@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*	flex-basis	:	Esnek kutu içerisindeki element veya elementlerin başlangıç uzunluğu değerlerini belirler.
+Değerler		:	auto | number | initial
+auto			:	Otomatik değer alır.
+number			:	Rakam.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	width:500px;
+	height:500px;
+	border:1px solid grey;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	-o-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+}
+.IcElemanlarGenislikVeBorder{
+	border:1px solid grey;
+	height:50px;
+}
+.Islem{
+	-webkit-flex-basis:100px;
+	-moz-flex-basis:100px;
+	-o-flex-basis:100px;
+	-ms-flex-basis:100px;
+	flex-basis:100px;
+}

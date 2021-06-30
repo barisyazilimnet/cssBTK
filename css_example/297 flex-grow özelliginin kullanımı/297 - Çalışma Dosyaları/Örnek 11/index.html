@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	flex-grow	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranının ne şekilde olması gerektiğini belirler.
+	Değerler	:	number | initial
+	number		:	Rakam.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		border:1px solid black;
+		width:500px;
+		height:500px;
+		-webkit-flex-direction:column;
+		-moz-flex-direction:column;
+		-o-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column;
+	}
+	.IcEleman{
+		border:1px solid black;
+		-webkit-flex-grow:1;
+		-moz-flex-grow:1;
+		-o-flex-grow:1;
+		-ms-flex-grow:1;
+		flex-grow:1;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcEleman">1</div>
+	<div class="IcEleman">2</div>
+	<div class="IcEleman">3</div>
+	<div class="IcElemanr">4</div>
+	<div class="IcEleman">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*	align-self	:	Esnek kutu içerisinde bulunan ve seçilen element veya elementlerin hizalama özelliklerini belirler.
+Değerler		:	auto | stretch | center | flex-start | flex-end | baseline | initial
+auto			:	Otomatik değer alır.
+stretch			:	Uzat / esne.
+center			:	Orta.
+flex-start		:	Esnek başlangıç.
+flex-end		:	Esnek bitiş.
+baseline		:	Başlangıç.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	width:500px;
+	height:400px;
+	border:1px solid grey;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	-webkit-align-items:baseline;
+	-moz-align-items:baseline;
+	-o-align-items:baseline;
+	-ms-align-items:baseline;
+	align-items:baseline;
+
+}
+.IcElemanlar{
+	border:1px solid black;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-o-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+.Deneme{
+	-webkit-align-self:center;
+	-moz-align-self:center;
+	-o-align-self:center;
+	-ms-align-self:center;
+	align-self:center;
+}

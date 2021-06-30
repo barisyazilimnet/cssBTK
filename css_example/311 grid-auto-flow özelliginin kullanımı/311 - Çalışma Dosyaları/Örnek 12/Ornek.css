@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	grid-auto-flow	:	Izgara düzeni içerisindeki element veya elementler için, otomatik yerleşim algoritması özelliklerini belirler.
+Değerler			:	row | column | row dense | column dense | initial
+row					:	Satır.
+column				:	Sütun.
+row dense			:	Satır yoğunluğu.
+column dense		:	Sütun yoğunluğu.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:500px;
+	border:1px solid red;
+	padding:10px;
+	grid-template-columns:auto auto auto;
+	grid-template-rows:auto auto auto auto;
+	grid-gap:10px;
+	grid-auto-flow:column;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}

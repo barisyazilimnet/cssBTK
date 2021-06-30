@@ -1,0 +1,8 @@
+@charset "utf-8";
+div{
+	width:500px;
+	height:200px;
+	border:4px double blue;
+	overflow:auto;
+	overflow-wrap:break-word;
+}

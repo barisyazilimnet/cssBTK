@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*	font		:	Metnin tüm yazı tipi özelliklerini belirler.
+Değerler		:	font-style | font-variant | font-weight | font-size/line-height | font-family | initial | inherit
+font-style		:	Metnin yazı tipi stili.
+font-variant	:	Metnin küçük harf içerikleri için büyük harf gösterilme özelliği.
+font-weight		:	Metnin yazı tipi kalınlığı.
+font-size		:	Metnin yazı tipi boyutu.
+line-height		:	Metin bloğunda bulunan satırların yüksekliği.
+font-family		:	Metnin yazı tipi ailesi.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	font:bold 30px "Monotype Corsiva", cursive;
+}

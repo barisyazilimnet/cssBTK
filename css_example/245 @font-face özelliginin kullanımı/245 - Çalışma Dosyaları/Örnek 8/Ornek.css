@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*	@font-face		:	Metinler için sistemde yüklü olmayan font'ların kullanılabilme durumlarını belirler.
+Değerler			:	font-family | local | src | font-style | font-weight
+font-family			:	Metnin yazı tipi ailesi.
+local				:	Yerel.
+src					:	Dosya adresi.
+font-style			:	Metnin yazı tipi stili.
+font-weight			:	Metnin yazı tipi kalınlığı.
+
+Font Dosya Türleri	:	EOT | WOFF2 | WOFF | TTF & OTF | SVG
+EOT					:	Internet Explorer - Microsoft Edge
+WOFF2				:	Chrome - Firefox - Opera
+WOFF				:	Tüm tarayıcılar.
+TTF & OTF			:	Tüm tarayıcılar.
+SVG					:	Chrome - Safari - Opera	*/
+@font-face{
+	font-family:"Angilla Tattoo Personal Use Regular";
+	src:url("Fontlar/Angilla_Tattoo_Personal_Use_Regular.eot"); /* Internet Explorer - Microsoft Edge */
+	src:url("Fontlar/Angilla_Tattoo_Personal_Use_Regular.eot?#iefix") format("embedded-opentype"), /* Internet Explorer 6 - 8 */
+		url("Fontlar/Angilla_Tattoo_Personal_Use_Regular.woff2") format("woff2"), /* Modern tarayıcılar (Süper) */
+		url("Fontlar/Angilla_Tattoo_Personal_Use_Regular.woff") format("woff"), /* Modern tarayıcılar */
+		url("Fontlar/Angilla_Tattoo_Personal_Use_Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("Fontlar/Angilla_Tattoo_Personal_Use_Regular.svg#angilla_tattoo_personal_useRg") format("svg"); /* iOS */
+}
+@font-face{
+	font-family:"Fiolex Girls Regular";
+	src:url("Fontlar/Fiolex_Girls_Regular.eot"); /* Internet Explorer - Microsoft Edge */
+	src:url("Fontlar/Fiolex_Girls_Regular.eot?#iefix") format("embedded-opentype"), /* Internet Explorer 6 - 8 */
+		url("Fontlar/Fiolex_Girls_Regular.woff2") format("woff2"), /* Modern tarayıcılar (Süper) */
+		url("Fontlar/Fiolex_Girls_Regular.woff") format("woff"), /* Modern tarayıcılar */
+		url("Fontlar/Fiolex_Girls_Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("Fontlar/Fiolex_Girls_Regular.svg#fiolex_girlsregular") format("svg"); /* iOS */
+}
+h3{
+	font-family:"Angilla Tattoo Personal Use Regular";
+}
+div, p{
+	font-family:"Fiolex Girls Regular";
+}

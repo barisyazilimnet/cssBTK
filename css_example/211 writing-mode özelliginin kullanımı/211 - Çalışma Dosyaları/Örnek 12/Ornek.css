@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*	writing-mode	:	Metnin veya içeriğin hizalama yönü özelliklerini belirler.
+Değerler			:	horizontal-tb | vertical-lr | vertical-rl | initial | inherit
+horizontal-tb		:	Yatay sekme.
+vertical-lr			:	Dikey (Sol).
+vertical-rl			:	Dikey (Sağ).
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:500px;
+	height:150px;
+	border:2px solid red;
+	-webkit-writing-mode:vertical-lr;
+	-moz-writing-mode:vertical-lr;
+	-o-writing-mode:vertical-lr;
+	-ms-writing-mode:vertical-lr;
+	writing-mode:vertical-lr;
+}
+p{
+	-webkit-writing-mode:initial;
+	-moz-writing-mode:initial;
+	-o-writing-mode:initial;
+	-ms-writing-mode:initial;
+	writing-mode:initial;
+}
+p[id="Dikey"]{
+	color:red;
+	-webkit-writing-mode:inherit; /* -webkit-writing-mode:vertical-lr; */
+	-moz-writing-mode:inherit; /* -moz-writing-mode:vertical-lr; */
+	-o-writing-mode:inherit; /* -o-writing-mode:vertical-lr; */
+	-ms-writing-mode:inherit; /* -ms-writing-mode:vertical-lr; */
+	writing-mode:inherit; /* writing-mode:vertical-lr; */
+}

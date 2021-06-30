@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	text-shadow		:	Metnin gölgelendirme özelliklerini belirler.
+	Parametreler	:	horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | blur-radius (bulanıklık yarıçapı) | color
+	Değerler		:	none & length & initial & inherit | blur-radius | color
+	none			:	Değer yok.
+	length			:	Uzunluk değeri.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.
+	blur-radius		:	Bulanıklık yarıçapı değeri.
+	color			:	Renk.	*/
+	div{
+		text-shadow:-2px 2px 4px orange;
+	}
+	p{
+		text-shadow:initial;
+	}
+	.Deneme{
+		text-shadow:inherit; /* text-shadow:-2px 2px 4px orange; */
+	}
+</style>
+</head>
+
+<body>
+<div>
+	<p>Extra Eğitim - Volkan Alakent</p>
+	<p class="Deneme">Extra Eğitim - Volkan Alakent</p>
+	<p class="Deneme">Extra Eğitim - Volkan Alakent</p>
+	<p class="Deneme">Extra Eğitim - Volkan Alakent</p>
+	<p>Extra Eğitim - Volkan Alakent</p>
+</div>
+</body>
+</html>

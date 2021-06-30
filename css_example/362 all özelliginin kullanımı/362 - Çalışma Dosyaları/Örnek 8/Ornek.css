@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	all		:	direction ve unicode-bidi hariç, diğer tüm CSS özelliklerinin sıfırlanacağı veya devralınacağı durumunu belirler.
+Değerler	:	initial | inherit | unset
+initial		:	Belirtilecek olan HTML elementinin, tüm CSS özellikleri varsayılan biçimlendirme değerine döner.
+inherit		:	Belirtilecek olan HTML elementinin, üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır.
+unset		:	Belirtilecek olan HTML elementinin, üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır. Fakat üst elementinde tanımlı herhangi bir özellik yoksa, tüm CSS
+				özellikleri varsayılan biçimlendirme değerine döner.	*/
+body{
+	font-size:25px;
+	font-weight:bold;
+	color:red;
+}
+div{
+	all:initial;
+	display:block;
+}
+#Ornek{
+	all:inherit;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	counter-reset				:	Bir yada daha fazla sayaç oluşturmak veya sıfırlamak için kullanılır.
+	counter-increment			:	Bir yada daha fazla sayacın değerini arttırmak için kullanılır.
+	counters()					:	Oluşturulmuş olan ve iç içe geçmiş sayacın değerini HTML elementine eklemek için kullanılır.
+	counters() parametreleri	:	counter name (sayaç adı) | style-type
+	style-type değerleri		:	decimal | decimal-leading-zero | lower-alpha | upper-alpha | lower-roman | upper-roman
+	decimal						:	Ondalık sayı.
+	decimal-leading-zero		:	Ondalık sayı. (Tek haneli sayılara 0 takısı eklenir.)
+	lower-alpha					:	Küçük harf.
+	upper-alpha					:	Büyük harf.
+	lower-roman					:	Küçük harfli roma rakamı.
+	upper-roman					:	Büyük harfli roma rakamı.	*/
+	ul{
+		list-style-type:none;
+		counter-reset:Sayac;
+	}
+	li::before{
+		counter-increment:Sayac;
+		content:counters(Sayac, ".", lower-alpha) " : ";
+	}
+</style>
+</head>
+
+<body>
+<h3>Extra Eğitim</h3>
+<ul>
+	<li>Volkan Alakent
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>PHP</li>
+		</ul>
+	</li>
+	<li>Hakan Alakent
+		<ul>
+			<li>PHOTOSHOP</li>
+			<li>COREL</li>
+		</ul>
+	</li>
+	<li>Mesut Alakent
+		<ul>
+			<li>3DS MAX</li>
+			<li>CINEMA 4D</li>
+			<li>MAYA</li>
+			<li>Z-BRUSH</li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>

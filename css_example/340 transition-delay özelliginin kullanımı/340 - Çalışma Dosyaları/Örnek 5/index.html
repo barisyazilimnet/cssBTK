@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transition-delay	:	HTML elementine tanımlanmış olan geçiş özelliğinin kaç saniye veya kaç milisaniye sonra başlayacağını belirler.
+	Değerler			:	time | initial
+	time				:	Zaman (Saniye : s, Milisaniye : ms)
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:150px;
+		height:100px;
+		border:thin solid red;
+		background-color:#990000;
+		line-height:100px;
+		text-align:center;
+		color:#FFFFFF;
+		-webkit-transition-property:width, border, background-color, color;
+		-moz-transition-property:width, border, background-color, color;
+		-o-transition-property:width, border, background-color, color;
+		-ms-transition-property:width, border, background-color, color;
+		transition-property:width, border, background-color, color;
+		-webkit-transition-duration:8000ms;
+		-moz-transition-duration:8000ms;
+		-o-transition-duration:8000ms;
+		-ms-transition-duration:8000ms;
+		transition-duration:8000ms;
+		-webkit-transition-delay:1000ms, 2000ms, 3000ms, 4000ms;
+		-moz-transition-delay:1000ms, 2000ms, 3000ms, 4000ms;
+		-o-transition-delay:1000ms, 2000ms, 3000ms, 4000ms;
+		-ms-transition-delay:1000ms, 2000ms, 3000ms, 4000ms;
+		transition-delay:1000ms, 2000ms, 3000ms, 4000ms;
+	}
+	div:hover{
+		width:1500px;
+		border:thin solid blue;
+		background-color:#000099;
+		color:yellow;
+	}
+</style>
+</head>
+
+<body>
+<div>Extra Eğitim</div>
+</body>
+</html>

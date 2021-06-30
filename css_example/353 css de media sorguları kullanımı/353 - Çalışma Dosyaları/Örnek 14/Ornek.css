@@ -1,0 +1,6 @@
+@charset "utf-8";
+@media only screen and (min-width:300px) and (max-width:600px){
+	div{
+		color:red;
+	}
+}	

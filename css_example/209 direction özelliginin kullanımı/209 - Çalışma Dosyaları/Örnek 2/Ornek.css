@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*	direction	:	Metnin veya içeriğin akış yönü özelliklerini belirler.
+Değerler		:	ltr | rtl | initial | inherit
+ltr				:	Soldan sağa.
+rtl				:	Sağdan sola.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	direction:ltr;
+}

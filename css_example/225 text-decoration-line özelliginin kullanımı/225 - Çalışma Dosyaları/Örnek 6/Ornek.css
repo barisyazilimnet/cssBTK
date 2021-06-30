@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	text-decoration-line	:	Metne eklenecek olan dekorasyon / süsleme çizgisi türünü belirler.
+Değerler					:	none | underline | overline | line-through | initial | inherit
+none						:	Değer yok.
+underline					:	Metnin alt tarafına çizgi ekler.
+overline					:	Metnin alt tarafına çizgi ekler.
+line-through				:	Metnin üzerine çizgi ekler.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-text-decoration-line:overline;
+	-moz-text-decoration-line:overline;
+	-o-text-decoration-line:overline;
+	-ms-text-decoration-line:overline;
+	text-decoration-line:overline;
+}

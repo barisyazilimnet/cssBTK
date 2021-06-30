@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*	text-overflow	:	HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük metnin taşma özelliklerini belirler.
+Değerler			:	clip | ellipsis | initial | inherit
+clip				:	Metni kırpar.
+ellipsis			:	Metni kırpar ve ... ekler.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:250px;
+	height:18px;
+	border:thin solid red;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+p{
+	width:250px;
+	height:18px;
+	margin:0px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:inherit; /* text-overflow:ellipsis; */
+}

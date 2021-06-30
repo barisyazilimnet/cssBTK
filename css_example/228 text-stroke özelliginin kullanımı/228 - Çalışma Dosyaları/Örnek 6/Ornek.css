@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	text-stroke		:	Metne eklenecek olan dış çizgisi özelliklerini belirler.
+Parametreler		:	length | color
+Değerler			:	length & initial & inherit | color
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+color				:	Renk.	*/
+p{
+	-webkit-text-stroke:1px red;
+	-moz-text-stroke:1px red;
+	-o-text-stroke:1px red;
+	-ms-text-stroke:1px red;
+	text-stroke:1px red;
+}

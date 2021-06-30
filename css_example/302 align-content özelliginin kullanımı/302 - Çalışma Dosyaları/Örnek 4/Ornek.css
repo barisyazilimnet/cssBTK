@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*	align-content	:	Esnek kutu içerisinde bulunan elementler tüm alanı kullanmadığında ve satır kırılma olduğunda, elementlerin hizalama özelliklerini belirler.
+Değerler			:	stretch | center | flex-start | flex-end | space-between | space-around | initial
+stretch				:	Uzat / esne.
+center				:	Orta.
+flex-start			:	Esnek başlangıç.
+flex-end			:	Esnek bitiş.
+space-between		:	Boşluk arasında.
+space-around		:	Boşluk etrafında.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	width:500px;
+	height:500px;
+	border:thin solid red;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	-webkit-flex-wrap:wrap;
+	-moz-flex-wrap:wrap;
+	-o-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-align-content:center;
+	-moz-align-content:center;
+	-o-align-content:center;
+	-ms-align-content:center;
+	align-content:center;
+}
+.IcElemanlar{
+	width:125px;
+	height:125px;
+	border:thin solid blue;
+}

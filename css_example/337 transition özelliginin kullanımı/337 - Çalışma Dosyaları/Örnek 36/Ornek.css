@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*	transition				:	HTML elementinin tüm geçiş özelliklerini belirler.
+Parametreler				:	transition-property | transition-duration | transition-timing-function | transition-delay
+Varsayılan Değer			:	all 0s ease 0s
+Değerler					:	property value (özellik değeri) | initial
+transition-property			:	CSS özellik adı.
+transition-duration			:	Geçiş süresi.
+transition-timing-function	:	Hız eğrisi.
+transition-delay			:	Duraksama süresi.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div.Alan{
+	position:absolute;
+	width:100%;
+	background-color:#00506C;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+.KapsamaAlani{
+	position:absolute;
+	top:250px;
+	left:450px;
+}
+.Kutular{
+	position:relative;
+	display:inline-block;
+	width:200px;
+	height:200px;
+	text-align:center;
+	line-height:200px;
+	font-size:20px;
+	-webkit-transition:all 500ms;
+	-moz-transition:all 500ms;
+	-o-transition:all 500ms;
+	-ms-transition:all 500ms;
+	transition:all 500ms;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1);
+}
+.Kutular:hover{
+	-webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	transform:scale(1.5);
+	-webkit-box-shadow:0px 0px 150px black;
+	-moz-box-shadow:0px 0px 150px black;
+	-o-box-shadow:0px 0px 150px black;
+	-ms-box-shadow:0px 0px 150px black;
+	box-shadow:0px 0px 150px black;
+	z-index:2;
+}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	attr()	:	HTML elementinin belirtilecek olan herhangi bir özellik bilgisine erişmek için kullanılır.	*/
+div::after{
+	content:"( Yön Değeri : " attr(dir) ")";
+}

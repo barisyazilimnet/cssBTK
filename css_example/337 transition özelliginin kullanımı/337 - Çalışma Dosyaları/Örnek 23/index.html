@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transition					:	HTML elementinin tüm geçiş özelliklerini belirler.
+	Parametreler				:	transition-property | transition-duration | transition-timing-function | transition-delay
+	Varsayılan Değer			:	all 0s ease 0s
+	Değerler					:	property value (özellik değeri) | initial
+	transition-property			:	CSS özellik adı.
+	transition-duration			:	Geçiş süresi.
+	transition-timing-function	:	Hız eğrisi.
+	transition-delay			:	Duraksama süresi.
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:200px;
+		height:200px;
+		border:1px solid red;
+		background-color:yellow;
+		-webkit-transition:border-radius 1s;
+		-moz-transition:border-radius 1s;
+		-o-transition:border-radius 1s;
+		-ms-transition:border-radius 1s;
+		transition:border-radius 1s;
+	}
+	div:hover{
+		-webkit-border-radius:50%;
+		-moz-border-radius:50%;
+		-o-border-radius:50%;
+		-ms-border-radius:50%;
+		border-radius:50%;
+	}
+</style>
+</head>
+
+<body>
+<div> </div>
+</body>
+</html>

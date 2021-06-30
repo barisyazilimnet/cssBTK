@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	counter-reset		:	Bir yada daha fazla sayaç oluşturmak veya sıfırlamak için kullanılır.
+counter-increment		:	Bir yada daha fazla sayacın değerini arttırmak için kullanılır.
+counter()				:	Oluşturulmuş olan sayacın değerini HTML elementine eklemek için kullanılır.
+counter() parametreleri	:	counter name (sayaç adı) | style-type
+style-type değerleri	:	decimal | decimal-leading-zero | lower-alpha | upper-alpha | lower-roman | upper-roman
+decimal					:	Ondalık sayı.
+decimal-leading-zero	:	Ondalık sayı. (Tek haneli sayılara 0 takısı eklenir.)
+lower-alpha				:	Küçük harf.
+upper-alpha				:	Büyük harf.
+lower-roman				:	Küçük harfli roma rakamı.
+upper-roman				:	Büyük harfli roma rakamı.	*/
+body{
+	counter-reset:Sayac;
+}
+p::before{
+	counter-increment:Sayac;
+	content:counter(Sayac) " : ";
+}

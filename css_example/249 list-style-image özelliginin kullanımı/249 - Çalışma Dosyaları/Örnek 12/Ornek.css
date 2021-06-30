@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*	list-style-image	:	Listedeki madde işaretçisinin resim özelliklerini belirler.
+Değerler				:	none | url | initial | inherit
+none					:	Değer yok.
+url						:	Dosya adresi.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+ol{
+	list-style-image:url(Yildiz.png);
+}

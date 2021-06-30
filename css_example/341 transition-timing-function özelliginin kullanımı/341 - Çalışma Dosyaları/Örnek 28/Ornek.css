@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*	transition-timing-function	:	HTML elementine tanımlanmış olan geçiş özelliğinin, hız eğrisi özelliklerini belirler.
+Değerler						:	ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps | cubic-bezier | initial
+ease							:	Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+linear							:	Başlangıçtan sona kadar aynı hız.
+ease-in							:	Yavaş olarak başlayarak sona doğru hızlanır.
+ease-out						:	Hızlı olarak başlayarak sona doğru yavaşlar.
+ease-in-out						:	Yavaş olarak başlayarak  ortada hızlanır ve sona doğru tekrar yavaşlar.
+step-start						:	Geçiş süresine bakılmaksızın doğrudan sona ulaşır.
+step-end						:	Geçiş süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+steps							:	Başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar.
+cubic-bezier					:	Bezier eğrisi. (http://cubic-bezier.com)
+initial							:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div.Islem{
+	width:50px;
+	height:50px;
+	margin:2px;
+	border:thin solid black;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	-webkit-transition-property:all;
+	-moz-transition-property:all;
+	-o-transition-property:all;
+	-ms-transition-property:all;
+	transition-property:all;
+	-webkit-transition-duration:5s;
+	-moz-transition-duration:5s;
+	-o-transition-duration:5s;
+	-ms-transition-duration:5s;
+	transition-duration:5s;
+}
+#Bir{
+	background-color:#FF0004;
+	-webkit-transition-timing-function:ease;
+	-moz-transition-timing-function:ease;
+	-o-transition-timing-function:ease;
+	-ms-transition-timing-function:ease;
+	transition-timing-function:ease;
+}
+#Iki{
+	background-color:#6F23D9;
+	-webkit-transition-timing-function:linear;
+	-moz-transition-timing-function:linear;
+	-o-transition-timing-function:linear;
+	-ms-transition-timing-function:linear;
+	transition-timing-function:linear;
+}
+#Uc{
+	background-color:#45E17E;
+	-webkit-transition-timing-function:ease-in;
+	-moz-transition-timing-function:ease-in;
+	-o-transition-timing-function:ease-in;
+	-ms-transition-timing-function:ease-in;
+	transition-timing-function:ease-in;
+}
+#Dort{
+	background-color:#A7490A;
+	-webkit-transition-timing-function:ease-out;
+	-moz-transition-timing-function:ease-out;
+	-o-transition-timing-function:ease-out;
+	-ms-transition-timing-function:ease-out;
+	transition-timing-function:ease-out;
+}
+#Bes{
+	background-color:#E4F811;
+	-webkit-transition-timing-function:ease-in-out;
+	-moz-transition-timing-function:ease-in-out;
+	-o-transition-timing-function:ease-in-out;
+	-ms-transition-timing-function:ease-in-out;
+	transition-timing-function:ease-in-out;
+}
+#Alti{
+	background-color:#00FF0D;
+	-webkit-transition-timing-function:step-start;
+	-moz-transition-timing-function:step-start;
+	-o-transition-timing-function:step-start;
+	-ms-transition-timing-function:step-start;
+	transition-timing-function:step-start;
+}
+#Yedi{
+	background-color:#686666;
+	-webkit-transition-timing-function:step-end;
+	-moz-transition-timing-function:step-end;
+	-o-transition-timing-function:step-end;
+	-ms-transition-timing-function:step-end;
+	transition-timing-function:step-end;
+}
+#Sekiz{
+	background-color:#2BA8E4;
+	-webkit-transition-timing-function:steps(5, end);
+	-moz-transition-timing-function:steps(5, end);
+	-o-transition-timing-function:steps(5, end);
+	-ms-transition-timing-function:steps(5, end);
+	transition-timing-function:steps(5, end);
+}
+#Dokuz{
+	background-color:#188C34;
+	-webkit-transition-timing-function:steps(5, start);
+	-moz-transition-timing-function:steps(5, start);
+	-o-transition-timing-function:steps(5, start);
+	-ms-transition-timing-function:steps(5, start);
+	transition-timing-function:steps(5, start);
+}
+#On{
+	background-color:#433B87;
+	-webkit-transition-timing-function:cubic-bezier(0, 1, 1, 0);
+	-moz-transition-timing-function:cubic-bezier(0, 1, 1, 0);
+	-o-transition-timing-function:cubic-bezier(0, 1, 1, 0);
+	-ms-transition-timing-function:cubic-bezier(0, 1, 1, 0);
+	transition-timing-function:cubic-bezier(0, 1, 1, 0);
+}
+#AnaEleman:hover div{
+	transform:translateX(1800px);
+}

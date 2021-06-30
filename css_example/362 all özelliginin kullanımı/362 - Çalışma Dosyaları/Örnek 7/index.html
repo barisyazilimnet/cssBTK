@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	all			:	direction ve unicode-bidi hariç, diğer tüm CSS özelliklerinin sıfırlanacağı veya devralınacağı durumunu belirler.
+	Değerler	:	initial | inherit | unset
+	initial		:	Belirtilecek olan HTML elementinin, tüm CSS özellikleri varsayılan biçimlendirme değerine döner.
+	inherit		:	Belirtilecek olan HTML elementinin, üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır.
+	unset		:	Belirtilecek olan HTML elementinin, üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır. Fakat üst elementinde tanımlı herhangi bir özellik yoksa, tüm CSS
+					özellikleri varsayılan biçimlendirme değerine döner.	*/
+	body{
+		font-size:25px;
+		font-weight:bold;
+		color:red;
+	}
+	div{
+		all:initial;
+		display:block;
+	}
+	#Ornek{
+		all:inherit;
+	}
+</style>
+</head>
+
+<body>
+<div>Extra Eğitim - Volkan Alakent</div>
+<div id="Ornek">Extra Eğitim - Volkan Alakent</div>
+<div>Extra Eğitim - Volkan Alakent</div>
+</body>
+</html>

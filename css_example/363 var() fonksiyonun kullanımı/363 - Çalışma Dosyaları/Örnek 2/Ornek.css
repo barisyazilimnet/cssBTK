@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	var()	:	Önceden tanımlanmış olan ve tüm CSS kodları içerisinde kullanılmak üzere belirli değerler içeren verilerin tutulduğu değişkenlerin çağrılma durumunu belirler.	*/
+:root{
+	--KirmiziRenk:red;
+	--MaviBorder:2px solid blue;
+	--KalinYazi:bold;
+	--SariArkaplan:yellow;
+	--Genislik:600px;
+	--Yukseklik:100px;
+	--YaziOrtalama:center;
+}
+div{
+	width:var(--Genislik);
+	height:var(--Yukseklik);
+	border:var(--MaviBorder);
+	color:var(--KirmiziRenk);
+	text-align:var(--YaziOrtalama);
+	font-weight:var(--KalinYazi);
+	background-color:var(--SariArkaplan);
+}
+p{
+	width:var(--Genislik);
+	height:var(--Yukseklik);
+	border:var(--MaviBorder);
+	color:var(--KirmiziRenk);
+	text-align:var(--YaziOrtalama);
+	font-weight:var(--KalinYazi);
+	background-color:var(--SariArkaplan);
+}

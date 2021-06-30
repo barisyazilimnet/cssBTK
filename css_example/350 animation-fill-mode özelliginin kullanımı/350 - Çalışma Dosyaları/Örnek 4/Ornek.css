@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*	animation-fill-mode	:	HTML elementine tanımlanmış olan animasyonun oynatma işlemi tamamlandığında, HTML elementinin konum özelliklerini belirler.
+Değerler				:	none | forwards | backwards | both | initial
+none					:	Değer yok.
+forwards				:	İleride.
+backwards				:	Geride.
+both					:	Her ikiside.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:100px;
+	border:1px solid black;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	background-color:red;
+	-webkit-animation-name:ExtraEgitim;
+	-moz-animation-name:ExtraEgitim;
+	-o-animation-name:ExtraEgitim;
+	-ms-animation-name:ExtraEgitim;
+	animation-name:ExtraEgitim;
+	-webkit-animation-duration:5s;
+	-moz-animation-duration:5s;
+	-o-animation-duration:5s;
+	-ms-animation-duration:5s;
+	animation-duration:5s;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	-ms-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+@keyframes ExtraEgitim{
+	from{
+		-webkit-transform:translateX(0px);
+		-moz-transform:translateX(0px);
+		-o-transform:translateX(0px);
+		-ms-transform:translateX(0px);
+		transform:translateX(0px);
+	}
+	to{
+		-webkit-transform:translateX(1000px);
+		-moz-transform:translateX(1000px);
+		-o-transform:translateX(1000px);
+		-ms-transform:translateX(1000px);
+		transform:translateX(1000px);
+	}
+}

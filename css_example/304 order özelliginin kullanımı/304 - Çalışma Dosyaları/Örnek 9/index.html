@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	order		:	Esnek kutu içerinde bulunan element veya elementlerin, diğer elementlere göre sıralama özelliklerini belirler.
+	Değerler	:	number | initial
+	number		:	Rakam.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		width:50px;
+		height:500px;
+		border:thin solid grey;
+		-webkit-flex-direction:column;
+		-moz-flex-direction:column;
+		-o-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column;
+	}
+	.IcElemanlar{
+		border:thin solid red;
+		-webkit-flex:1;
+		-moz-flex:1;
+		-o-flex:1;
+		-ms-flex:1;
+		flex:1;
+	}
+	.Bir{
+		-webkit-order:1;
+		-moz-order:1;
+		-o-order:1;
+		-ms-order:1;
+		order:1;
+	}
+	.Iki{
+		-webkit-order:2;
+		-moz-order:2;
+		-o-order:2;
+		-ms-order:2;
+		order:2;
+	}
+	.Uc{
+		-webkit-order:3;
+		-moz-order:3;
+		-o-order:3;
+		-ms-order:3;
+		order:3;
+	}
+	.Dort{
+		-webkit-order:4;
+		-moz-order:4;
+		-o-order:4;
+		-ms-order:4;
+		order:4;
+	}
+	.Bes{
+		-webkit-order:5;
+		-moz-order:5;
+		-o-order:5;
+		-ms-order:5;
+		order:5;
+	}
+	.Alti{
+		-webkit-order:6;
+		-moz-order:6;
+		-o-order:6;
+		-ms-order:6;
+		order:6;
+	}
+	.Yedi{
+		-webkit-order:7;
+		-moz-order:7;
+		-o-order:7;
+		-ms-order:7;
+		order:7;
+	}
+	.Sekiz{
+		-webkit-order:8;
+		-moz-order:8;
+		-o-order:8;
+		-ms-order:8;
+		order:8;
+	}
+	.Dokuz{
+		-webkit-order:9;
+		-moz-order:9;
+		-o-order:9;
+		-ms-order:9;
+		order:9;
+	}
+	.On{
+		-webkit-order:10;
+		-moz-order:10;
+		-o-order:10;
+		-ms-order:10;
+		order:10;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar Dokuz">1</div>
+	<div class="IcElemanlar Uc">2</div>
+	<div class="IcElemanlar Alti">3</div>
+	<div class="IcElemanlar Sekiz">4</div>
+	<div class="IcElemanlar Iki">5</div>
+	<div class="IcElemanlar Bes">6</div>
+	<div class="IcElemanlar On">7</div>
+	<div class="IcElemanlar Bir">8</div>
+	<div class="IcElemanlar Dort">9</div>
+	<div class="IcElemanlar Yedi">10</div>
+</div>
+</body>
+</html>

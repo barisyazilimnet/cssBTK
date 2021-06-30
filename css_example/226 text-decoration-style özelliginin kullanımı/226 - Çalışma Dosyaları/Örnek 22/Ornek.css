@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*	text-decoration-style	:	Metne eklenecek olan dekorasyon / süsleme çizgisi stilini belirler.
+Değerler					:	solid | dashed | dotted | double | wavy | initial | inherit
+solid						:	Düz çizgi.
+dashed						:	Kesikli çizgi.
+dotted						:	Noktalı çizgi.
+double						:	Çift çizgi.
+wavy						:	Dalgalı çizgi.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-text-decoration-line:overline;
+	-moz-text-decoration-line:overline;
+	-o-text-decoration-line:overline;
+	-ms-text-decoration-line:overline;
+	text-decoration-line:overline;
+	-webkit-text-decoration-style:double;
+	-moz-text-decoration-style:double;
+	-o-text-decoration-style:double;
+	-ms-text-decoration-style:double;
+	text-decoration-style:double;
+}
+p{
+	-webkit-text-decoration-style:initial;
+	-moz-text-decoration-style:initial;
+	-o-text-decoration-style:initial;
+	-ms-text-decoration-style:initial;
+	text-decoration-style:initial;
+}
+#Deneme{
+	-webkit-text-decoration-style:inherit; /* -webkit-text-decoration-style:double; */
+	-moz-text-decoration-style:inherit; /* -moz-text-decoration-style:double; */
+	-o-text-decoration-style:inherit; /* -o-text-decoration-style:double; */
+	-ms-text-decoration-style:inherit; /* -ms-text-decoration-style:double; */
+	text-decoration-style:inherit; /* text-decoration-style:double; */
+}

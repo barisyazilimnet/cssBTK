@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	break-before	:	HTML elementinin çok sütunlu düzeni için bölünen sütunların arasındaki belirtilecek olan elementin öncesinde bölünme davranış özelliklerini belirler.
+Değerler			:	auto | column | initial
+auto				:	Otomatik değer alır.
+column				:	Sütun bölünür.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	-o-column-count:2;
+	-ms-column-count:2;
+	column-count:2;
+}
+#Deneme{
+	break-before:auto;
+}

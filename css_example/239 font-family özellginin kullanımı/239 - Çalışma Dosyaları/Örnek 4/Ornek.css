@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*	font-family	:	Metnin yazı tipi ailesini belirler.
+Değerler		:	family-name | initial | inherit
+family-name		:	Yazı tipi ailesinin adı.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.
+
+Font ailelerinin türleri	:	family-name | generic-name
+family-name 				:	Yazı tipi ailesinin adı.
+generic-name				:	Genel yazı tipi ailesinin adı.
+	Değerler				:	serif | sans-serif | cursive | fantasy | monospace
+	serif					:	Tırnaklı.
+	sans-serif				:	Tırnaksız.
+	cursive					:	El yazısı.
+	fantasy					:	Fantazi.
+	monospace				:	Tek aralıklı.	*/
+div{
+	font-size:30px;
+	font-family:"Monotype Corsiva", "cursive";
+}
+#Deneme{
+	font-family:initial;
+}

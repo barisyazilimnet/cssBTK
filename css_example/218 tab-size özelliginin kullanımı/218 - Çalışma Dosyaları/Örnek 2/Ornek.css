@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*	tab-size	:	HTML elementi içerisinde bulunan metnin içerdiği sekme karakterinin genişliğini belirler.
+Değerler		:	number | length | initial | inherit
+number			:	Rakam. (X karakter.)
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+pre{
+	-webkit-tab-size:30;
+	-moz-tab-size:30;
+	-o-tab-size:30;
+	-ms-tab-size:30;
+	tab-size:30;
+}

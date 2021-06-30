@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	animation-timing-function	:	HTML elementine tanımlanmış olan animasyon döngüsünün hız eğrisi özelliklerini belirler.
+	Değerler					:	ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps() | cubic-bezier() | initial
+	ease						:	Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+	linear						:	Başlangıçtan sona kadar aynı hız.
+	ease-in						:	Yavaş olarak başlayarak sona doğru hızlanır.
+	ease-out					:	Hızlı olarak başlayarak sona doğru yavaşlar.
+	ease-in-out					:	Yavaş olarak başlayarak ortalarda hızlanır ve sona doğru tekrar yavaşlar.
+	step-start					:	Animasyon süresine bakılmaksızın doğrudan sona ulaşır.
+	step-end					:	Animasyon süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+	steps()						:	Başlangıç ve bitiş arasında adımlamalı animasyon işlemi yapar. (1. Parametre : Adım sayısı, 2. Parametre : end | start)
+	cubic-bezier()				:	Bezier eğrisi. (http://cubic-bezier.com)
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div#AnaEleman{
+		width:1500px;
+		height:555px;
+		border:1px solid black;
+	}
+	div.IcElemanlar{
+		width:0px;
+		height:50px;
+		margin:5px;
+		-webkit-animation-duration:5s;
+		-moz-animation-duration:5s;
+		-o-animation-duration:5s;
+		-ms-animation-duration:5s;
+		animation-duration:5s;
+		-webkit-animation-fill-mode:forwards;
+		-moz-animation-fill-mode:forwards;
+		-o-animation-fill-mode:forwards;
+		-ms-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+	}
+	div.Bir{
+		background-color:#FF0000;
+		-webkit-animation-name:ExtraEgitim1;
+		-moz-animation-name:ExtraEgitim1;
+		-o-animation-name:ExtraEgitim1;
+		-ms-animation-name:ExtraEgitim1;
+		animation-name:ExtraEgitim1;
+		-webkit-animation-timing-function:ease;
+		-moz-animation-timing-function:ease;
+		-o-animation-timing-function:ease;
+		-ms-animation-timing-function:ease;
+		animation-timing-function:ease;
+	}
+	@keyframes ExtraEgitim1{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Iki{
+		background-color:#5100FF;
+		-webkit-animation-name:ExtraEgitim2;
+		-moz-animation-name:ExtraEgitim2;
+		-o-animation-name:ExtraEgitim2;
+		-ms-animation-name:ExtraEgitim2;
+		animation-name:ExtraEgitim2;
+		-webkit-animation-timing-function:linear;
+		-moz-animation-timing-function:linear;
+		-o-animation-timing-function:linear;
+		-ms-animation-timing-function:linear;
+		animation-timing-function:linear;
+	}
+	@keyframes ExtraEgitim2{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Uc{
+		background-color:#00FF0D;
+		-webkit-animation-name:ExtraEgitim3;
+		-moz-animation-name:ExtraEgitim3;
+		-o-animation-name:ExtraEgitim3;
+		-ms-animation-name:ExtraEgitim3;
+		animation-name:ExtraEgitim3;
+		-webkit-animation-timing-function:ease-in;
+		-moz-animation-timing-function:ease-in;
+		-o-animation-timing-function:ease-in;
+		-ms-animation-timing-function:ease-in;
+		animation-timing-function:ease-in;
+	}
+	@keyframes ExtraEgitim3{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Dort{
+		background-color:#FFBE00;
+		-webkit-animation-name:ExtraEgitim4;
+		-moz-animation-name:ExtraEgitim4;
+		-o-animation-name:ExtraEgitim4;
+		-ms-animation-name:ExtraEgitim4;
+		animation-name:ExtraEgitim4;
+		-webkit-animation-timing-function:ease-out;
+		-moz-animation-timing-function:ease-out;
+		-o-animation-timing-function:ease-out;
+		-ms-animation-timing-function:ease-out;
+		animation-timing-function:ease-out;
+	}
+	@keyframes ExtraEgitim4{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Bes{
+		background-color:brown;
+		-webkit-animation-name:ExtraEgitim5;
+		-moz-animation-name:ExtraEgitim5;
+		-o-animation-name:ExtraEgitim5;
+		-ms-animation-name:ExtraEgitim5;
+		animation-name:ExtraEgitim5;
+		-webkit-animation-timing-function:ease-in-out;
+		-moz-animation-timing-function:ease-in-out;
+		-o-animation-timing-function:ease-in-out;
+		-ms-animation-timing-function:ease-in-out;
+		animation-timing-function:ease-in-out;
+	}
+	@keyframes ExtraEgitim5{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Alti{
+		background-color:darkseagreen;
+		-webkit-animation-name:ExtraEgitim6;
+		-moz-animation-name:ExtraEgitim6;
+		-o-animation-name:ExtraEgitim6;
+		-ms-animation-name:ExtraEgitim6;
+		animation-name:ExtraEgitim6;
+		-webkit-animation-timing-function:step-start;
+		-moz-animation-timing-function:step-start;
+		-o-animation-timing-function:step-start;
+		-ms-animation-timing-function:step-start;
+		animation-timing-function:step-start;
+	}
+	@keyframes ExtraEgitim6{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Yedi{
+		background-color:aquamarine;
+		-webkit-animation-name:ExtraEgitim7;
+		-moz-animation-name:ExtraEgitim7;
+		-o-animation-name:ExtraEgitim7;
+		-ms-animation-name:ExtraEgitim7;
+		animation-name:ExtraEgitim7;
+		-webkit-animation-timing-function:step-end;
+		-moz-animation-timing-function:step-end;
+		-o-animation-timing-function:step-end;
+		-ms-animation-timing-function:step-end;
+		animation-timing-function:step-end;
+	}
+	@keyframes ExtraEgitim7{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Sekiz{
+		background-color:fuchsia;
+		-webkit-animation-name:ExtraEgitim8;
+		-moz-animation-name:ExtraEgitim8;
+		-o-animation-name:ExtraEgitim8;
+		-ms-animation-name:ExtraEgitim8;
+		animation-name:ExtraEgitim8;
+		-webkit-animation-timing-function:steps(5, end);
+		-moz-animation-timing-function:steps(5, end);
+		-o-animation-timing-function:steps(5, end);
+		-ms-animation-timing-function:steps(5, end);
+		animation-timing-function:steps(5, end);
+	}
+	@keyframes ExtraEgitim8{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.Dokuz{
+		background-color:gold;
+		-webkit-animation-name:ExtraEgitim9;
+		-moz-animation-name:ExtraEgitim9;
+		-o-animation-name:ExtraEgitim9;
+		-ms-animation-name:ExtraEgitim9;
+		animation-name:ExtraEgitim9;
+		-webkit-animation-timing-function:steps(5, start);
+		-moz-animation-timing-function:steps(5, start);
+		-o-animation-timing-function:steps(5, start);
+		-ms-animation-timing-function:steps(5, start);
+		animation-timing-function:steps(5, start);
+	}
+	@keyframes ExtraEgitim9{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+	div.On{
+		background-color:lightslategrey;
+		-webkit-animation-name:ExtraEgitim10;
+		-moz-animation-name:ExtraEgitim10;
+		-o-animation-name:ExtraEgitim10;
+		-ms-animation-name:ExtraEgitim10;
+		animation-name:ExtraEgitim10;
+		-webkit-animation-timing-function:cubic-bezier(0.72, 1.83, 0.22, -1.42);
+		-moz-animation-timing-function:cubic-bezier(0.72, 1.83, 0.22, -1.42);
+		-o-animation-timing-function:cubic-bezier(0.72, 1.83, 0.22, -1.42);
+		-ms-animation-timing-function:cubic-bezier(0.72, 1.83, 0.22, -1.42);
+		animation-timing-function:cubic-bezier(0.72, 1.83, 0.22, -1.42);
+	}
+	@keyframes ExtraEgitim10{
+		from{
+			width:0px;
+		}
+		to{
+			width:1490px;
+		}
+	}
+</style>
+</head>
+
+<body>
+<div id="AnaEleman">
+	<div class="IcElemanlar Bir"></div>
+	<div class="IcElemanlar Iki"></div>
+	<div class="IcElemanlar Uc"></div>
+	<div class="IcElemanlar Dort"></div>
+	<div class="IcElemanlar Bes"></div>
+	<div class="IcElemanlar Alti"></div>
+	<div class="IcElemanlar Yedi"></div>
+	<div class="IcElemanlar Sekiz"></div>
+	<div class="IcElemanlar Dokuz"></div>
+	<div class="IcElemanlar On"></div>
+</div>
+</body>
+</html>

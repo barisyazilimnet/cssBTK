@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	flex-shrink	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük / büzülme oranının ne şekilde olması gerektiğini belirler.
+	Değerler	:	number | initial
+	number		:	Rakam.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div[name="AnaEleman"]{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		width:500px;
+		height:100px;
+		border:1px solid red;
+	}
+	.IcEleman{
+		-webkit-flex-grow:1;
+		-moz-flex-grow:1;
+		-o-flex-grow:1;
+		-ms-flex-grow:1;
+		flex-grow:1;
+		border:1px solid grey;
+		-webkit-flex-shrink:1;
+		-moz-flex-shrink:1;
+		-o-flex-shrink:1;
+		-ms-flex-shrink:1;
+		flex-shrink:1;
+	}
+	.Ornek{
+		-webkit-flex-shrink:3;
+		-moz-flex-shrink:3;
+		-o-flex-shrink:3;
+		-ms-flex-shrink:3;
+		flex-shrink:3;
+	}
+</style>
+</head>
+
+<body>
+<div name="AnaEleman">
+	<div class="IcEleman">A</div>
+	<div class="IcEleman">B</div>
+	<div class="IcEleman Ornek">C</div>
+	<div class="IcEleman">D</div>
+	<div class="IcEleman">E</div>
+</div>
+</body>
+</html>

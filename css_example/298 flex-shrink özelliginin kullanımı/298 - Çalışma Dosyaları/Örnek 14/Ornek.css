@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*	flex-shrink	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük / büzülme oranının ne şekilde olması gerektiğini belirler.
+Değerler		:	number | initial
+number			:	Rakam.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div[name="AnaEleman"]{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	width:500px;
+	height:100px;
+	border:1px solid red;
+}
+.IcEleman{
+	-webkit-flex-basis:150px;
+	-moz-flex-basis:150px;
+	-o-flex-basis:150px;
+	-ms-flex-basis:150px;
+	flex-basis:150px;
+	border:1px solid grey;
+	-webkit-flex-shrink:1;
+	-moz-flex-shrink:1;
+	-o-flex-shrink:1;
+	-ms-flex-shrink:1;
+	flex-shrink:1;
+}
+.Ornek{
+	-webkit-flex-shrink:5;
+	-moz-flex-shrink:5;
+	-o-flex-shrink:5;
+	-ms-flex-shrink:5;
+	flex-shrink:5;
+}

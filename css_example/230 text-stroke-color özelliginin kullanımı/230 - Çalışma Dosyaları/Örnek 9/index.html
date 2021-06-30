@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	text-stroke-color	:	Metne eklenecek olan dış çizgisi rengini belirler.
+	Değerler			:	color | initial | inherit
+	color				:	Renk.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		-webkit-text-stroke-width:1px;
+		-moz-text-stroke-width:1px;
+		-o-text-stroke-width:1px;
+		-ms-text-stroke-width:1px;
+		text-stroke-width:1px;
+		-webkit-text-stroke-color:red;
+		-moz-text-stroke-color:red;
+		-o-text-stroke-color:red;
+		-ms-text-stroke-color:red;
+		text-stroke-color:red;
+	}
+	p{
+		-webkit-text-stroke-color:initial;
+		-moz-text-stroke-color:initial;
+		-o-text-stroke-color:initial;
+		-ms-text-stroke-color:initial;
+		text-stroke-color:initial;
+	}
+	p[name="AAA"]{
+		-webkit-text-stroke-color:inherit; /* -webkit-text-stroke-color:red; */
+		-moz-text-stroke-color:inherit; /* -moz-text-stroke-color:red; */
+		-o-text-stroke-color:inherit; /* -o-text-stroke-color:red; */
+		-ms-text-stroke-color:inherit; /* -ms-text-stroke-color:red; */
+		text-stroke-color:inherit; /* text-stroke-color:red; */
+	}
+</style>
+</head>
+
+<body>
+<div>
+	<p name="AAA">Extra Eğitim - Volkan Alakent</p>
+	<p>Extra Eğitim - Volkan Alakent</p>
+	<p name="AAA">Extra Eğitim - Volkan Alakent</p>
+</div>
+</body>
+</html>

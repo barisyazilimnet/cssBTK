@@ -1,0 +1,62 @@
+@charset "utf-8";
+@media only screen and (min-width:1200px){ /* XL */
+	div#IcerikAlani{
+		width:800px;
+		height:52px;
+		margin:0 auto;
+		border:2px solid #000000;
+		text-align:center;
+		font-size:40px;
+		background-color:#FF0000;
+		font-weight:bold;
+		color:#FFFFFF;
+	}
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){ /* L */
+	div#IcerikAlani{
+		width:600px;
+		height:45px;
+		margin:0 auto;
+		border:2px solid #000000;
+		text-align:center;
+		font-size:35px;
+		background-color:#0000FF;
+		font-weight:bold;
+		color:#FFFFFF;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){ /* M */
+	div#IcerikAlani{
+		width:400px;
+		height:38px;
+		margin:0 auto;
+		border:2px solid #000000;
+		text-align:center;
+		font-size:30px;
+		background-color:#00FF00;
+		font-weight:bold;
+		color:#FFFFFF;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){ /* S */
+	div#IcerikAlani{
+		width:200px;
+		height:30px;
+		margin:0 auto;
+		border:2px solid #000000;
+		text-align:center;
+		font-size:25px;
+		background-color:#FFFF00;
+		font-weight:bold;
+		color:#000000;
+	}
+}
+
+@media only screen and (max-width:575px){ /* XS */
+	div#IcerikAlani{
+		display:none;
+	}
+}

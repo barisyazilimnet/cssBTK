@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*	order	:	Izgara düzeni içerisindeki element veya elementlerin, diğer elementlere göre sıralama özelliklerini belirler.
+Değerler	:	number | initial
+number		:	Rakam.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:500px;
+	border:1px solid red;
+	padding:10px;
+	grid-template-columns:auto auto auto auto auto;
+	grid-gap:20px;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}
+.Sekiz{
+	-webkit-order:-1;
+	-moz-order:-1;
+	-o-order:-1;
+	-ms-order:-1;
+	order:-1;
+}
+#Islem{
+	-webkit-order:initial;
+	-moz-order:initial;
+	-o-order:initial;
+	-ms-order:initial;
+	order:initial;
+}

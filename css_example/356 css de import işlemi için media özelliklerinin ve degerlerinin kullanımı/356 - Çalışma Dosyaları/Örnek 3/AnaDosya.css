@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import "1.css" only screen and (min-width:1200px); /* XL */
+@import "2.css" only screen and (min-width:992px) and (max-width:1199px); /* L */
+@import "3.css" only screen and (min-width:768px) and (max-width:991px); /* M */
+@import "4.css" only screen and (min-width:576px) and (max-width:767px); /* S */
+@import "5.css" only screen and (max-width:575px); /* S */
+@import "6.css" only print;

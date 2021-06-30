@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*	flex-grow	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranının ne şekilde olması gerektiğini belirler.
+Değerler		:	number | initial
+number			:	Rakam.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	border:1px solid black;
+	width:500px;
+	height:500px;
+}
+.IcEleman{
+	border:1px solid black;
+}
+.Bir{
+	-webkit-flex-grow:1;
+	-moz-flex-grow:1;
+	-o-flex-grow:1;
+	-ms-flex-grow:1;
+	flex-grow:1;
+}

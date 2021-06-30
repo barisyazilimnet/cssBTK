@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*	transition-timing-function	:	HTML elementine tanımlanmış olan geçiş özelliğinin, hız eğrisi özelliklerini belirler.
+Değerler						:	ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps | cubic-bezier | initial
+ease							:	Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+linear							:	Başlangıçtan sona kadar aynı hız.
+ease-in							:	Yavaş olarak başlayarak sona doğru hızlanır.
+ease-out						:	Hızlı olarak başlayarak sona doğru yavaşlar.
+ease-in-out						:	Yavaş olarak başlayarak  ortada hızlanır ve sona doğru tekrar yavaşlar.
+step-start						:	Geçiş süresine bakılmaksızın doğrudan sona ulaşır.
+step-end						:	Geçiş süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+steps							:	Başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar.
+cubic-bezier					:	Bezier eğrisi. (http://cubic-bezier.com)
+initial							:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:100px;
+	border:thin solid black;
+	background-color:grey;
+	-webkit-transition-property:all;
+	-moz-transition-property:all;
+	-o-transition-property:all;
+	-ms-transition-property:all;
+	transition-property:all;
+	-webkit-transition-duration:5s;
+	-moz-transition-duration:5s;
+	-o-transition-duration:5s;
+	-ms-transition-duration:5s;
+	transition-duration:5s;
+	-webkit-transition-timing-function:step-end;
+	-moz-transition-timing-function:step-end;
+	-o-transition-timing-function:step-end;
+	-ms-transition-timing-function:step-end;
+	transition-timing-function:step-end;
+}
+div:hover{
+	width:1500px;
+}

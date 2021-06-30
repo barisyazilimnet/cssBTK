@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*	z-index		:	Konumlandırılmış bir HTML elementinin katman / yığın sırasını belirler.
+Değerler		:	auto | number | initial
+auto			:	Otomatik değer alır.
+number			:	Rakam değeri. (En büyük rakam değeri daima en üstte olacaktır.)
+initial			:	HTML elementi varsayılan biçilendirme değerine döner.	*/
+div{
+	position:absolute;
+	width:200px;
+	height:200px;
+	border:1px solid red;
+}
+.bir{
+	top:0;
+	left:0;
+	background-color:yellow;
+}
+.iki{
+	top:40px;
+	left:40px;
+	background-color:blue;
+}
+.uc{
+	top:80px;
+	left:80px;
+	background-color:red;
+	z-index:1;
+}
+.dort{
+	top:120px;
+	left:120px;
+	background-color:green;
+}
+.bes{
+	top:160px;
+	left:160px;
+	background-color:grey;
+}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	font-weight	:	Metnin yazı tipi kalınlığını belirler.
+Değerler		:	normal | bold | bolder | lighter | number | initial | inherit
+normal			:	Normal.
+bold			:	Kalın.
+bolder			:	Cesur.
+lighter			:	Açık.
+number			:	Rakam (100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	font-weight:600;
+}

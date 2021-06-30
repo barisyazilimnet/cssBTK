@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*	linear-gradient()	:	HTML elementinin doğrusal arkaplan renk geçişi özelliklerini belirler.
+Parametreler			:	Direction (Yön) | Colors (Renkler)
+Değerler				:	Başlangıç noktası & açı - derece | Başlangıç rengi - bitiş rengi	*/
+div{
+	width:1000px;
+	height:500px;
+	border:2px solid black;
+	background:-webkit-linear-gradient(to top right, blue, yellow, red);
+	background:-moz-linear-gradient(to top right, blue, yellow, red);
+	background:-o-linear-gradient(to top right, blue, yellow, red);
+	background:-ms-linear-gradient(to top right, blue, yellow, red);
+	background:linear-gradient(to top right, blue, yellow, red);
+}

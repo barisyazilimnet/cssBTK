@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	quotes		:	HTML'in q tag'ı (etiketi) için tırnak işareti türü değerini belirler.
+Değerler		:	none | string | initial | inherit
+none			:	Değer yok.
+string			:	Harf - rakam - simge vs.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	quotes:"\05D0" "\05D0";
+}
+q{
+	quotes:initial;
+}
+#Deneme{
+	quotes:inherit; /* quotes:"\05D0" "\05D0"; */
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	clip-path		:	absolute (mutlak / kesin) değeri ile konumlandırılmış bir HTML elementinin gelişmiş kırpma / maskeleme özelliklerini belirler.
+	Değerler		:	auto | shape | initial
+	auto			:	Otomatik değer alır.
+	shape			:	Şekil.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+	Shape değerleri	:	inset | circle | ellipse | polygon
+	inset			:	İlave.
+	circle			:	Daire.
+	ellipse			:	Elips.
+	polygon			:	Poligon.	*/
+	img{
+		position:absolute;
+		clip-path:polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* (Path (yol) / Doldurma Kuralı) (Yatay pozisyon | Dikey pozisyon) */
+	}
+</style>
+</head>
+
+<body>
+<img src="Mustang.jpg" alt="Mustang" title="Mustang" width="500" height="500">
+</body>
+</html>

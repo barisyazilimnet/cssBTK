@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	text-overflow	:	HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük metnin taşma özelliklerini belirler.
+	Değerler		:	clip | ellipsis | initial | inherit
+	clip			:	Metni kırpar.
+	ellipsis		:	Metni kırpar ve ... ekler.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		width:250px;
+		height:18px;
+		border:thin solid red;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+</style>
+</head>
+
+<body>
+<div>Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</div><br />
+<div style="text-overflow:initial;">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</div>
+</body>
+</html>

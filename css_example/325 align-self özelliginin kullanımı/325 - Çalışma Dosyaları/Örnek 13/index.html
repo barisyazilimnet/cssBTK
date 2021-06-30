@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	align-self	:	Izgara düzeni içerisinde bulunan seçilen element veya elementlerin, dikey hizalama özelliklerini belirler.
+	Değerler	:	auto | stretch | center | start | end | initial
+	auto		:	Otomatik değer alır.
+	stretch		:	Uzat / esne.
+	center		:	Orta.
+	start		:	Başlangıç.
+	end			:	Bitiş.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		height:500px;
+		border:thin solid red;
+		padding:10px;
+		grid-template-columns:auto auto auto auto auto;
+		grid-gap:10px;
+		-webkit-align-items:center;
+		-moz-align-items:center;
+		-o-align-items:center;
+		-ms-align-items:center;
+		align-items:center;
+	}
+	.IcElemanlar{
+		border:thin solid blue;
+		padding:10px;
+	}
+	.Islem{
+		-webkit-align-self:end;
+		-moz-align-self:end;
+		-o-align-self:end;
+		-ms-align-self:end;
+		align-self:end;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar Islem">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+</div>
+</body>
+</html>

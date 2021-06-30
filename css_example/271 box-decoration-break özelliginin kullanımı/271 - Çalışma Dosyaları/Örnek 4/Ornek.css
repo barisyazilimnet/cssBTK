@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	box-decoration-break	:	HTML elementinin kenarlık / çerçeve özelliklerinin, kutu parçalandığındaki satır veya sayfa sonları için davranış özelliklerini belirler.
+Değerler					:	slice | clone | initial
+slice						:	Dilimle.
+clone						:	Klonla.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+span{
+	border:2px solid red;
+	line-height:25px;
+	-webkit-box-decoration-break:clone;
+	-moz-box-decoration-break:clone;
+	-o-box-decoration-break:clone;
+	-ms-box-decoration-break:clone;
+	box-decoration-break:clone;
+}

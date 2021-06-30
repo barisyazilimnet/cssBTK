@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	border-spacing	:	HTML'in table (tablo) elementinde bulunan bitişik hücrelerin arasındaki mesafeyi belirler.
+Değerler			:	length | initial | inherit
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+table{
+	border:2px solid red;
+	border-spacing:50px 20px;
+}
+th, td{
+	border:2px solid red;
+}

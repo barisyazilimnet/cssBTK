@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	break-after	:	HTML elementinin çok sütunlu düzeni için bölünen sütunların arasındaki belirtilecek olan elementin sonrasında bölünme davranış özellikleri belirler.
+Değerler		:	auto | column | initial
+auto			:	Otomatik değer alır.
+column			:	Sütunu ayır.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	-webkit-columns:2;
+	-moz-columns:2;
+	-o-columns:2;
+	-ms-columns:2;
+	columns:2;
+}
+.Ornek{
+	break-after:auto;
+}

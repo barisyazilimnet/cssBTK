@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	table-layout	:	HTML'in table (tablo) elementinde bulunan sütunların genişlikleri için düzen algoritması özelliklerini belirler.
+	Değerler		:	auto | fixed | initial
+	auto			:	Otomatik değer alır.
+	fixed			:	Sabit.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	table{
+		border:2px solid red;
+		width:100%;
+		table-layout:fixed;
+	}
+	td{
+		border:2px solid blue;
+	}
+	#Bir-Bir{
+		width:10%;
+	}
+	#Bir-Iki{
+		width:90%;
+	}
+	#Iki-Bir{
+		width:10%;
+	}
+	#Iki-Iki{
+		width:90%;
+	}
+	#Deneme{
+		table-layout:initial;
+	}
+</style>
+</head>
+
+<body>
+<table>
+	<tr>
+		<td id="Bir-Bir">ExtraEğitimVolkanAlakentExtraEğitimVolkanAlakent</td>
+		<td id="Bir-Iki">Extra Eğitim Volkan Alakent</td>
+	</tr>
+</table>
+<br />
+<table id="Deneme">
+	<tr>
+		<td id="Iki-Bir">ExtraEğitimVolkanAlakentExtraEğitimVolkanAlakent</td>
+		<td id="Iki-Iki">Extra Eğitim Volkan Alakent</td>
+	</tr>
+</table>
+</body>
+</html>

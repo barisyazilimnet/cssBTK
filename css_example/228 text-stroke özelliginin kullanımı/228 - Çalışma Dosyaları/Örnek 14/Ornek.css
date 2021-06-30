@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	text-stroke		:	Metne eklenecek olan dış çizgisi özelliklerini belirler.
+Parametreler		:	length | color
+Değerler			:	length & initial & inherit | color
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+color				:	Renk.	*/
+div{
+	-webkit-text-stroke:1px blue;
+	-moz-text-stroke:1px blue;
+	-o-text-stroke:1px blue;
+	-ms-text-stroke:1px blue;
+	text-stroke:1px blue;
+}
+p{
+	-webkit-text-stroke:initial;
+	-moz-text-stroke:initial;
+	-o-text-stroke:initial;
+	-ms-text-stroke:initial;
+	text-stroke:initial;
+}
+.Deneme{
+	-webkit-text-stroke:inherit; /* -webkit-text-stroke:1px blue; */
+	-moz-text-stroke:inherit; /* -moz-text-stroke:1px blue; */
+	-o-text-stroke:inherit; /* -o-text-stroke:1px blue; */
+	-ms-text-stroke:inherit; /* -ms-text-stroke:1px blue; */
+	text-stroke:inherit; /* text-stroke:1px blue; */
+}

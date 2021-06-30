@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	align-content	:	Esnek kutu içerisinde bulunan elementler tüm alanı kullanmadığında ve satır kırılma olduğunda, elementlerin hizalama özelliklerini belirler.
+	Değerler		:	stretch | center | flex-start | flex-end | space-between | space-around | initial
+	stretch			:	Uzat / esne.
+	center			:	Orta.
+	flex-start		:	Esnek başlangıç.
+	flex-end		:	Esnek bitiş.
+	space-between	:	Boşluk arasında.
+	space-around	:	Boşluk etrafında.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		width:500px;
+		height:500px;
+		border:thin solid red;
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		-webkit-flex-wrap:wrap;
+		-moz-flex-wrap:wrap;
+		-o-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap;
+		-webkit-align-content:flex-start;
+		-moz-align-content:flex-start;
+		-o-align-content:flex-start;
+		-ms-align-content:flex-start;
+		align-content:flex-start;
+	}
+	.IcElemanlar{
+		width:125px;
+		height:125px;
+		border:thin solid blue;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+</div>
+</body>
+</html>

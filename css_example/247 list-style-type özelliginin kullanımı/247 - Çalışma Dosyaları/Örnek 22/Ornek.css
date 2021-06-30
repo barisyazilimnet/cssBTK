@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	list-style-type		:	Listedeki madde işaretçisinin türünü belirler.
+Değerler				:	disc | circle | square | decimal | decimal-leading-zero | lower-alpha | upper-alpha | lower-roman | upper-roman | none | initial | inherit
+disc					:	İçi dolu daire.
+circle					:	İçi boş daire.
+square					:	İçi dolu kare.
+decimal					:	Ondalıklı sayı.
+decimal-leading-zero	:	Ondalıklı sayı. (Tek haneli sayılarda 0 takısı eklenir)
+lower-alpha				:	Küçük harf.
+upper-alpha				:	Büyük harf.
+lower-roman				:	Küçük harfli roma rakamı.
+upper-roman				:	Büyük harfli roma rakamı.
+none					:	Değer yok.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+ul{
+	list-style-type:upper-roman;
+}
+#Deneme{
+	list-style-type:initial;
+}

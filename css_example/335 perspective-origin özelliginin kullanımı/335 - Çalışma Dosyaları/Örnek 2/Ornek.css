@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*	perspective-origin	:	HTML elementinin 3D dönüştürme sonrasındaki perspektif derinliği konum özelliklerini belirler.
+Parametreler			:	x | y
+Varsayılan Değer		:	50% 50%
+Değerler				:	length | % | initial
+length					:	Uzunluk değeri.
+%						:	Yüzde değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	position:relative;
+	width:250px;
+	height:250px;
+	margin:50px;
+	padding:50px;
+	border:1px solid black;
+	-webkit-perspective:150px;
+	-moz-perspective:150px;
+	-o-perspective:150px;
+	-ms-perspective:150px;
+	perspective:150px;
+	-webkit-perspective-origin:50% 50%;
+	-moz-perspective-origin:50% 50%;
+	-o-perspective-origin:50% 50%;
+	-ms-perspective-origin:50% 50%;
+	perspective-origin:50% 50%;
+}
+.IcEleman{
+	position:absolute;
+	padding:50px;
+	border:1px solid red;
+	background-color:yellow;
+	-webkit-transform:rotateX(45deg);
+	-moz-transform:rotateX(45deg);
+	-o-transform:rotateX(45deg);
+	-ms-transform:rotateX(45deg);
+	transform:rotateX(45deg);
+}

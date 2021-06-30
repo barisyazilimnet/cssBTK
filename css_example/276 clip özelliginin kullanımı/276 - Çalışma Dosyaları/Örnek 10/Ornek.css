@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*	clip	:	absolute (mutlak / kesin) değeri ile konumlandırılmış bir HTML elementinin kırpma / maskeleme özelliklerini belirler.
+Değerler	:	auto | shape | initial
+auto		:	Otomatik değer alır.
+shape		:	Şekil. rect() fonksiyonunu kullanır. (Rectangle : Dikdörtgen)
+initial		:	HTML elementi varsayılan biçimlendirme değerine geri döner.	*/
+div#elemanbir{
+	position:relative;
+	width:500px;
+	float:left;
+}
+div#elemaniki{
+	position:relative;
+	width:500px;
+	float:right;
+}
+img#bir{
+	position:absolute;
+	clip:rect(190px, 500px, 370px, 0px); /* 1. Parametre : Üst, 2. Parametre : Sağ, 3. Parametre : Alt, 4. Parametre : Sol */
+}
+img.iki{
+	position:absolute;
+	clip:rect(190px, 500px, 370px, 0px); /* 1. Parametre : Üst, 2. Parametre : Sağ, 3. Parametre : Alt, 4. Parametre : Sol */
+}
+#iki{
+	clip:initial;
+}

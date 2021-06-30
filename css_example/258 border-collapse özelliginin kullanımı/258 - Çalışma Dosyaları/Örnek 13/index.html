@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	border-collapse	:	HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+	Değerler		:	separate | collapse | initial | inherit
+	separate		:	Ayrı kenarlık / çerçeve.
+	collapse		:	Bitişik kenarlık / çerçeve.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	table#AnaTablo{
+		border:2px solid red;
+		border-collapse:collapse;
+	}
+	th, td.AnaTabloSutunu{
+		border:2px solid red;
+	}
+	td.IcTabloSutunu{
+		border:2px dashed blue;
+	}
+	table#IcTablo1, table#IcTablo2{
+		border:2px dashed blue;
+		border-collapse:inherit; /* border-collapse:collapse; */
+	}
+</style>
+</head>
+
+<body>
+<table id="AnaTablo">
+	<tr>
+		<th>İsim</th>
+		<th>Soyisim</th>
+		<th>Dersler</th>
+	</tr>
+	<tr>
+		<td class="AnaTabloSutunu">Volkan</td>
+		<td class="AnaTabloSutunu">Alakent</td>
+		<td class="AnaTabloSutunu"><table id="IcTablo1">
+			<tr>
+				<td class="IcTabloSutunu">HTML</td>
+				<td class="IcTabloSutunu">CSS</td>
+				<td class="IcTabloSutunu">JAVASCRIPT</td>
+				<td class="IcTabloSutunu">PHP</td>
+			</tr>
+			<tr>
+				<td class="IcTabloSutunu">HTML</td>
+				<td class="IcTabloSutunu">CSS</td>
+				<td class="IcTabloSutunu">JAVASCRIPT</td>
+				<td class="IcTabloSutunu">PHP</td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="AnaTabloSutunu">Hakan</td>
+		<td class="AnaTabloSutunu">Alakent</td>
+		<td class="AnaTabloSutunu"><table id="IcTablo2">
+			<tr>
+				<td class="IcTabloSutunu">HTML</td>
+				<td class="IcTabloSutunu">CSS</td>
+				<td class="IcTabloSutunu">JAVASCRIPT</td>
+				<td class="IcTabloSutunu">PHP</td>
+			</tr>
+			<tr>
+				<td class="IcTabloSutunu">HTML</td>
+				<td class="IcTabloSutunu">CSS</td>
+				<td class="IcTabloSutunu">JAVASCRIPT</td>
+				<td class="IcTabloSutunu">PHP</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+</body>
+</html>

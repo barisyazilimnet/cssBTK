@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*	overflow-y	:	HTML elementinin y ekseni baz alınarak boyutlandırılmış alanına sığmayacak kadar büyük olan içeriğin taşma özelliklerini belirler.
+Değerler		:	visible | hidden | scroll | auto | initial | inherit
+visible			:	Görünür.
+hidden			:	Gizli.
+scroll			:	Kaydırma.
+auto			:	Otomatik değer alır.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	overflow-y:auto;
+}
+div#Bir{
+	width:500px;
+	height:50px;
+	border:thin solid red;
+}
+div#Iki{
+	width:1000px;
+	height:50px;
+	border:thin solid blue;
+	overflow-y:initial;
+}

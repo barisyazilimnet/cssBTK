@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	grid-row-start	:	Izgara içerisindeki elementin kaçıncı satırdan başlaması gerektiğini belirler.
+Değerler			:	auto | row-line | initial
+auto				:	Otomatik değer alır.
+row-line			:	Satır çizgisi.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	grid-template-columns:repeat(3, auto);
+	grid-gap:5px;
+}
+.IcElemanlar{
+	border:1px solid red;
+	padding:10px;
+}
+.Bir{
+	grid-row-start:span 4;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*	repeating-linear-gradient()	:	HTML elementinin doğrusal arkaplan renk geçişi tekrarlanma özelliklerini belirler.
+Parametreler					:	Direction (Yön) | Colors (Renkler)
+Değerler						:	Başlangıç noktası & açı - derece | başlangıç rengi - bitiş rengi & dilimleme.	*/
+body{
+	background:-webkit-repeating-linear-gradient(-124deg, red 0%, yellow 15%, blue 25%);
+	background:-moz-repeating-linear-gradient(-124deg, red 0%, yellow 15%, blue 25%);
+	background:-o-repeating-linear-gradient(-124deg, red 0%, yellow 15%, blue 25%);
+	background:-ms-repeating-linear-gradient(-124deg, red 0%, yellow 15%, blue 25%);
+	background:repeating-linear-gradient(-124deg, red 0%, yellow 15%, blue 25%);
+}

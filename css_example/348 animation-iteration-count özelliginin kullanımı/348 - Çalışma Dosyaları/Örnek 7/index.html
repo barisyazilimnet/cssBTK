@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	animation-iteration-count	:	HTML elementine tanımlanmış olan animasyonun kaç defa oynatılacağını belirler.
+	Değerler					:	number | infinite | initial
+	number						:	Rakam.
+	infinite					:	Sonsuz.
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:100px;
+		height:100px;
+		background-color:blueviolet;
+		margin:100px;
+		-webkit-animation-name:ExtraEgitim;
+		-moz-animation-name:ExtraEgitim;
+		-o-animation-name:ExtraEgitim;
+		-ms-animation-name:ExtraEgitim;
+		animation-name:ExtraEgitim;
+		-webkit-animation-duration:2s;
+		-moz-animation-duration:2s;
+		-o-animation-duration:2s;
+		-ms-animation-duration:2s;
+		animation-duration:2s;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		animation-iteration-count:infinite;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			transform:rotate(0deg);
+			background-color:blueviolet;
+		}
+		to{
+			-webkit-transform:rotate(360deg);
+			-moz-transform:rotate(360deg);
+			-o-transform:rotate(360deg);
+			-ms-transform:rotate(360deg);
+			transform:rotate(360deg);
+			background-color:black;
+		}
+	}
+</style>
+</head>
+
+<body>
+<div></div>
+<div style="-webkit-animation-iteration-count:initial; -moz-animation-iteration-count:initial; -o-animation-iteration-count:initial; -ms-animation-iteration-count:initial; animation-iteration-count:initial;"></div>
+</body>
+</html>

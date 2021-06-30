@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	transform-origin	:	HTML elementinin dönüştürme sonrasındaki konum özelliklerini belirler.
+Parametreler			:	x | y | z
+Varsayılan				:	50% 50% 0;
+Değerler				:	length | % | initial
+length					:	Uzunluk değeri.
+%						:	Yüzde değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:87px;
+	background-color:blue;
+	color:white;
+	border:1px solid black;
+	padding:50px;
+	margin:200px;
+	transform:perspective(1000px) rotate(45deg) translateZ(200px);
+	-webkit-transform-origin:100px 1000px 0;
+	-moz-transform-origin:100px 1000px 0;
+	-o-transform-origin:100px 1000px 0;
+	-ms-transform-origin:100px 1000px 0;
+	transform-origin:100px 1000px 0;
+}

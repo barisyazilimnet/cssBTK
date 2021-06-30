@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-area		:	Izgara düzeni içerisindeki elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler. Aynı zamanda ızgara düzeni içerisindeki elementin alan adı
+						değerini belirler.
+	Parametreler	:	grid-row-start (satır başlangıcı) | grid-column-start (sütun başlangıcı) | grid-row-end (satır bitişi) | grid-column-end (sütun bitişi)
+	Değerler		:	areaname | initial
+	areaname		:	Alan adı.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid red;
+		padding:10px;
+		grid-template-columns:auto auto auto auto;
+		grid-gap:5px;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+	}
+	.Islem1{
+		grid-area:2 / 3 / 5 / 5;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar Islem1">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar">15</div>
+	<div class="IcElemanlar">16</div>
+	<div class="IcElemanlar">17</div>
+	<div class="IcElemanlar">18</div>
+	<div class="IcElemanlar">19</div>
+	<div class="IcElemanlar">20</div>
+</div><br />
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar Islem1" style="grid-area:initial;">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar">15</div>
+	<div class="IcElemanlar">16</div>
+	<div class="IcElemanlar">17</div>
+	<div class="IcElemanlar">18</div>
+	<div class="IcElemanlar">19</div>
+	<div class="IcElemanlar">20</div>
+</div>
+</body>
+</html>

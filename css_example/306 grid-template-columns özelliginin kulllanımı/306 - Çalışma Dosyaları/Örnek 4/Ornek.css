@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*	grid-template-columns	:	Izgara düzeni içerisindeki element veya elementler için, oluşturulması gereken sütun adedini ve sütun boyutu genişliğini belirler.
+Değerler					:	none | auto | max-content | min-content | length | initial
+none						:	Değer yok.
+auto						:	Otomatik değer alır.
+max-content					:	Maksimum içerik.
+min-content					:	Minimum içerik.
+length						:	Uzunluk değeri.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:500px;
+	border:1px solid blue;
+	padding:10px;
+	grid-template-columns:auto;
+}
+.IcElemanlar{
+	padding:10px;
+	border:1px solid red;
+}

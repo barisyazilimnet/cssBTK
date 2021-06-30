@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	text-stroke-width	:	Metne eklenecek olan dış çizgisi genişliğini belirler.
+	Değerler			:	length | initial | inherit
+	length				:	Uzunluk değer.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		-webkit-text-stroke-width:2px;
+		-moz-text-stroke-width:2px;
+		-o-text-stroke-width:2px;
+		-ms-text-stroke-width:2px;
+		text-stroke-width:2px;
+	}
+	p{
+		-webkit-text-stroke-width:initial;
+		-moz-text-stroke-width:initial;
+		-o-text-stroke-width:initial;
+		-ms-text-stroke-width:initial;
+		text-stroke-width:initial;
+	}
+	#Deneme{
+		-webkit-text-stroke-width:inherit; /* -webkit-text-stroke-width:2px; */
+		-moz-text-stroke-width:inherit; /* -moz-text-stroke-width:2px; */
+		-o-text-stroke-width:inherit; /* -o-text-stroke-width:2px; */
+		-ms-text-stroke-width:inherit; /* -ms-text-stroke-width:2px; */
+		text-stroke-width:inherit; /* text-stroke-width:2px; */
+	}
+</style>
+</head>
+
+<body>
+<div>
+	<p>Extra Eğitim - Volkan Alakent</p>
+	<p id="Deneme">Extra Eğitim - Volkan Alakent</p>
+	<p>Extra Eğitim - Volkan Alakent</p>
+</div>	
+</body>
+</html>

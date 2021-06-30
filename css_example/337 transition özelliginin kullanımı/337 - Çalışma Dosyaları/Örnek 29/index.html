@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transition					:	HTML elementinin tüm geçiş özelliklerini belirler.
+	Parametreler				:	transition-property | transition-duration | transition-timing-function | transition-delay
+	Varsayılan Değer			:	all 0s ease 0s
+	Değerler					:	property value (özellik değeri) | initial
+	transition-property			:	CSS özellik adı.
+	transition-duration			:	Geçiş süresi.
+	transition-timing-function	:	Hız eğrisi.
+	transition-delay			:	Duraksama süresi.
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		width:760px;
+		margin:150px auto;
+		border:4px double black;
+		padding:50px;
+	}
+	.Alan{
+		width:250px;
+		display:inline-block;
+	}
+	h1{
+		color:grey;
+		font-size:20px;
+		padding:50px;
+		text-align:center;
+	}
+	.Kutu{
+		width:50px;
+		height:50px;
+		margin:50px auto;
+		-webkit-border-radius:50%;
+		-moz-border-radius:50%;
+		-o-border-radius:50%;
+		-ms-border-radius:50%;
+		border-radius:50%;
+	}
+	.Kutu1{
+		background-color:#60D4C8;
+		-webkit-transition:all 500ms;
+		-moz-transition:all 500ms;
+		-o-transition:all 500ms;
+		-ms-transition:all 500ms;
+		transition:all 500ms;
+	}
+	.Kutu2{
+		background-color:#46AAAF;
+		-webkit-transition:all 3s;
+		-moz-transition:all 3s;
+		-o-transition:all 3s;
+		-ms-transition:all 3s;
+		transition:all 3s;
+	}
+	.Kutu3{
+		background-color:#25D193;
+		-webkit-transition:all 6s;
+		-moz-transition:all 6s;
+		-o-transition:all 6s;
+		-ms-transition:all 6s;
+		transition:all 6s;
+	}
+	
+	.AnaEleman:hover .Alan .Kutu1, .AnaEleman:hover .Alan .Kutu2, .AnaEleman:hover .Alan .Kutu3 {
+		-webkit-transform:scale(4);
+		-moz-transform:scale(4);
+		-o-transform:scale(4);
+		-ms-transform:scale(4);
+		transform:scale(4);
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="Alan">
+		<h1>500 Milisaniye</h1>
+		<div class="Kutu Kutu1"></div>
+	</div>
+	<div class="Alan">
+		<h1>3 Saniye</h1>
+		<div class="Kutu Kutu2"></div>
+	</div>
+	<div class="Alan">
+		<h1>6 Saniye</h1>
+		<div class="Kutu Kutu3"></div>
+	</div>
+</div>
+</body>
+</html>

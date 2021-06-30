@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	empty-cells	:	HTML'in table (tablo) elementinde bulunan ve içeriği boş hücrelerin görüntülenme özelliklerini belirler.
+Değerler		:	show | hide | initial | inherit
+show			:	Göster.
+hide			:	Gizle.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+table#AnaTablo{
+	empty-cells:hide;
+}
+th, td{
+	border:2px solid red;
+}
+.Deneme{
+	empty-cells:initial;
+}

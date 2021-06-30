@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	word-wrap	:	HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük kelimenin satır kırılma özelliklerini belirler.
+Değerler		:	normal | break-word | initial | inherit
+normal			:	Normal.
+break-word		:	Kelimeyi kırar.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	word-wrap:break-word;
+}
+p{
+	width:200px;
+	border:thin solid red;
+	word-wrap:initial;
+}
+#Deneme{
+	word-wrap:inherit; /* word-wrap:break-word; */
+}

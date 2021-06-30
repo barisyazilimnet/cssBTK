@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	text-decoration-style	:	Metne eklenecek olan dekorasyon / süsleme çizgisi stilini belirler.
+Değerler					:	solid | dashed | dotted | double | wavy | initial | inherit
+solid						:	Düz çizgi.
+dashed						:	Kesikli çizgi.
+dotted						:	Noktalı çizgi.
+double						:	Çift çizgi.
+wavy						:	Dalgalı çizgi.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	text-decoration:underline;
+	-webkit-text-decoration-style:solid;
+	-moz-text-decoration-style:solid;
+	-o-text-decoration-style:solid;
+	-ms-text-decoration-style:solid;
+	text-decoration-style:solid;
+}

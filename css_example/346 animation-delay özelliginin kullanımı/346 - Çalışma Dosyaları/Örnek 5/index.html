@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	animation-delay	:	HTML elementine tanımlanmış olan animasyonun, kaç saniye veya kaç milisaniye gecikme sonunda başlayacağını belirler.
+	Değerler		:	time | initial
+	time			:	Zaman. (Saniye : s, Milisaniye : ms)
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	p{
+		height:50px;
+		border:1px solid black;
+		line-height:50px;
+		text-align:center;
+		-webkit-animation-name:ExtraEgitim;
+		-moz-animation-name:ExtraEgitim;
+		-o-animation-name:ExtraEgitim;
+		-ms-animation-name:ExtraEgitim;
+		animation-name:ExtraEgitim;
+		-webkit-animation-duration:5s;
+		-moz-animation-duration:5s;
+		-o-animation-duration:5s;
+		-ms-animation-duration:5s;
+		animation-duration:5s;
+		-webkit-animation-delay:2000ms;
+		-moz-animation-delay:2000ms;
+		-o-animation-delay:2000ms;
+		-ms-animation-delay:2000ms;
+		animation-delay:2000ms;
+	}
+	@keyframes ExtraEgitim{
+		0%{
+			width:100%;
+			background-color:yellow;
+		}
+		50%{
+			width:50%;
+			background-color:red;
+		}
+		75%{
+			width:75%;
+			background-color:blue;
+		}
+		100%{
+			width:25%;
+			background-color:transparent;
+		}
+	}
+	#Islem{
+		-webkit-animation-delay:initial;
+		-moz-animation-delay:initial;
+		-o-animation-delay:initial;
+		-ms-animation-delay:initial;
+		animation-delay:initial;
+	}
+</style>
+</head>
+
+<body>
+<p>Extra Eğitim</p>
+<p id="Islem">Extra Eğitim</p>
+</body>
+</html>

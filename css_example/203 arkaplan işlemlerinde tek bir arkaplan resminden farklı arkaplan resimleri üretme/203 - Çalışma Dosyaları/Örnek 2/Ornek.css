@@ -1,0 +1,48 @@
+@charset "utf-8";
+#Bir{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	background-image:url(SosyalMedyaA.png);
+	background-repeat:no-repeat;
+}
+#Iki{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	background-image:url(SosyalMedyaA.png);
+	background-repeat:no-repeat;
+	background-position:-30px;
+}
+#Uc{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	background-image:url(SosyalMedyaA.png);
+	background-repeat:no-repeat;
+	background-position:-60px;
+}
+#Dort{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	background-image:url(SosyalMedyaA.png);
+	background-repeat:no-repeat;
+	background-position:-90px;
+}
+#Bes{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	background-image:url(SosyalMedyaA.png);
+	background-repeat:no-repeat;
+	background-position:-120px;
+}
+#Alti{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	background-image:url(SosyalMedyaA.png);
+	background-repeat:no-repeat;
+	background-position:-150px;
+}

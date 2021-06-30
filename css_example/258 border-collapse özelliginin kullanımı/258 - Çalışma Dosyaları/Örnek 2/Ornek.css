@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*	border-collapse	:	HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+Değerler			:	separate | collapse | initial | inherit
+separate			:	Ayrı kenarlık / çerçeve.
+collapse			:	Bitişik kenarlık / çerçeve.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+table{
+	border:2px solid red;
+	border-collapse:separate;
+}
+th, td{
+	border:2px solid red;
+}

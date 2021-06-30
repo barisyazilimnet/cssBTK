@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	clear		:	HTML elementine atanmış olan kayma özelliğinin temizlenme durumunu belirler.
+	Değerler	:	none | left | right | both | initial
+	none		:	Değer yok.
+	left		:	Sol.
+	right		:	Sağ.
+	both		:	Her ikiside.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:100px;
+		border:1px solid blue;
+		margin:2px;
+	}
+	#Bir, #Iki, #Uc, #Dort, #Bes{
+		float:right;
+	}
+	#Temizle{
+		border:initial;
+		margin:0px;
+		clear:right;
+	}
+</style>
+</head>
+
+<body>
+<div id="Bir">Extra Eğitim 1</div>
+<div id="Iki">Extra Eğitim 2</div>
+<div id="Temizle"></div>
+<div id="Uc">Extra Eğitim 3</div>
+<div id="Dort">Extra Eğitim 4</div>
+<div id="Bes">Extra Eğitim 5</div>
+</body>
+</html>

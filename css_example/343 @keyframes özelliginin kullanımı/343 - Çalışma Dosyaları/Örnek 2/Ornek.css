@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*	@keyframes	:	HTML elementine tanımlanmış olan animasyonun, animasyon sırasındaki ara aşamalarını belirler.
+Değerler		:	from | to | %
+from			:	Başlangıç.
+to				:	Bitiş.
+%				:	Yüzde değeri.	*/
+#AnaEleman{
+	position:relative;
+	width:500px;
+	height:500px;
+	border:4px double grey;
+	margin:0px auto;
+}
+#Top{
+	position:absolute;
+	width:50px;
+	height:50px;
+	background-color:#4515E5;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	left:-webkit-calc(50% - 25px);
+	left:-moz-calc(50% - 25px);
+	left:-o-calc(50% - 25px);
+	left:-ms-calc(50% - 25px);
+	left:calc(50% - 25px);
+	-webkit-animation:ExtraEgitim 10s ease 0s 1 normal none running; 
+	-moz-animation:ExtraEgitim 10s ease 0s 1 normal none running; 
+	-o-animation:ExtraEgitim 10s ease 0s 1 normal none running; 
+	-ms-animation:ExtraEgitim 10s ease 0s 1 normal none running; 
+	animation:ExtraEgitim 10s ease 0s 1 normal none running;
+}
+@keyframes ExtraEgitim{
+	from{
+		-webkit-transform:translateY(0px);
+		-moz-transform:translateY(0px);
+		-o-transform:translateY(0px);
+		-ms-transform:translateY(0px);
+		transform:translateY(0px);
+	}
+	to{
+		-webkit-transform:translateY(450px);
+		-moz-transform:translateY(450px);
+		-o-transform:translateY(450px);
+		-ms-transform:translateY(450px);
+		transform:translateY(450px);
+	}
+}

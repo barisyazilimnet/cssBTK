@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*	clear	:	HTML elementine atanmış olan kayma özelliğinin temizlenme durumunu belirler.
+Değerler	:	none | left | right | both | initial
+none		:	Değer yok.
+left		:	Sol.
+right		:	Sağ.
+both		:	Her ikiside.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+#Bir, #Iki, #Uc, #Dort, #Bes {
+	width:100px;
+	border:1px solid blue;
+	margin:2px;
+}
+#Iki, #Uc{
+	float:left;
+}
+#Dort, #Bes{
+	float:right;
+}
+#Temizle1{
+	clear:left;
+}
+#Temizle2{
+	clear:right;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	justify-content	:	Esnek kutu içerisinde bulunan elementler tüm alanı kaplamadığında, elementlerin arasındaki hizalama özelliklerini belirler.
+	Değerler		:	flex-start | flex-end | center | space-between | space-around | initial
+	flex-start		:	Esnek başlangıç.
+	flex-end		:	Esnek bitiş.
+	center			:	Orta.
+	space-between	:	Boşluk arasında.
+	space-around	:	Boşluk etrafında.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		border:1px solid red;
+		width:50px;
+		height:750px;
+		-webkit-flex-direction:column;
+		-moz-flex-direction:column;
+		-o-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-webkit-justify-content:center;
+		-moz-justify-content:center;
+		-o-justify-content:center;
+		-ms-justify-content:center;
+		justify-content:center;
+	}
+	.Elemanlar{
+		border:1px solid blue;
+		width:48px;
+		height:100px;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="Elemanlar">1</div>
+	<div class="Elemanlar">2</div>
+	<div class="Elemanlar">3</div>
+	<div class="Elemanlar">4</div>
+	<div class="Elemanlar">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*	text-decoration-color	:	Metne eklenecek olan dekorasyon / süsleme çizgisi rengini belirler.
+Değerler					:	color | initial | inherit
+color						:	Renk.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-text-decoration-line:underline;
+	-moz-text-decoration-line:underline;
+	-o-text-decoration-line:underline;
+	-ms-text-decoration-line:underline;
+	text-decoration-line:underline;
+	-webkit-text-decoration-style:wavy;
+	-moz-text-decoration-style:wavy;
+	-o-text-decoration-style:wavy;
+	-ms-text-decoration-style:wavy;
+	text-decoration-style:wavy;
+	-webkit-text-decoration-color:#FF9900;
+	-moz-text-decoration-color:#FF9900;
+	-o-text-decoration-color:#FF9900;
+	-ms-text-decoration-color:#FF9900;
+	text-decoration-color:#FF9900;
+}

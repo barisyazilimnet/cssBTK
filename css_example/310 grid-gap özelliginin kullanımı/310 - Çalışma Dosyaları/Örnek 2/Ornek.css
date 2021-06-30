@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	grid-gap	:	Izgara düzeni içerisindeki element veya elementler için, oluşturulmuş olan satırların ve sütunların aralarındaki boşluk değerlerini belirler.
+Parametreler	:	grid-row-gap (Satırlar) | grid-column-gap (Sütunlar)
+Değerler		:	length | initial
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid red;
+	padding:10px;
+	width:1000px;
+	grid-template-columns:auto auto auto auto auto;
+	grid-gap:10px;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}

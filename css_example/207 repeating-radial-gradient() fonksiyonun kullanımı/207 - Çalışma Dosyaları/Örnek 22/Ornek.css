@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*	repeating-radial-gradient()	:	HTML elementinin dairesel arkaplan renk geçişi tekrarlanma özelliklerini belirler.
+Parametreler					:	Shape (Şekil) | Size (Boyut) | Direction (Yön) | Colors (Renkler)
+Değerler						:	Ellipse (elips) & Circle (Daire) | farthest-corner (En uzak köşe) & closest-corner (En yakın köşe) & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece | Başlangıç rengi - bitiş rengi - dilimle	*/
+body{
+	background:-webkit-repeating-radial-gradient(circle at 0% 50%, white 0px, white 20px, black 20px, black 80px);
+	background:-moz-repeating-radial-gradient(circle at 50% 0%,  white 0px, white 20px, black 20px, black 80px);
+	background:-o-repeating-radial-gradient(circle at 0% 50%,  white 0px, white 20px, black 20px, black 80px);
+	background:-ms-repeating-radial-gradient(circle at 0% 50%, white 0px, white 20px, black 20px, black 80px);
+	background:repeating-radial-gradient(circle at 0% 50%,  white 0px, white 20px, black 20px, black 80px);
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	display				:	HTML elementinin görüntülenme özelliklerini belirler.
+	Değerler			:	inline | block | inline-block | none | run-in | list-item | table | table-row | table-cell | table-caption | table-row-group | table-header-group | table-footer-group
+							table-column | table-column-group | inline-table | flex | inline-flex | grid | inline-grid | initial
+	inline				:	HTML elementi satır düzeyli element olarak kabul edilir ve görüntülenir. (Elemente içerik alanından fazla genişlik veya yükseklik atanmasına izin verilmez.)
+	block				:	HTML elementi blok düzeyli element olarak kabul edilir ve görüntülenir.
+	inline-block		:	HTML elementi hem satır düzeyli hem de blok düzeyli element olarak kabul edilir ve görüntülenir. (Elemente içerik alanından fazla genişlik veya yükseklik atanmasına izin
+							verir.)
+	none				:	Değer yok. (HTML elementi görüntülenmez.)
+	run-in				:	HTML elementi ya satır düzeyli ya da blok düzeyli element olarak kabul edilir ve görüntülenir.
+	list-item			:	HTML elementi liste elementi (li) olarak kabul edilir ve görüntülenir.
+	table				:	HTML elementi tablo elementi (table) olarak kabul edilir ve görüntülenir.
+	table-row			:	HTML elementi tablo satır elementi (tr) olarak kabul edilir ve görüntülenir.
+	table-cell			:	HTML elementi tablo sütun elementi (td) olarak kabul edilir ve görüntülenir.
+	table-caption		:	HTML elementi tablo kısa başlık elementi (caption) olarak kabul edilir ve görüntülenir.
+	table-row-group		:	HTML elementi tablo gövde elementi (tbody) olarak kabul edilir ve görüntülenir.
+	table-header-group	:	HTML elementi tablo içi başlık elementi (thead) olarak kabul edilir ve görüntülenir.
+	table-footer-group	:	HTML elementi tablo içi altlık elementi (tfoot) olarak kabul edilir ve görüntülenir.
+	table-column		:	HTML elementi tablo içi sütun ortak özellikleri belirleme elementi (col) olarak kabul edilir ve görüntülenir.
+	table-column-group	:	HTML elementi tablo içi sütun ortak özellikleri belirleme grubu elementi (colgroup) olarak kabul edilir ve görüntülenir.
+	inline-table		:	HTML elementi satır düzeyli tablo element (table) olarak kabul edilir ve görüntülenir.
+	flex				:	HTML elementi blok düzeyli esnek element olarak kabul edilir ve görüntülenir.
+	inline-flex			:	HTML elementi satır düzeyli esnek element olarak kabul edilir ve görüntülenir.
+	grid				:	HTML elementi blok düzeyli ızgara elementi olarak kabul edilir ve görüntülenir.
+	inline-grid			:	HTML elementi satır düzeyli ızgara elementi olarak kabul edilir ve görüntülenir.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	table, td{
+		border:1px solid red;
+	}
+</style>
+</head>
+
+<body>
+<table>
+	<caption>Satış Listesi</caption>
+	<colgroup span="5" style="background-color:yellow;">
+		<col span="1" width="100">
+		<col span="1" width="150">
+		<col span="1" width="200">
+		<col span="1" width="250">
+		<col span="1" width="300">
+	</colgroup>
+	<thead>
+		<tr>
+			<td>İsim</td>
+			<td>Soyisim</td>
+			<td>Cinsiyet</td>
+			<td>Yaşadığı Şehir</td>
+			<td>Harcadığı Tutar</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Volkan</td>
+			<td>Alakent</td>
+			<td>Erkek</td>
+			<td>İstanbul</td>
+			<td>30.50 TL</td>
+		</tr>
+		<tr>
+			<td>Hakan</td>
+			<td>Alakent</td>
+			<td>Erkek</td>
+			<td>Ankara</td>
+			<td>100.00 TL</td>
+		</tr>
+		<tr>
+			<td>Onur</td>
+			<td>Tatlı</td>
+			<td>Erkek</td>
+			<td>İzmir</td>
+			<td>63.25 TL</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>193.75</td>
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>

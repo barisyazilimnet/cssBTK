@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	object-fit	:	HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük resim veya video içeriklerinin yeniden nasıl boyutlandırılacağını belirler.
+Değerler		:	fill | cover | contain | none | scale-down | initial
+fill			:	Doldurma. (Genişlik ve yükseklik değerlerine bakılmaksızın, resim veya video, elementin içerisine sığacak sekilde daraltılır veya uzatılır.)
+cover			:	Kapak. (Genişlik ve yükseklik değerleri korunarak, resim veya video, elementin içerisine sığacak halde kırpılır. Fakat resim veya video genişlik yada yükseklik değeri, elementin
+					genişlik yada yükseklik değerinden az ise uzatılır.)
+contain			:	İçerme. (Genişlik ve yükseklik değerleri korunarak, resim veya video, elementin içerisine sığacak halde orantılı bir şekilde yeniden boyutlandırılır.)
+none			:	Değer yok. (Genişlik ve yükseklik değerleri korunarak, resim veya video, elementin içerisine sığdırılmaya çalışılmaz. Fakat elementin içerisine sığmayan / taşan kısım kırpılır.)
+scale-down		:	Azaltma. (Resim veya video nesnesinin en uygun boyutlandırmasını bulmak için contain ve none değerlerini karşılaştırarak, en uygun olanını otomatik olarak uygular.)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+img{
+	width:200px;
+	height:400px;
+	object-fit:scale-down;
+}

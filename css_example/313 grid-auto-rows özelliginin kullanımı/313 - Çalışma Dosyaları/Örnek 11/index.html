@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-auto-rows	:	Izgara düzeni içerisindeki element veya elementlerin, oluşturulması gereken satırların varsayılan yüksekliğini belirler.
+	Değerler		:	auto | max-content | min-content | length | initial
+	auto			:	Otomatik değer alır.
+	max-content		:	Maksimum içerik.
+	min-content		:	Minimum içerik.
+	length			:	Uzunluk değeri.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid red;
+		width:800px;
+		padding:10px;
+		grid-auto-rows:100px;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+	}
+	#Islem{
+		grid-auto-rows:initial;
+	}
+</style>
+</head>
+
+<body>
+<div id="Islem" class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+</div><br />
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid			:	Izgara düzeni içerisindeki element veya elementler için, gelişmiş tüm satır ve sütun işlemlerinin yanı sıra alan yerleştirme özelliklerini belirler.
+	Parametreler	:	grid-template-rows | grid-template-columns | grid-template-areas
+	Parametreler	:	grid-template-rows | [grid-auto-flow] grid-template-columns
+	Parametreler	:	[grid-auto-flow] grid-template-rows | grid-template-columns
+	Değerler		:	none | initial
+	none			:	Değer yok.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid red;
+		padding:10px;
+		grid-gap:10px;
+		grid:50px / auto-flow 100px 150px 200px 250px 300px 350px;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:5px;
+	}
+	.Islem{
+		grid-column-start:3;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar Islem">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+</div>
+</body>
+</html>

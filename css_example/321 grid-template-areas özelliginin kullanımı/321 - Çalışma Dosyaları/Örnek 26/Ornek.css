@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	grid-template-areas	:	Izgara düzeni içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler.
+Değerler				:	none | area name
+none					:	Değer yok.
+area name				:	Alan adı.	*/
+.AnaEleman{
+	display:grid;
+	grid-template-areas:"HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi" "MenuEtiketi MenuEtiketi MenuEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi" "FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi";
+}
+.HeaderAlani{
+	grid-area:HeaderEtiketi;
+	background-color:black;
+	height:200px;
+}
+.MenuAlani{
+	grid-area:MenuEtiketi;
+	background-color:yellow;
+	height:500px;
+}
+.IcerikAlani{
+	grid-area:IcerikEtiketi;
+	background-color:grey;
+	height:500px;
+}
+.FooterAlani{
+	grid-area:FooterEtiketi;
+	background-color:red;
+	height:250px;
+}

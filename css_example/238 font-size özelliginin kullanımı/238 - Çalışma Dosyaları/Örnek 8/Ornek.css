@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	font-size	:	Metnin yazı tipi boyutunu belirler.
+Değerler		:	length | % | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | initial | inherit
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+xx-small		:	En Küçük.
+x-small			:	Çok küçük.
+small			:	Küçük.
+medium			:	Orta.
+large			:	Büyük.
+x-large			:	Çok büyük.
+xx-large		:	En büyük.
+smaller			:	Daha küçük.
+larger			:	Daha büyük.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	font-size:x-small;
+}

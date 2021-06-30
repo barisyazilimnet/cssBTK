@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*	overflow	:	HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük olan içeriğin taşma özelliklerini belirler.
+Değerler		:	visible | hidden | scroll | auto | initial | inherit
+visible			:	Görünür.
+hidden			:	Gizli.
+scroll			:	Kaydırma.
+auto			:	Otomatik değer alır.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div#AnaEleman{
+	width:1008px;
+	height:250px;
+	border:4px solid green;
+	overflow:hidden;
+}
+div#Bir{
+	width:1000px;
+	height:50px;
+	border:4px solid blue;
+	overflow:inherit; /* overflow:hidden; */
+}
+div#Iki{
+	width:1000px;
+	height:50px;
+	border:4px solid red;
+	overflow:inherit; /* overflow:hidden; */
+}

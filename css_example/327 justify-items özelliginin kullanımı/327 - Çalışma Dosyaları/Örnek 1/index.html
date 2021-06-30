@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	justify-items	:	Izgara düzeni içerisinde bulunan elementlerin, yatay hizalama özelliklerini belirler.
+	Değerler		:	stretch | center | start | end | initial
+	stretch			:	Uzat / esnet.
+	center			:	Orta.
+	start			:	Başlangıç.
+	end				:	Bitiş.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		width:800px;
+		height:600px;
+		border:1px solid red;
+		grid-template-columns:repeat(2, auto);
+		grid-gap:10px;
+		-webkit-justify-items:stretch;
+		-moz-justify-items:stretch;
+		-o-justify-items:stretch;
+		-ms-justify-items:stretch;
+		justify-items:stretch;
+	}
+	.IcElemanlar{
+		width:100px;
+		border:1px solid blue;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+</div>
+</body>
+</html>

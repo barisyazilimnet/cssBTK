@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-row		:	Izgara düzeni içerisinde bulunan elementin kaçıncı satırda başlaması gerektiğini ve kaçıncı satırda bitmesi gerektiğini belirler.
+	Parametreler	:	grid-row-start (Başlangıç) | grid-row-end (Bitiş)
+	Değerler		:	auto | row-line | initial
+	auto			:	Otomatik değer alır.
+	row-line		:	Satır çizgisi.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid grey;
+		padding:10px;
+		grid-template-columns:repeat(4, auto);
+		grid-gap:5px;
+	}
+	.IcElemanlar{
+		border:1px solid black;
+		padding:5px;
+	}
+	.Islem{
+		grid-row:2 / 5;
+	}
+	#Deneme{
+		grid-row:initial;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div id="Deneme" class="IcElemanlar Islem">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar">15</div>
+	<div class="IcElemanlar">16</div>
+	<div class="IcElemanlar">17</div>
+	<div class="IcElemanlar">18</div>
+	<div class="IcElemanlar">19</div>
+	<div class="IcElemanlar">20</div>
+</div><br />
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar Islem">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar">15</div>
+	<div class="IcElemanlar">16</div>
+	<div class="IcElemanlar">17</div>
+	<div class="IcElemanlar">18</div>
+	<div class="IcElemanlar">19</div>
+	<div class="IcElemanlar">20</div>
+</div>
+</body>
+</html>

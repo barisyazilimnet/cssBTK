@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	grid-column-end	:	Izgara düzeni içerisindeki elementin kaçıncı sütunda bitmesi gerektiğini belirler.
+Değerler			:	auto | column-line | initial
+auto				:	Otomatik değer alır.
+column-line			:	Sütun çizgisi.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid red;
+	padding:10px;
+	grid-template-columns:auto auto auto auto auto;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}
+.Bir{
+	grid-column-end:4 span;
+}

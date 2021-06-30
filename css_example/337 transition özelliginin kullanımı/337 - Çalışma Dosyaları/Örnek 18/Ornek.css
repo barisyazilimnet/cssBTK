@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	transition				:	HTML elementinin tüm geçiş özelliklerini belirler.
+Parametreler				:	transition-property | transition-duration | transition-timing-function | transition-delay
+Varsayılan Değer			:	all 0s ease 0s
+Değerler					:	property value (özellik değeri) | initial
+transition-property			:	CSS özellik adı.
+transition-duration			:	Geçiş süresi.
+transition-timing-function	:	Hız eğrisi.
+transition-delay			:	Duraksama süresi.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:100px;
+	margin:100px;
+	border:1px solid red;
+	background-color:yellow;
+	-webkit-transition:transform 5s;
+	-moz-transition:transform 5s;
+	-o-transition:transform 5s;
+	-ms-transition:transform 5s;
+	transition:transform 5s;
+}
+div:hover{
+	-webkit-transform:rotate(1800deg);
+	-moz-transform:rotate(1800deg);
+	-o-transform:rotate(1800deg);
+	-ms-transform:rotate(1800deg);
+	transform:rotate(1800deg);
+}

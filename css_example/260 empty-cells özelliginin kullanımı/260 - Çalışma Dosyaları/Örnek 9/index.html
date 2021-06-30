@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	empty-cells	:	HTML'in table (tablo) elementinde bulunan ve içeriği boş hücrelerin görüntülenme özelliklerini belirler.
+	Değerler	:	show | hide | initial | inherit
+	show		:	Göster.
+	hide		:	Gizle.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	table#AnaTablo{
+		empty-cells:hide;
+	}
+	th, td{
+		border:2px solid red;
+	}
+	.Deneme{
+		empty-cells:initial;
+	}
+</style>
+</head>
+
+<body>
+<table id="AnaTablo">
+	<tr>
+		<th>İsim</th>
+		<th>Soyisim</th>
+		<th>Derler</th>
+	</tr>
+	<tr>
+		<td>Volkan</td>
+		<td>Alakent</td>
+		<td><table class="Deneme" style="empty-cells:inherit;">
+			<tr>
+				<td>Türkçe</td>
+				<td>İngilizce</td>
+				<td>Bilgisayar</td>
+			</tr>
+			<tr>
+				<td>Türkçe</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Bilgisayar</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td>Hakan</td>
+		<td>Alakent</td>
+		<td><table class="Deneme" style="empty-cells:inherit;">
+			<tr>
+				<td></td>
+				<td>İngilizce</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Türkçe</td>
+				<td>Bilgisayar</td>
+				<td>Türkçe</td>
+			</tr>
+			<tr>
+				<td>Bilgisayar</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+</body>
+</html>

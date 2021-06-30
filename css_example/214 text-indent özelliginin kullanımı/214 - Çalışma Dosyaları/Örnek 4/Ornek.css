@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	text-indent	:	Metin bloğunda bulunan ilk satırın grintisini belirler.
+Değerler		:	length | % | initial | inherit
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:-webkit-calc(100% - 4px);
+	width:-moz-calc(100% - 4px);
+	width:-o-calc(100% - 4px);
+	width:-ms-calc(100% - 4px);
+	width:calc(100% - 4px);
+	height:auto;
+	border:2px solid red;
+	text-indent:25%;
+}

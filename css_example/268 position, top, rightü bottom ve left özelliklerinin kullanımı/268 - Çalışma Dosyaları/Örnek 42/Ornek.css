@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*	position	:	HTML elementinin konumlandırma özelliklerini belirler.
+Değerler		:	static | relative | absolute | fixed | sticky | initial | inherit
+static			:	Durağan.
+relative		:	Göreceli.
+absolute		:	Mutlak / Kesin.
+fixed			:	Sabit.
+sticky			:	Yapışkan.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.
+
+top				:	Konumlandırılmış bir HTML elementinin, üstten hizalama konumunu belirler.
+right			:	Konumlandırılmış bir HTML elementinin, sağdan hizalama konumunu belirler.
+bottom			:	Konumlandırılmış bir HTML elementinin, alttan hizalama konumunu belirler.
+left			:	Konumlandırılmış bir HTML elementinin, soldan hizalama konumunu belirler.
+Değerler		:	auto | length | initial
+auto			:	Otomatik değer alır.
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.Elementler{
+	width:250px;
+	padding:20px;
+	text-align:center;
+	border:2px solid red;
+	position:absolute;
+}
+div[name="bir"]{
+	top:100px;
+	left:100px;
+}
+div[name="iki"]{
+	top:200px;
+	left:400px;
+}
+#Ornek{
+	top:initial;
+	left:initial;
+}

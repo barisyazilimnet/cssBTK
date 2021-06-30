@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	resize	:	HTML elementinin kullanıcı tarafından yeniden boyutlandırılabilir olup olmadığı durumunu belirler.
+Değerler	:	none | both | horizontal | vertical | initial | inherit
+none		:	Değer yok.
+both		:	Her ikiside.
+horizontal	:	Yatay.
+vertical	:	Dikey.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+textarea{
+	width:200px;
+	height:auto;
+	border:2px solid red;
+	resize:horizontal;
+}

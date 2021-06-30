@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*	caption-side	:	HTML'in table (tablo) elementinde bulunan başlık elementinin konum özelliklerini belirler.
+Değerler			:	top | bottom | initial | inherit
+top					:	Üstte.
+bottom				:	Altta.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+table#AnaTablo{
+	border:2px solid red;
+	width:500px;
+	caption-side:bottom;
+}
+td{
+	border:2px solid red;
+}
+table#IcTablo{
+	border:2px solid blue;
+	width:300px;
+	caption-side:initial;
+}

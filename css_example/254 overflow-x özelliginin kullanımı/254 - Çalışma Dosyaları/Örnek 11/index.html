@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	overflow-x	:	HTML elementinin x ekseni baz alınarak boyutlandırılmış alanına sığmayacak kadar büyük olan içeriğin taşma özelliklerini belirler.
+	Değerler	:	visible | hidden | scroll | auto | initial | inherit
+	visible		:	Görünür.
+	hidden		:	Gizli.
+	scroll		:	Kaydırma.
+	auto		:	Otomatik değer alır.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div#Bir{
+		width:500px;
+		height:200px;
+		border:4px double red;
+		overflow-x:auto;
+	}
+	div#Iki{
+		width:200px;
+		height:100px;
+		background-color:blue;
+
+	}
+</style>
+</head>
+
+<body>
+<div id="Bir">
+	<div id="Iki"> </div>
+</div>
+</body>
+</html>

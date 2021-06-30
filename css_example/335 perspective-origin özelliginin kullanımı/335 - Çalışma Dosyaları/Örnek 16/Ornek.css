@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*	perspective-origin	:	HTML elementinin 3D dönüştürme sonrasındaki perspektif derinliği konum özelliklerini belirler.
+Parametreler			:	x | y
+Varsayılan Değer		:	50% 50%
+Değerler				:	length | % | initial
+length					:	Uzunluk değeri.
+%						:	Yüzde değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	position:relative;
+	width:250px;
+	height:250px;
+	margin:50px;
+	padding:50px;
+	border:1px solid black;
+	-webkit-perspective:150px;
+	-moz-perspective:150px;
+	-o-perspective:150px;
+	-ms-perspective:150px;
+	perspective:150px;
+	-webkit-perspective-origin:100px 50px;
+	-moz-perspective-origin:100px 50px;
+	-o-perspective-origin:100px 50px;
+	-ms-perspective-origin:100px 50px;
+	perspective-origin:100px 50px;
+}
+.IcEleman{
+	position:absolute;
+	padding:50px;
+	border:1px solid red;
+	background-color:yellow;
+	-webkit-transform:rotateY(45deg);
+	-moz-transform:rotateY(45deg);
+	-o-transform:rotateY(45deg);
+	-ms-transform:rotateY(45deg);
+	transform:rotateY(45deg);
+}
+#Islem{
+	-webkit-perspective-origin:initial;
+	-moz-perspective-origin:initial;
+	-o-perspective-origin:initial;
+	-ms-perspective-origin:initial;
+	perspective-origin:initial;
+}

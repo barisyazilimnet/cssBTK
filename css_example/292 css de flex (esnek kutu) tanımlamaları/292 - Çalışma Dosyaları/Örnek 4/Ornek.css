@@ -1,0 +1,15 @@
+@charset "utf-8";
+#AnaEleman{
+	background-color:#03A8D1;
+	border:2px solid blue;
+	display:-webkit-inline-flex;
+	display:-moz-inline-flex;
+	display:-o-inline-flex;
+	display:-ms-inline-flex;
+	display:inline-flex;
+}
+.IcElemanlar{
+	border:2px solid red;
+	color:white;
+	padding:10px;
+}

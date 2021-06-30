@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	filter		:	HTML elementine uygulanacak olan efekt özelliklerini belirler.
+Değerler		:	none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia()
+none			:	Değer yok.
+blur()			:	Bulanıklık. (Pixel değer.)
+brightness()	:	Parlaklık. (0% ila 100% arası.)
+contrast()		:	Kontrast. (0% ila 100% arası.)
+drop-shadow()	:	Gölge düşürme. (horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | blur spread (bulanıklık yayma) | color (renk))
+grayscale()		:	Gri tonlama. (0% ila 100% arası.)
+hue-rotate()	:	Renk döndürme. (0 derce ila 360 derece arası.)
+invert()		:	Ters çevirme. (0% ila 100% arası.)
+opacity()		:	Opaklık. (0% ila 100% arası.)
+saturate()		:	Doyma. (0% ila 100% arası.)
+sepia()			:	Sepya. (Kahverengi ağırlıklı antik tonlama) (0% ila 100% arası.)	*/
+img{
+	-webkit-filter:contrast(50%);
+	-moz-filter:contrast(50%);
+	-o-filter:contrast(50%);
+	-ms-filter:contrast(50%);
+	filter:contrast(50%);
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*	backface-visibility	:	Belirtilen HTML elementinin dönüştürme, geçiş veya animasyon işlemlerinde arka yüzeyinin görüntülenme veya gizlenme özelliklerini belirler.
+Değerler				:	visible | hidden | initial
+visible					:	Göster.
+hidden					:	Gizle.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.Islem1a{
+	border:1px solid red;
+	width:87px;
+	padding:25px;
+	background-color:red;
+	color:white;
+}
+.Islem1b{
+	border:1px solid red;
+	width:87px;
+	padding:25px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-o-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+	-webkit-backface-visibility:visible;
+	-moz-backface-visibility:visible;
+	-o-backface-visibility:visible;
+	-ms-backface-visibility:visible;
+	backface-visibility:visible;
+}
+.Islem2a{
+	border:1px solid blue;
+	width:102px;
+	padding:25px;
+	background-color:blue;
+	color:white;
+}
+.Islem2b{
+	border:1px solid blue;
+	width:102px;
+	padding:25px;
+	background-color:blue;
+	color:white;
+	-webkit-transform:rotateX(180deg);
+	-moz-transform:rotateX(180deg);
+	-o-transform:rotateX(180deg);
+	-ms-transform:rotateX(180deg);
+	transform:rotateX(180deg);
+	-webkit-backface-visibility:visible;
+	-moz-backface-visibility:visible;
+	-o-backface-visibility:visible;
+	-ms-backface-visibility:visible;
+	backface-visibility:visible;
+}

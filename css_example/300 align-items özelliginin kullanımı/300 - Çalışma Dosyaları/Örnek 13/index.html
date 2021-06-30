@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	align-items	:	Esnek kutu içerisinde bulunan elementlerin hizalama özelliklerini belirler.
+	Değerler	:	stretch | center | flex-start | flex-end | baseline | initial
+	stretch		:	Uzat / esne.
+	center		:	Orta.
+	flex-start	:	Esnek başlangıç.
+	flex-end	:	Esnek bitiş.
+	baseline	:	Başlangıç.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		border:1px solid red;
+		width:500px;
+		height:250px;
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		-webkit-align-items:flex-end;
+		-moz-align-items:flex-end;
+		-o-align-items:flex-end;
+		-ms-align-items:flex-end;
+		align-items:flex-end;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		-webkit-flex:1;
+		-moz-flex:1;
+		-o-flex:1;
+		-ms-flex:1;
+		flex:1;
+	}
+	#Islem{
+		-webkit-align-items:initial;
+		-moz-align-items:initial;
+		-o-align-items:initial;
+		-ms-align-items:initial;
+		align-items:initial;
+	}
+</style>
+</head>
+
+<body>
+<div id="Islem" class="AnaEleman">
+	<div class="IcElemanlar">A</div>
+	<div class="IcElemanlar">B</div>
+	<div class="IcElemanlar">C</div>
+	<div class="IcElemanlar">D</div>
+	<div class="IcElemanlar">E</div>
+</div><br />
+<div class="AnaEleman">
+	<div class="IcElemanlar">A</div>
+	<div class="IcElemanlar">B</div>
+	<div class="IcElemanlar">C</div>
+	<div class="IcElemanlar">D</div>
+	<div class="IcElemanlar">E</div>
+</div>
+</body>
+</html>

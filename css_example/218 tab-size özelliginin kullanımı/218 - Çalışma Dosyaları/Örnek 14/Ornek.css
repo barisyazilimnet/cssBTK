@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	tab-size	:	HTML elementi içerisinde bulunan metnin içerdiği sekme karakterinin genişliğini belirler.
+Değerler		:	number | length | initial | inherit
+number			:	Rakam. (X karakter.)
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-tab-size:80px;
+	-moz-tab-size:80px;
+	-o-tab-size:80px;
+	-ms-tab-size:80px;
+	tab-size:80px;
+}
+p{
+	white-space:pre-wrap;
+	-webkit-tab-size:initial;
+	-moz-tab-size:initial;
+	-o-tab-size:initial;
+	-ms-tab-size:initial;
+	tab-size:initial;
+}
+.Ornek{
+	-webkit-tab-size:inherit; /* -webkit-tab-size:80px; */
+	-moz-tab-size:inherit; /* -moz-tab-size:80px; */
+	-o-tab-size:inherit; /* -o-tab-size:80px; */
+	-ms-tab-size:inherit; /* -ms-tab-size:80px; */
+	tab-size:inherit; /* tab-size:80px; */
+}

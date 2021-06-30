@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*	color	:	Metnin rengini belirler.
+Değerler	:	color | initial | inherit
+color		:	Renk.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	color:rgba(255, 0, 0, 0.5);
+}
+#Deneme{
+	color:initial;
+}

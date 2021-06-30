@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	text-align-last	:	Metnin son satırının veya metnin justify değeri atanmış olan satırlarının yatay hizalama özelliklerini belirler.
+Değerler			:	auto | left | right | center | justify | start | end | initial | inherit
+auto				:	Otomatik değer alır.
+left				:	Sol.
+right				:	Sağ.
+center				:	Orta.
+justify				:	Sağa ve sola hizalı.
+start				:	Başlangıç.
+end					:	Bitiş.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-text-align-last:right;
+	-moz-text-align-last:right;
+	-o-text-align-last:right;
+	-ms-text-align-last:right;
+	text-align-last:right;
+}

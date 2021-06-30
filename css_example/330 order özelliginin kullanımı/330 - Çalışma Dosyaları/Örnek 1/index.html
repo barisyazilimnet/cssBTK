@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	order		:	Izgara düzeni içerisindeki element veya elementlerin, diğer elementlere göre sıralama özelliklerini belirler.
+	Değerler	:	number | initial
+	number		:	Rakam.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		width:500px;
+		border:1px solid red;
+		padding:10px;
+		grid-template-columns:auto auto auto auto auto;
+		grid-gap:20px;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+	}
+	.Uc{
+		-webkit-order:1;
+		-moz-order:1;
+		-o-order:1;
+		-ms-order:1;
+		order:1;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar Bir">1</div>
+	<div class="IcElemanlar Iki">2</div>
+	<div class="IcElemanlar Uc">3</div>
+	<div class="IcElemanlar Dort">4</div>
+	<div class="IcElemanlar Bes">5</div>
+	<div class="IcElemanlar Alti">6</div>
+	<div class="IcElemanlar Yedi">7</div>
+	<div class="IcElemanlar Sekiz">8</div>
+	<div class="IcElemanlar Dokuz">9</div>
+	<div class="IcElemanlar On">10</div>
+</div>
+</body>
+</html>

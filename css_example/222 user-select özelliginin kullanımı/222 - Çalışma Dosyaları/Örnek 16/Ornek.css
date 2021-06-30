@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*	user-select	:	Metnin kullanıcı tarafından seçilebilme durumunu belirler.
+Değerler		:	auto | none | text | all | initial | inherit
+auto			:	Otomatik değer alır.
+none			:	Değer yok. (Metin seçilemez.)
+text			:	Metin. (Metin seçilebilir.)
+all				:	Tümü. (Tüm metin bir seferde seçilebilir.)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+p{
+	-webkit-user-select:initial;
+	-moz-user-select:initial;
+	-o-user-select:initial;
+	-ms-user-select:initial;
+	user-select:initial;
+}
+#Deneme{
+	-webkit-user-select:inherit; /* -webkit-user-select:none; */
+	-moz-user-select:inherit; /* -moz-user-select:none; */
+	-o-user-select:inherit; /* -o-user-select:none; */
+	-ms-user-select:inherit; /* -ms-user-select:none; */
+	user-select:inherit; /* user-select:none; */
+}

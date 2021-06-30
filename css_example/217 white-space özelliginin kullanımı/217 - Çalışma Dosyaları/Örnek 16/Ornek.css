@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	white-space	:	HTML elementi içerisinde bulunan metin boşluk değerleri için davranış özellikleri belirler.
+Değerler		:	normal | nowrap | pre | pre-line | pre-wrap | initial | inherit
+normal			:	Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de tek boşluk olur.
+nowrap			:	Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de tek boşluk olur ve satır sonları hiçbir zaman alt satıra geçmez.
+pre				:	Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de korunur ve satır sonları hiçbir zaman alt satıra geçmez.
+pre-line		:	Satır boşluk dizeleri korunur ve metin içi boşluk dizeleri tek boşluk olur.
+pre-wrap		:	Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de korunur.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	white-space:pre-wrap;
+}
+p{
+	width:500px;
+	height:auto;
+	border:2px solid red;
+	white-space:initial;
+}
+.Deneme{
+	white-space:inherit; /* white-space:pre-wrap; */
+}

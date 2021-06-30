@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	flex		:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranını yada küçüklük / büzülme oranını yada başlangıç uzunluğu değerini belirler.
+	Değerler	:	flex-grow | flex-shrink | flex-basis | auto | initial
+	flex-grow	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranı.
+	flex-shrink	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük / büzülme oranı.
+	flex-basis	:	Esnek kutu içerisindeki element veya elementlerin, başlangıç uzunluğu.
+	auto		:	Otomatik değer alır.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		width:400px;
+		height:100px;
+		border:1px solid red;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		-webkit-flex:100px;
+		-moz-flex:100px;
+		-o-flex:100px;
+		-ms-flex:100px;
+		flex:100px;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">Extra Eğitim</div>
+	<div class="IcElemanlar">Volkan Alakent</div>
+	<div class="IcElemanlar">A'dan Z'ye CSS Görsel Eğitim Seti</div>
+</div>
+</body>
+</html>

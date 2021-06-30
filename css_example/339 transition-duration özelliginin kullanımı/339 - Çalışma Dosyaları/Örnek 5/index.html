@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transition-duration	:	HTML elementine tanımlanmış olan geçiş özelliğinin kaç saniye veya kaç milisaniye sonunda tamamlanacağını belirler.
+	Değerler			:	time | initial
+	time				:	Zaman. (Saniye : s, Milisaniye : ms)
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:200px;
+		height:200px;
+		border:4px double black;
+		background-color:skyblue;
+		font-size:25px;
+		line-height:200px;
+		color:grey;
+		text-align:center;
+		margin:200px;
+		-webkit-transition-property:width, transform;
+		-moz-transition-property:width, transform;
+		-o-transition-property:width, transform;
+		-ms-transition-property:width, transform;
+		transition-property:width, transform;
+		-webkit-transition-duration:100ms, 3000ms;
+		-moz-transition-duration:100ms, 3000ms;
+		-o-transition-duration:100ms, 3000ms;
+		-ms-transition-duration:100ms, 3000ms;
+		transition-duration:100ms, 3000ms;
+	}
+	div:hover{
+		width:300px;
+		-webkit-transform:skewX(10deg);
+		-moz-transform:skewX(10deg);
+		-o-transform:skewX(10deg);
+		-ms-transform:skewX(10deg);
+		transform:skewX(10deg);
+	}
+</style>
+</head>
+
+<body>
+<div>Extra Eğitim</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*	unicode-bidi	:	Metnin direction özelliği ile belirtilmiş akış yönü özelliğinin döndürme durumunu belirler.
+Değerler			:	normal | embed | bidi-override | initial | inherit
+normal				:	Normal.
+embed				:	Gömülü.
+bidi-override		:	Geçersiz kılma.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	direction:rtl;
+	unicode-bidi:bidi-override;
+}

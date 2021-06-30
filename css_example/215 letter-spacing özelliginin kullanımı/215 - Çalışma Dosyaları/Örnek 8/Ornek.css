@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	letter-spacing	:	Metin içerisindeki karakterlerin aralarındaki boşluk değerlerini belirler.
+Değerler			:	normal | length | initial | inherit
+normal				:	Normal.
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	letter-spacing:-3px;
+}
+#Deneme{
+	letter-spacing:initial;
+}

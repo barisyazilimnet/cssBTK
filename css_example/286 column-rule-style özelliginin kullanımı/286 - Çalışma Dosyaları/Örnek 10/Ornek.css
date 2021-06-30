@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*	column-rule-style	:	HTML elementinin çok sütunlu düzeni için bölünen sütunların aralarındaki dikey ayraç stilini belirler.
+Değerler				:	none | hidden | solid | dashed | dotted | double | groove | ridge | inset | outset | initial | inherit
+none					:	Değer yok.
+hidden					:	Gizli.
+solid					:	Düz çizgi.
+dashed					:	Kesikli çizgi.
+dotted					:	Noktalı çizgi.
+double					:	Çift çizgi.
+groove					:	İçe dönük gölgeli çizgi.
+ridge					:	Dışa dönük gölgeli çizgi.
+inset					:	İçe dönük derin çizgi.
+outset					:	Dışa dönük derin çizgi.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	-o-column-count:3;
+	-ms-column-count:3;
+	column-count:3;
+	-webkit-column-gap:50px;
+	-moz-column-gap:50px;
+	-o-column-gap:50px;
+	-ms-column-gap:50px;
+	column-gap:50px;
+	-webkit-column-rule-style:dotted;
+	-moz-column-rule-style:dotted;
+	-o-column-rule-style:dotted;
+	-ms-column-rule-style:dotted;
+	column-rule-style:dotted;
+}

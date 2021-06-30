@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	float	:	HTML elementinin bulunduğu konumdan kayma özelliklerini belirler.
+Değerler	:	none | left | right | initial | inherit
+none		:	Değer yok.
+left		:	Sola kay.
+right		:	Sağa kay.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+span{
+	font-size:80px;
+	float:left;
+	line-height:53px;
+}

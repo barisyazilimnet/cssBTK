@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*	align-content	:	Izgara düzeni içerisinde bulunan elementler tüm alanı kullanmadığında, elementlerin dikey hizalama özelliklerini belirler.
+Değerler			:	stretch | center | start | end | space-between | space-around | space-evenly | initial
+stretch				:	Uzat / esne.
+center				:	Orta.
+start				:	Başlangıç.
+end					:	Bitiş.
+space-between		:	Boşluk arasında.
+space-around		:	Boşluk etrafında.
+space-evenly		:	Eşit boşluk.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:800px;
+	height:300px;
+	border:1px solid red;
+	grid-template-columns:auto auto auto;
+	-webkit-align-content:space-evenly;
+	-moz-align-content:space-evenly;
+	-o-align-content:space-evenly;
+	-ms-align-content:space-evenly;
+	align-content:space-evenly;
+}
+.IcElemanlar{
+	width:100px;
+	border:1px solid blue;
+}
+#Islem{
+	-webkit-align-content:initial;
+	-moz-align-content:initial;
+	-o-align-content:initial;
+	-ms-align-content:initial;
+	align-content:initial;
+}

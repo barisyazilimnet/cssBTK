@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*	flex	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranını yada küçüklük / büzülme oranını yada başlangıç uzunluğu değerini belirler.
+Değerler	:	flex-grow | flex-shrink | flex-basis | auto | initial
+flex-grow	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranı.
+flex-shrink	:	Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük / büzülme oranı.
+flex-basis	:	Esnek kutu içerisindeki element veya elementlerin, başlangıç uzunluğu.
+auto		:	Otomatik değer alır.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	width:400px;
+	height:100px;
+	border:1px solid red;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	-webkit-flex:auto;
+	-moz-flex:auto;
+	-o-flex:auto;
+	-ms-flex:auto;
+	flex:auto;
+}

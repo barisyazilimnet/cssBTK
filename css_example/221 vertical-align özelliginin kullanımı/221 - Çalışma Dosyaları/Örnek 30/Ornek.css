@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	vertical-align	:	Metnin veya içeriğin dikey hizalama özelliklerini belirler.
+Değerler			:	baseline | length | % | sub | super | top | text-top | middle | bottom | text-bottom | initial | inherit
+baseline			:	Alt köşeden başlar.
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+sub					:	Alt simge.
+super				:	Üst simge.
+top					:	En üstten.
+text-top			:	Metnin üst hizasından.
+middle				:	Ortadan.
+bottom				:	En alttan.
+text-bottom			:	Metnin alt hizasından.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	font-size:50px;
+}
+span{
+	vertical-align:text-top;
+	font-size:20px;
+}

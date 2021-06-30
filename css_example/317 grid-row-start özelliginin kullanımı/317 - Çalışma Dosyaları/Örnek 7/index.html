@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-row-start	:	Izgara içerisindeki elementin kaçıncı satırdan başlaması gerektiğini belirler.
+	Değerler		:	auto | row-line | initial
+	auto			:	Otomatik değer alır.
+	row-line		:	Satır çizgisi.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		grid-template-columns:repeat(3, auto);
+		grid-gap:5px;
+	}
+	.IcElemanlar{
+		border:1px solid red;
+		padding:10px;
+	}
+	.Bir{
+		grid-row-start:3 span;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar Bir">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar">15</div>
+</div>
+</body>
+</html>

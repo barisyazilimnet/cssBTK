@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*	perspective	:	HTML elementinin 3D dönüştürme sonrasındaki perspektif derinliği özelliklerini belirler.
+Değerler		:	none | length | initial
+none			:	Değer yok.
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	position:relative;
+	width:150px;
+	height:150px;
+	padding:50px;
+	margin:50px;
+	border:1px solid red;
+	-webkit-perspective:none;
+	-moz-perspective:none;
+	-o-perspective:none;
+	-ms-perspective:none;
+	perspective:none;
+}
+.IcEleman{
+	position:absolute;
+	padding:50px;
+	border:1px solid blue;
+	background-color:yellow;
+	-webkit-transform:rotateX(45deg);
+	-moz-transform:rotateX(45deg);
+	-o-transform:rotateX(45deg);
+	-ms-transform:rotateX(45deg);
+	transform:rotateX(45deg);
+}

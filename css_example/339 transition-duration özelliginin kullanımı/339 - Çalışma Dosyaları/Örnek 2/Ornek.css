@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	transition-duration	:	HTML elementine tanımlanmış olan geçiş özelliğinin kaç saniye veya kaç milisaniye sonunda tamamlanacağını belirler.
+Değerler				:	time | initial
+time					:	Zaman. (Saniye : s, Milisaniye : ms)
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:200px;
+	height:200px;
+	border:4px double black;
+	background-color:skyblue;
+	font-size:25px;
+	line-height:200px;
+	color:grey;
+	text-align:center;
+	-webkit-transition-property:all;
+	-moz-transition-property:all;
+	-o-transition-property:all;
+	-ms-transition-property:all;
+	transition-property:all;
+	-webkit-transition-duration:3s;
+	-moz-transition-duration:3s;
+	-o-transition-duration:3s;
+	-ms-transition-duration:3s;
+	transition-duration:3s;
+}
+div:hover{
+	width:1000px;
+	color:black;
+}

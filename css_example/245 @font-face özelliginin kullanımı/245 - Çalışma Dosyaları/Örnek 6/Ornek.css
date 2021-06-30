@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*	@font-face		:	Metinler için sistemde yüklü olmayan font'ların kullanılabilme durumlarını belirler.
+Değerler			:	font-family | local | src | font-style | font-weight
+font-family			:	Metnin yazı tipi ailesi.
+local				:	Yerel.
+src					:	Dosya adresi.
+font-style			:	Metnin yazı tipi stili.
+font-weight			:	Metnin yazı tipi kalınlığı.
+
+Font Dosya Türleri	:	EOT | WOFF2 | WOFF | TTF & OTF | SVG
+EOT					:	Internet Explorer - Microsoft Edge
+WOFF2				:	Chrome - Firefox - Opera
+WOFF				:	Tüm tarayıcılar.
+TTF & OTF			:	Tüm tarayıcılar.
+SVG					:	Chrome - Safari - Opera	*/
+@font-face{
+	font-family:"Hickory Jack";
+	src:url("Fontlar/Hickory_Jack.eot"); /* Internet Explorer - Microsoft Edge */
+	src:url("Fontlar/Hickory_Jack.eot?#iefix") format("embedded-opentype"), /* Internet Explorer 6 - 8 */
+		url("Fontlar/Hickory_Jack.woff2") format("woff2"), /* Modern tarayıcılar (Süper) */
+		url("Fontlar/Hickory_Jack.woff") format("woff"), /* Modern tarayıcılar */
+		url("Fontlar/Hickory_Jack.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("Fontlar/Hickory_Jack.svg#hickory_jackregular") format("svg"); /* iOS */
+}
+h3, div, p{
+	font-family:"Hickory Jack";
+}

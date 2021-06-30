@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	flex-wrap		:	Esnek kutuların satır kırılma özelliklerini belirler.
+	Değerler		:	nowrap | wrap | wrap-reverse | initial
+	nowrap			:	Kırılma yok.
+	wrap			:	Kırılma.
+	wrap-reverse	:	Ters kırılma.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		width:250px;
+		height:250px;
+		border:thin solid grey;
+		-webkit-flex-wrap:wrap;
+		-moz-flex-wrap:wrap;
+		-o-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap;
+	}
+	.IcElemanlar{
+		width:50px;
+		height:50px;
+		border:thin solid grey;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">A</div>
+	<div class="IcElemanlar">B</div>
+	<div class="IcElemanlar">C</div>
+	<div class="IcElemanlar">D</div>
+	<div class="IcElemanlar">E</div>
+	<div class="IcElemanlar">F</div>
+	<div class="IcElemanlar">G</div>
+	<div class="IcElemanlar">H</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+@media only screen and (min-width:1200px){ /* XL */
+	div{
+		font-size:40px;
+	}
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){ /* L */
+	div{
+		font-size:35px;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){ /* M */
+	div{
+		font-size:30px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){ /* S */
+	div{
+		font-size:25px;
+	}
+}
+
+@media only screen and (max-width:575px){ /* XS */
+	div{
+		font-size:20px;
+	}
+}

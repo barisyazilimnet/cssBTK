@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	text-stroke-color	:	Metne eklenecek olan dış çizgisi rengini belirler.
+Değerler				:	color | initial | inherit
+color					:	Renk.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-text-stroke:1px red;
+	-moz-text-stroke:1px red;
+	-o-text-stroke:1px red;
+	-ms-text-stroke:1px red;
+	text-stroke:1px red;
+	-webkit-text-stroke-color:blue;
+	-moz-text-stroke-color:blue;
+	-o-text-stroke-color:blue;
+	-ms-text-stroke-color:blue;
+	text-stroke-color:blue;
+}

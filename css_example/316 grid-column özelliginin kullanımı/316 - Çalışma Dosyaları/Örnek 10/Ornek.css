@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	grid-column		:	Izgara düzeni içerisindeki elementin kaçıncı sütundan başlaması gerektiğini ve kaçıncı sütunda bitmesi gerektiğini belirler.
+Parametreler		:	grid-column-start (Başlangıç) | grid-column-end (Bitiş)
+Değerler			:	auto | column-line | initial
+auto				:	Otomatik değer alır.
+column-line			:	Sütun çizgisi.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid grey;
+	padding:10px;
+	grid-template-columns:repeat(5, auto);
+	grid-gap:5px;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}
+.Bir{
+	grid-column:2 / 5;
+}

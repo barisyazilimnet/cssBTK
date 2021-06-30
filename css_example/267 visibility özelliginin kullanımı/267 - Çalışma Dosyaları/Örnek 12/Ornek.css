@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	visibility	:	HTML elementinin görüntülenme ve gizlenme özelliklerini belirler.
+Değerler		:	visible | hidden | collapse | initial | inherit
+visible			:	Görünür. (Element gösterilir.)
+hidden			:	Gizli. (Element gösterilmez ve elementin kapladığı alan değerleri korunarak boş bir alan oluşur.)
+collapse		:	Bitişik. (Element gösterilmez ve elementin kapladığı alan değerleri korunarak boş bir alan oluşur. Fakat element bir table (tablo) elementi ise kapladığı alan değerleri korunmaz.)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:500px;
+	height:200px;
+	border:2px solid red;
+	margin:10px;
+	visibility:hidden;
+}

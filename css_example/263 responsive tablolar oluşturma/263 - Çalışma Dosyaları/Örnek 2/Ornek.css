@@ -1,0 +1,22 @@
+@charset "utf-8";
+table{
+	width:100%;
+	border:1px solid grey;
+	border-collapse:collapse;
+	white-space:nowrap;
+}
+#BaslikSatiri{
+	background-color:#CCCCCC;
+}
+th, td{
+	border:1px solid grey;
+	padding:10px 15px;
+	text-align:left;
+}
+tr:nth-child(odd){
+	background-color:#F1F1F1;
+}
+div{
+	width:100%;
+	overflow-x:auto;
+}

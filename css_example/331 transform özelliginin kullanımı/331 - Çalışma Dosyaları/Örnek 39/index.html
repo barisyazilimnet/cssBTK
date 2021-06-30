@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transform		:	HTML elementinin 2D veya 3D dönüştürme özelliklerini belirler.
+	Değerler		:	none | translate() | translate3d() | translateX() | translateY() | translateZ() | skew() | skewX() | skewY() | scale() | scale3d() | scaleX() | scaleY() | scaleZ()
+						rotate() | rotate3d() | rotateX() | rotateY() | rotateZ() | perspective() | matrix() | matrix3d() | initial
+	none			:	Değer yok.
+	translate()		:	HTML elementinin x ve y ekseni doğrultusunda konumunu değiştirir.
+	translate3d()	:	HTML elementinin x, y ve z ekseni doğrultusunda konumunu değiştirir.
+	translateX()	:	HTML elementinin x ekseni doğrultusunda konumunu değiştirir.
+	translateY()	:	HTML elementinin y ekseni doğrultusunda konumunu değiştirir.
+	translateZ()	:	HTML elementinin z ekseni doğrultusunda konumunu değiştirir.
+	skew()			:	HTML elementini x ve y ekseni doğrultusunda eğer.
+	skewX()			:	HTML elementini x ekseni doğrultusunda eğer.
+	skewY()			:	HTML elementini y ekseni doğrultusunda eğer.
+	scale()			:	HTML elementini x ve y ekseni doğrultusunda boyutunu değiştirir.
+	scale3d()		:	HTML elementini x, y ve z ekseni doğrultusunda boyutunu değiştirir.
+	scaleX()		:	HTML elementini x ekseni doğrultusunda boyutunu değiştirir.
+	scaleY()		:	HTML elementini y ekseni doğrultusunda boyutunu değiştirir.
+	scaleZ()		:	HTML elementini z ekseni doğrultusunda boyutunu değiştirir.
+	rotate()		:	HTML elementini saat yönü doğrultusunda döndürür.
+	rotate3d()		:	HTML elementini x, y ve z ekseni doğrultusunda döndürür.
+	rotateX()		:	HTML elementini x ekseni doğrultusunda döndürür.
+	rotateY()		:	HTML elementini y ekseni doğrultusunda döndürür.
+	rotateZ()		:	HTML elementini z ekseni doğrultusunda döndürür.
+	perspective()	:	HTML elementinin perspektif görünüşünü belirler.
+	matrix()		:	HTML elementine 6 farklı dönüşüm özelliği belirler. (scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+	matrix3d()		:	HTML elementine 4x4 dönüşüm özelliği belirler. (https://codepen.io/fta/pen/ifnqH)
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div#Normal{
+		width:87px;
+		height:87px;
+		padding:10px;
+		background-color:blue;
+		color:white;
+	}
+	div#Islem{
+		width:87px;
+		height:87px;
+		padding:10px;
+		background-color:red;
+		color:white;
+		-webkit-transform:scale(0.5);
+		-moz-transform:scale(0.5);
+		-o-transform:scale(0.5);
+		-ms-transform:scale(0.5);
+		transform:scale(0.5);
+	}
+</style>
+</head>
+
+<body>
+<div id="Normal">Extra Eğitim</div>
+<div id="Islem">Extra Eğitim</div>
+</body>
+</html>

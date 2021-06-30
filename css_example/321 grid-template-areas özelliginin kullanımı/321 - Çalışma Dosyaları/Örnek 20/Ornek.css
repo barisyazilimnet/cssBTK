@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	grid-template-areas	:	Izgara düzeni içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler.
+Değerler				:	none | area name
+none					:	Değer yok.
+area name				:	Alan adı.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid red;
+	grid-gap:10px;
+	grid-template-areas:"ExtraEgitim1 ExtraEgitim1 . . . ExtraEgitim2 ExtraEgitim2 ExtraEgitim2 ExtraEgitim2 ExtraEgitim2";
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+
+}
+.Islem1{
+	grid-area:ExtraEgitim1;
+}
+.Islem2{
+	grid-area:ExtraEgitim2;
+}

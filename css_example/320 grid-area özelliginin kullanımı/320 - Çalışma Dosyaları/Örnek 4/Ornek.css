@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	grid-area	:	Izgara düzeni içerisindeki elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler. Aynı zamanda ızgara düzeni içerisindeki elementin alan adı
+					değerini belirler.
+Parametreler	:	grid-row-start (satır başlangıcı) | grid-column-start (sütun başlangıcı) | grid-row-end (satır bitişi) | grid-column-end (sütun bitişi)
+Değerler		:	areaname | initial
+areaname		:	Alan adı.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid red;
+	padding:10px;
+	grid-template-columns:auto auto auto auto;
+	grid-gap:5px;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}
+.Islem1{
+	grid-area:2 / 3 / 5 / 5;
+}
+#Deneme{
+	grid-area:initial;
+}

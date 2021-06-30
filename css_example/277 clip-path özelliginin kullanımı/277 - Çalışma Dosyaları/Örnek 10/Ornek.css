@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*	clip-path	:	absolute (mutlak / kesin) değeri ile konumlandırılmış bir HTML elementinin gelişmiş kırpma / maskeleme özelliklerini belirler.
+Değerler		:	auto | shape | initial
+auto			:	Otomatik değer alır.
+shape			:	Şekil.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+Shape değerleri	:	inset | circle | ellipse | polygon
+inset			:	İlave.
+circle			:	Daire.
+ellipse			:	Elips.
+polygon			:	Poligon.	*/
+div#bir{
+	position:relative;
+	float:left;
+	width:500px;
+}
+div#iki{
+	position:relative;
+	float:right;
+	width:500px;
+}
+img{
+	position:absolute;
+}
+.resimbir{
+	clip-path:inset(150px 10px 90px 5px); /* 1. Parametre : Üst, 2. Parametre : Sağ, 3. Parametre : Alt, 4. Parametre : Sol */
+}
+.resimiki{
+	clip-path:inset(150px 10px 90px 5px); /* 1. Parametre : Üst, 2. Parametre : Sağ, 3. Parametre : Alt, 4. Parametre : Sol */
+}

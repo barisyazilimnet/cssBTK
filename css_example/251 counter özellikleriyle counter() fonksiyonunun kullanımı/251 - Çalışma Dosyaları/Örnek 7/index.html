@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	counter-reset			:	Bir yada daha fazla sayaç oluşturmak veya sıfırlamak için kullanılır.
+	counter-increment		:	Bir yada daha fazla sayacın değerini arttırmak için kullanılır.
+	counter()				:	Oluşturulmuş olan sayacın değerini HTML elementine eklemek için kullanılır.
+	counter() parametreleri	:	counter name (sayaç adı) | style-type
+	style-type değerleri	:	decimal | decimal-leading-zero | lower-alpha | upper-alpha | lower-roman | upper-roman
+	decimal					:	Ondalık sayı.
+	decimal-leading-zero	:	Ondalık sayı. (Tek haneli sayılara 0 takısı eklenir.)
+	lower-alpha				:	Küçük harf.
+	upper-alpha				:	Büyük harf.
+	lower-roman				:	Küçük harfli roma rakamı.
+	upper-roman				:	Büyük harfli roma rakamı.	*/
+	div{
+		counter-reset:Sayac;
+	}
+	p::before{
+		counter-increment:Sayac;
+		content:counter(Sayac) " : ";
+	}
+</style>
+</head>
+
+<body>
+<h3>Extra Eğitim</h3>
+<div>
+	<p>A'dan Z'ye HTML Görsel Eğitim Seti</p>
+	<p>A'dan Z'ye CSS Görsel Eğitim Seti</p>
+	<p>A'dan Z'ye JS Görsel Eğitim Seti</p>
+	<p>A'dan Z'ye PHP Görsel Eğitim Seti</p>
+</div>
+<div>
+	<p>A'dan Z'ye HTML Görsel Eğitim Seti</p>
+	<p>A'dan Z'ye CSS Görsel Eğitim Seti</p>
+	<p>A'dan Z'ye JS Görsel Eğitim Seti</p>
+	<p>A'dan Z'ye PHP Görsel Eğitim Seti</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	animation-duration	:	HTML elementine tanımlanmış olan animasyon döngüsünün, kaç saniye veya kaç milisaniye sonunda tamamlanacağını belirler.
+	Değerler			:	time | initial
+	time				:	Zaman. (Saniye : s, Milisaniye : ms)
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:100px;
+		height:100px;
+		margin:100px auto;
+		background-color:yellow;
+		border:1px solid grey;
+		-webkit-border-radius:5px 50%;
+		-moz-border-radius:5px 50%;
+		-o-border-radius:5px 50%;
+		-ms-border-radius:5px 50%;
+		border-radius:5px 50%;
+		-webkit-animation-name:VolkanAlakent;
+		-moz-animation-name:VolkanAlakent;
+		-o-animation-name:VolkanAlakent;
+		-ms-animation-name:VolkanAlakent;
+		animation-name:VolkanAlakent;
+		-webkit-animation-duration:5000ms;
+		-moz-animation-duration:5000ms;
+		-o-animation-duration:5000ms;
+		-ms-animation-duration:5000ms;
+		animation-duration:5000ms;
+	}
+	@keyframes VolkanAlakent{
+		from{
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			transform:rotate(0deg);
+		}
+		to{
+			-webkit-transform:rotate(3600deg);
+			-moz-transform:rotate(3600deg);
+			-o-transform:rotate(3600deg);
+			-ms-transform:rotate(3600deg);
+			transform:rotate(3600deg);
+		}
+	}
+</style>
+</head>
+
+<body>
+<div></div>
+</body>
+</html>

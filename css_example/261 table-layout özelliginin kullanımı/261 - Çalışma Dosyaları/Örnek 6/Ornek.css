@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	table-layout	:	HTML'in table (tablo) elementinde bulunan sütunların genişlikleri için düzen algoritması özelliklerini belirler.
+Değerler			:	auto | fixed | initial
+auto				:	Otomatik değer alır.
+fixed				:	Sabit.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+table{
+	border:2px solid red;
+	width:100%;
+	white-space:nowrap;
+	table-layout:auto;
+}
+td{
+	border:2px solid blue;
+}
+#Bir{
+	width:10%;
+}
+#Iki{
+	width:90%;
+}

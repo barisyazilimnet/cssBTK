@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*	content		:	before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır.
+Değerler		:	normal | none | string | open-quote | close-quote | no-open-quote | no-close-quote | url | attr | counter | initial
+normal			:	Normal.
+none			:	Değer yok.
+string			:	İçeriğe yeni bir dize ekler.
+open-quote		:	İçeriğe açılış tırnak işareti ekler.
+close-quote		:	İçeriğe kapanış tırnak işareti ekler.
+no-open-quote	:	İçeriğin açılış tırnak işaretini kaldırır.
+no-close-quote	:	İçeriğin kapanış tırnak işaretini kaldırır.
+url				:	İçeriğe medya dosyası ekler.
+attr			:	İçeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler.
+counter			:	Belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek değerini ekler.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div::before{
+	content:"Extra Eğitim - ";
+}
+div::after{
+	content:" - A'dan Z'ye CSS Görsel Eğitim Seti";
+}

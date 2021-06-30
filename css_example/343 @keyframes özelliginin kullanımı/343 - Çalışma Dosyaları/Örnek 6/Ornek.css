@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*	@keyframes	:	HTML elementine tanımlanmış olan animasyonun, animasyon sırasındaki ara aşamalarını belirler.
+Değerler		:	from | to | %
+from			:	Başlangıç.
+to				:	Bitiş.
+%				:	Yüzde değeri.	*/
+div{
+	position:relative;
+	width:100px;
+	height:100px;
+	border:4px double grey;
+	margin:200px;
+	background-color:#4515E5;
+	-webkit-animation:ExtraEgitim 5s ease 0s infinite normal none running; 
+	-moz-animation:ExtraEgitim 5s ease 0s infinite normal none running; 
+	-o-animation:ExtraEgitim 5s ease 0s infinite normal none running; 
+	-ms-animation:ExtraEgitim 5s ease 0s infinite normal none running; 
+	animation:ExtraEgitim 5s ease 0s infinite normal none running;
+}
+@keyframes ExtraEgitim{
+	25%{
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+		-o-transform:rotate(90deg);
+		-ms-transform:rotate(90deg);
+		transform:rotate(90deg);
+	}
+	50%{
+		-webkit-transform:skewX(45deg);
+		-moz-transform:skewX(45deg);
+		-o-transform:skewX(45deg);
+		-ms-transform:skewX(45deg);
+		transform:skewX(45deg);	
+		background-color:black;
+	}
+	75%{
+		-webkit-transform:scale(2);
+		-moz-transform:scale(2);
+		-o-transform:scale(2);
+		-ms-transform:scale(2);
+		transform:scale(2);
+	}
+	100%{
+		-webkit-transform:skewX(0deg);
+		-moz-transform:skewX(0deg);
+		-o-transform:skewX(0deg);
+		-ms-transform:skewX(0deg);
+		transform:skewX(0deg);
+		background-color:#4515E5;
+	}
+}

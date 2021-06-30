@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	list-style-position	:	Listedeki madde işaretçisinin içerik akışındaki konum özelliklerini belirler.
+Değerler				:	outside | inside | initial | inherit
+outside					:	Dışında.
+inside					:	İçinde.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+ul{
+	list-style-position:inside;
+}
+.Sinif{
+	list-style-position:initial;
+}
+#IcElement{
+	list-style-position:inherit; /* list-style-position:inside; */
+}

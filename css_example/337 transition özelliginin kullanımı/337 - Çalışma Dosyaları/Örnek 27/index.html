@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transition					:	HTML elementinin tüm geçiş özelliklerini belirler.
+	Parametreler				:	transition-property | transition-duration | transition-timing-function | transition-delay
+	Varsayılan Değer			:	all 0s ease 0s
+	Değerler					:	property value (özellik değeri) | initial
+	transition-property			:	CSS özellik adı.
+	transition-duration			:	Geçiş süresi.
+	transition-timing-function	:	Hız eğrisi.
+	transition-delay			:	Duraksama süresi.
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	body{
+		margin:50px;
+	}
+	#KisiKartiAlani{
+		position:relative;
+		cursor:pointer;
+		width:150px;
+		height:150px;
+		-webkit-perspective:600px;
+		-moz-perspective:600px;
+		-o-perspective:600px;
+		-ms-perspective:600px;
+		perspective:600px;
+	}
+	#KisiKarti{
+		position:absolute;
+		width:100%;
+		height:100%;
+		-webkit-transform-style:preserve-3d;
+		-moz-transform-style:preserve-3d;
+		-o-transform-style:preserve-3d;
+		-ms-transform-style:preserve-3d;
+		transform-style:preserve-3d;
+		-webkit-transition:all 1s linear;
+		-moz-transition:all 1s linear;
+		-o-transition:all 1s linear;
+		-ms-transition:all 1s linear;
+		transition:all 1s linear;
+	}
+	#KisiKarti:hover{
+		-webkit-transform:rotateY(180deg);
+		-moz-transform:rotateY(180deg);
+		-o-transform:rotateY(180deg);
+		-ms-transform:rotateY(180deg);
+		transform:rotateY(180deg);
+	}
+	.OnYuz{
+		position:absolute;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		-webkit-border-radius:8px;
+		-moz-border-radius:8px;
+		-o-border-radius:8px;
+		-ms-border-radius:8px;
+		border-radius:8px;
+		-webkit-backface-visibility:hidden;
+		-moz-backface-visibility:hidden;
+		-o-backface-visibility:hidden;
+		-ms-backface-visibility:hidden;
+		backface-visibility:hidden;
+	}
+	.ArkaYuz{
+		position:absolute;
+		line-height:150px;
+		text-align:center;
+		background-color:grey;
+		font-size:20px;
+		color:white;
+		-webkit-transform:rotateY(180deg);
+		-moz-transform:rotateY(180deg);
+		-o-transform:rotateY(180deg);
+		-ms-transform:rotateY(180deg);
+		transform:rotateY(180deg);
+	}
+</style>
+</head>
+
+<body>
+<div id="KisiKartiAlani">
+	<div id="KisiKarti">
+		<div class="OnYuz"><img src="Resim.jpg" width="150" height="150" alt="" title=""></div>
+		<div class="OnYuz ArkaYuz">Volkan Alakent</div>
+	</div>
+</div>
+</body>
+</html>

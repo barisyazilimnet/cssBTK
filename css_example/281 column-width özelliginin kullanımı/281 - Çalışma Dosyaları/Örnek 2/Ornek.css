@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*	column-width	:	HTML elementinin çok sütunlu düzeni için bölünmesi gereken sütunların genişliğini belirler.
+Değerler			:	auto | length | initial | inherit
+auto				:	Otomatik değer alır.
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-column-width:auto;
+	-moz-column-width:auto;
+	-o-column-width:auto;
+	-ms-column-width:auto;
+	column-width:auto;
+}

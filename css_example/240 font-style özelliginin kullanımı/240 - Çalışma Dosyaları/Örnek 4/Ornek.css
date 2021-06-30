@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*	font-style	:	Metnin yazı tipi stilini belirler.
+Değerler		:	normal | italic | oblique | initial | inherit
+normal			:	Normal.
+italic			:	İtalik.
+oblique			:	Eğik.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	font-style:italic;
+}

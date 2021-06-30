@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	caption-side	:	HTML'in table (tablo) elementinde bulunan başlık elementinin konum özelliklerini belirler.
+	Değerler		:	top | bottom | initial | inherit
+	top				:	Üstte.
+	bottom			:	Altta.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	table#AnaTablo{
+		border:2px solid red;
+		width:500px;
+		caption-side:bottom;
+	}
+	td{
+		border:2px solid red;
+	}
+	table#IcTablo{
+		border:2px solid blue;
+		width:300px;
+		caption-side:initial;
+	}
+</style>
+</head>
+
+<body>
+<table id="AnaTablo">
+	<caption>Extra Eğitim - Eğitmenleri</caption>
+	<tr>
+		<td>Volkan</td>
+		<td>Alakent</td>
+		<td><table id="IcTablo" style="caption-side:inherit;">
+			<caption>Extra Eğitim - Eğitmenleri</caption>
+			<tr>
+				<td>Hakan</td>
+				<td>Alakent</td>
+				<td></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+</body>
+</html>

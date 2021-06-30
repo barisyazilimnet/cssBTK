@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	text-orientation	:	Metnin writing-mode özelliği ile belirtilmiş hizalama yönü özelliğinin döndürme durumunu belirler.
+	Değerler			:	mixed | upright | initial | inherit
+	mixed				:	Karışık.
+	upright				:	Dik.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		width:200px;
+		height:250px;
+		border:thin solid red;
+		-webkit-writing-mode:vertical-lr;
+		-moz-writing-mode:vertical-lr;
+		-o-writing-mode:vertical-lr;
+		-ms-writing-mode:vertical-lr;
+		writing-mode:vertical-lr;
+		-webkit-text-orientation:upright;
+		-moz-text-orientation:upright;
+		-o-text-orientation:upright;
+		-ms-text-orientation:upright;
+		text-orientation:upright;
+	}
+	#Deger{
+		-webkit-text-orientation:initial;
+		-moz-text-orientation:initial;
+		-o-text-orientation:initial;
+		-ms-text-orientation:initial;
+		text-orientation:initial;
+	}
+</style>
+</head>
+
+<body>
+<div>Extra Eğitim</div><br />
+<div id="Deger">Extra Eğitim</div><br />
+<div>Extra Eğitim</div><br />
+</body>
+</html>

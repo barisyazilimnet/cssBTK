@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	box-shadow	:	HTML elementinin gölgelendirme özelliklerini belirler.
+Parametreler	:	horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | blur spread (bulanıklık yayma) | spread radius (yayma yarıçapı) | color (renk)
+Değerler		:	none | length | inset | initial
+none			:	Değer yok.
+length			:	Uzunluk değeri.
+inset			:	İlave. (İçerisinde.)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:200px;
+	height:auto;
+	padding:25px;
+	border:2px solid black;
+	-webkit-box-shadow:5px 5px;
+	-moz-box-shadow:5px 5px;
+	-o-box-shadow:5px 5px;
+	-ms-box-shadow:5px 5px;
+	box-shadow:5px 5px;
+}

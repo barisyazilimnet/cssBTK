@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*	position	:	HTML elementinin konumlandırma özelliklerini belirler.
+Değerler		:	static | relative | absolute | fixed | sticky | initial | inherit
+static			:	Durağan.
+relative		:	Göreceli.
+absolute		:	Mutlak / Kesin.
+fixed			:	Sabit.
+sticky			:	Yapışkan.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.
+
+top				:	Konumlandırılmış bir HTML elementinin, üstten hizalama konumunu belirler.
+right			:	Konumlandırılmış bir HTML elementinin, sağdan hizalama konumunu belirler.
+bottom			:	Konumlandırılmış bir HTML elementinin, alttan hizalama konumunu belirler.
+left			:	Konumlandırılmış bir HTML elementinin, soldan hizalama konumunu belirler.
+Değerler		:	auto | length | initial
+auto			:	Otomatik değer alır.
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+img{
+	position:fixed;
+	top:-webkit-calc(50% - 44.5px);
+	top:-moz-calc(50% - 44.5px);
+	top:-o-calc(50% - 44.5px);
+	top:-ms-calc(50% - 44.5px);
+	top:calc(50% - 44.5px);
+	left:-webkit-calc(50% - 25px);
+	left:-moz-calc(50% - 25px);
+	left:-o-calc(50% - 25px);
+	left:-ms-calc(50% - 25px);
+	left:calc(50% - 25px);
+}

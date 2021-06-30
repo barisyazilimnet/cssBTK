@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	animation-play-state	:	HTML elementine tanımlanmış olan animasyonun çalışığ çalışmadığınız veya duraklatılmış olup olmadığını belirler.
+	Değerler				:	running | paused | initial
+	running					:	Çalışır.
+	paused					:	Duraklatılmış.
+	initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:100px;
+		height:50px;
+		background-color:red;
+		-webkit-animation-name:ExtraEgitim;
+		-moz-animation-name:ExtraEgitim;
+		-o-animation-name:ExtraEgitim;
+		-ms-animation-name:ExtraEgitim;
+		animation-name:ExtraEgitim;
+		-webkit-animation-duration:3s;
+		-moz-animation-duration:3s;
+		-o-animation-duration:3s;
+		-ms-animation-duration:3s;
+		animation-duration:3s;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		animation-iteration-count:infinite;
+		-webkit-animation-play-state:running;
+		-moz-animation-play-state:running;
+		-o-animation-play-state:running;
+		-ms-animation-play-state:running;
+		animation-play-state:running;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			width:100px;
+			height:50px;
+		}
+		to{
+			width:1500px;
+			height:200px;
+		}
+	}
+</style>
+</head>
+
+<body>
+<div></div>
+</body>
+</html>

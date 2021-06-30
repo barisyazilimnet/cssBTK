@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*	transform	:	HTML elementinin 2D veya 3D dönüştürme özelliklerini belirler.
+Değerler		:	none | translate() | translate3d() | translateX() | translateY() | translateZ() | skew() | skewX() | skewY() | scale() | scale3d() | scaleX() | scaleY() | scaleZ()
+					rotate() | rotate3d() | rotateX() | rotateY() | rotateZ() | perspective() | matrix() | matrix3d() | initial
+none			:	Değer yok.
+translate()		:	HTML elementinin x ve y ekseni doğrultusunda konumunu değiştirir.
+translate3d()	:	HTML elementinin x, y ve z ekseni doğrultusunda konumunu değiştirir.
+translateX()	:	HTML elementinin x ekseni doğrultusunda konumunu değiştirir.
+translateY()	:	HTML elementinin y ekseni doğrultusunda konumunu değiştirir.
+translateZ()	:	HTML elementinin z ekseni doğrultusunda konumunu değiştirir.
+skew()			:	HTML elementini x ve y ekseni doğrultusunda eğer.
+skewX()			:	HTML elementini x ekseni doğrultusunda eğer.
+skewY()			:	HTML elementini y ekseni doğrultusunda eğer.
+scale()			:	HTML elementini x ve y ekseni doğrultusunda boyutunu değiştirir.
+scale3d()		:	HTML elementini x, y ve z ekseni doğrultusunda boyutunu değiştirir.
+scaleX()		:	HTML elementini x ekseni doğrultusunda boyutunu değiştirir.
+scaleY()		:	HTML elementini y ekseni doğrultusunda boyutunu değiştirir.
+scaleZ()		:	HTML elementini z ekseni doğrultusunda boyutunu değiştirir.
+rotate()		:	HTML elementini saat yönü doğrultusunda döndürür.
+rotate3d()		:	HTML elementini x, y ve z ekseni doğrultusunda döndürür.
+rotateX()		:	HTML elementini x ekseni doğrultusunda döndürür.
+rotateY()		:	HTML elementini y ekseni doğrultusunda döndürür.
+rotateZ()		:	HTML elementini z ekseni doğrultusunda döndürür.
+perspective()	:	HTML elementinin perspektif görünüşünü belirler.
+matrix()		:	HTML elementine 6 farklı dönüşüm özelliği belirler. (scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+matrix3d()		:	HTML elementine 4x4 dönüşüm özelliği belirler. (https://codepen.io/fta/pen/ifnqH)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div#Normal{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:blue;
+	color:white;
+}
+div#Islem1{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 10deg);
+	-moz-transform:rotate3d(1, 0, 0, 10deg);
+	-o-transform:rotate3d(1, 0, 0, 10deg);
+	-ms-transform:rotate3d(1, 0, 0, 10deg);
+	transform:rotate3d(1, 0, 0, 10deg);
+}
+div#Islem2{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 20deg);
+	-moz-transform:rotate3d(1, 0, 0, 20deg);
+	-o-transform:rotate3d(1, 0, 0, 20deg);
+	-ms-transform:rotate3d(1, 0, 0, 20deg);
+	transform:rotate3d(1, 0, 0, 20deg);
+}
+div#Islem3{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 30deg);
+	-moz-transform:rotate3d(1, 0, 0, 30deg);
+	-o-transform:rotate3d(1, 0, 0, 30deg);
+	-ms-transform:rotate3d(1, 0, 0, 30deg);
+	transform:rotate3d(1, 0, 0, 30deg);
+}
+div#Islem4{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 40deg);
+	-moz-transform:rotate3d(1, 0, 0, 40deg);
+	-o-transform:rotate3d(1, 0, 0, 40deg);
+	-ms-transform:rotate3d(1, 0, 0, 40deg);
+	transform:rotate3d(1, 0, 0, 40deg);
+}
+div#Islem5{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 50deg);
+	-moz-transform:rotate3d(1, 0, 0, 50deg);
+	-o-transform:rotate3d(1, 0, 0, 50deg);
+	-ms-transform:rotate3d(1, 0, 0, 50deg);
+	transform:rotate3d(1, 0, 0, 50deg);
+}
+div#Islem6{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 60deg);
+	-moz-transform:rotate3d(1, 0, 0, 60deg);
+	-o-transform:rotate3d(1, 0, 0, 60deg);
+	-ms-transform:rotate3d(1, 0, 0, 60deg);
+	transform:rotate3d(1, 0, 0, 60deg);
+}
+div#Islem7{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 70deg);
+	-moz-transform:rotate3d(1, 0, 0, 70deg);
+	-o-transform:rotate3d(1, 0, 0, 70deg);
+	-ms-transform:rotate3d(1, 0, 0, 70deg);
+	transform:rotate3d(1, 0, 0, 70deg);
+}
+div#Islem8{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 80deg);
+	-moz-transform:rotate3d(1, 0, 0, 80deg);
+	-o-transform:rotate3d(1, 0, 0, 80deg);
+	-ms-transform:rotate3d(1, 0, 0, 80deg);
+	transform:rotate3d(1, 0, 0, 80deg);
+}
+div#Islem9{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 90deg);
+	-moz-transform:rotate3d(1, 0, 0, 90deg);
+	-o-transform:rotate3d(1, 0, 0, 90deg);
+	-ms-transform:rotate3d(1, 0, 0, 90deg);
+	transform:rotate3d(1, 0, 0, 90deg);
+}
+div#Islem10{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 100deg);
+	-moz-transform:rotate3d(1, 0, 0, 100deg);
+	-o-transform:rotate3d(1, 0, 0, 100deg);
+	-ms-transform:rotate3d(1, 0, 0, 100deg);
+	transform:rotate3d(1, 0, 0, 100deg);
+}
+div#Islem11{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 110deg);
+	-moz-transform:rotate3d(1, 0, 0, 110deg);
+	-o-transform:rotate3d(1, 0, 0, 110deg);
+	-ms-transform:rotate3d(1, 0, 0, 110deg);
+	transform:rotate3d(1, 0, 0, 110deg);
+}
+div#Islem12{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 120deg);
+	-moz-transform:rotate3d(1, 0, 0, 120deg);
+	-o-transform:rotate3d(1, 0, 0, 120deg);
+	-ms-transform:rotate3d(1, 0, 0, 120deg);
+	transform:rotate3d(1, 0, 0, 120deg);
+}
+div#Islem13{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 130deg);
+	-moz-transform:rotate3d(1, 0, 0, 130deg);
+	-o-transform:rotate3d(1, 0, 0, 130deg);
+	-ms-transform:rotate3d(1, 0, 0, 130deg);
+	transform:rotate3d(1, 0, 0, 130deg);
+}
+div#Islem14{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 140deg);
+	-moz-transform:rotate3d(1, 0, 0, 140deg);
+	-o-transform:rotate3d(1, 0, 0, 140deg);
+	-ms-transform:rotate3d(1, 0, 0, 140deg);
+	transform:rotate3d(1, 0, 0, 140deg);
+}
+div#Islem15{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 150deg);
+	-moz-transform:rotate3d(1, 0, 0, 150deg);
+	-o-transform:rotate3d(1, 0, 0, 150deg);
+	-ms-transform:rotate3d(1, 0, 0, 150deg);
+	transform:rotate3d(1, 0, 0, 150deg);
+}
+div#Islem16{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 160deg);
+	-moz-transform:rotate3d(1, 0, 0, 160deg);
+	-o-transform:rotate3d(1, 0, 0, 160deg);
+	-ms-transform:rotate3d(1, 0, 0, 160deg);
+	transform:rotate3d(1, 0, 0, 160deg);
+}
+div#Islem17{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 170deg);
+	-moz-transform:rotate3d(1, 0, 0, 170deg);
+	-o-transform:rotate3d(1, 0, 0, 170deg);
+	-ms-transform:rotate3d(1, 0, 0, 170deg);
+	transform:rotate3d(1, 0, 0, 170deg);
+}
+div#Islem18{
+	width:87px;
+	height:87px;
+	padding:10px;
+	background-color:red;
+	color:white;
+	-webkit-transform:rotate3d(1, 0, 0, 180deg);
+	-moz-transform:rotate3d(1, 0, 0, 180deg);
+	-o-transform:rotate3d(1, 0, 0, 180deg);
+	-ms-transform:rotate3d(1, 0, 0, 180deg);
+	transform:rotate3d(1, 0, 0, 180deg);
+}

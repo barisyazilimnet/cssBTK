@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	flex-basis	:	Esnek kutu içerisindeki element veya elementlerin başlangıç uzunluğu değerlerini belirler.
+Değerler		:	auto | number | initial
+auto			:	Otomatik değer alır.
+number			:	Rakam.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	width:500px;
+	height:100px;
+	border:1px solid grey;
+}
+.IcElemanlar{
+	border:1px solid grey;
+	-webkit-flex-basis:auto;
+	-moz-flex-basis:auto;
+	-o-flex-basis:auto;
+	-ms-flex-basis:auto;
+	flex-basis:auto;
+}

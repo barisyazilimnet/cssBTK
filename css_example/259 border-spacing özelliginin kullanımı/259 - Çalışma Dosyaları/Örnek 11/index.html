@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	border-spacing	:	HTML'in table (tablo) elementinde bulunan bitişik hücrelerin arasındaki mesafeyi belirler.
+	Değerler		:	length | initial | inherit
+	length			:	Uzunluk değeri.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	table#BirinciTablo{
+		border:2px solid red;
+		border-spacing:50px 50px;
+	}
+	th, td{
+		border:2px solid red;
+	}
+	table#IkinciTablo{
+		border-spacing:inherit; /* border-spacing:50px 50px; */
+	}
+</style>
+</head>
+
+<body>
+<table id="BirinciTablo">
+	<tr>
+		<th>İsim</th>
+		<th>Soyisim</th>
+		<th>Dersler</th>
+	</tr>
+	<tr>
+		<td>Volkan</td>
+		<td>Alakent</td>
+		<td><table id="IkinciTablo">
+			<tr>
+				<td>HTML</td>
+				<td>CSS</td>
+				<td>JS</td>
+				<td>PHP</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*	flex-flow		:	Esnek kutuların dizilim yönü ve satır kırılma özelliklerini belirler.
+Parametreler		:	flex-direction | flex-wrap
+Değerler			:	row & row-reverse & column & column-reverse | nowrap & wrap & wrap-reverse | initial
+row					:	Satır.
+row-reverse			:	Ters satır.
+column				:	Sütun.
+column-reverse		:	Ters sütun.
+nowrap				:	Kırılma yok.
+wrap				:	Kırılma.
+wrap-reverse		:	Ters kırılma.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	border:1px solid red;
+	width:300px;
+	height:400px;
+	-webkit-flex-flow:wrap;
+	-moz-flex-flow:wrap;
+	-o-flex-flow:wrap;
+	-ms-flex-flow:wrap;
+	flex-flow:wrap;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	width:50px;
+	height:50px;
+}

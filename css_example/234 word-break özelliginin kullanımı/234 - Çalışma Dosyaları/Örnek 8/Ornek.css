@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	word-break	:	HTML elementinin boyutlandırılmış alanının sonuna sığmayacak kadar büyük kelimelerin satır kırılma özelliklerini belirler.
+Değerler		:	normal | break-all | keep-all | initial | inherit
+normal			:	Normal.
+break-all		:	Kelimeyi harflerden kırar.
+keep-all		:	Kelimeyi boşluklardan kırar.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	width:275px;
+	border:thin solid red;
+	word-break:break-all;
+}
+#Deneme{
+	word-break:initial;
+}

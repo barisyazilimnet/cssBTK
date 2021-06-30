@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	animation-name	:	HTML elementine atanmış olan animasyonun, @keyframes özelliği için isim tanımlamasını belirler.
+	Değerler		:	none | keyframes name | initial
+	none			:	Değer yok.
+	keyframes name	:	Animasyon aşamaları adı.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		width:100px;
+		height:100px;
+		background-color:red;
+		-webkit-animation:5s;
+		-moz-animation:5s;
+		-o-animation:5s;
+		-ms-animation:5s;
+		animation:5s;
+		-webkit-animation-name:ExtraEgitim;
+		-moz-animation-name:ExtraEgitim;
+		-o-animation-name:ExtraEgitim;
+		-ms-animation-name:ExtraEgitim;
+		animation-name:ExtraEgitim;
+	}
+	@keyframes ExtraEgitim{
+		0%{
+			width:100px;
+		}
+		25%{
+			width:500px;
+		}
+		35%{
+			width:300px;
+		}
+		65%{
+			width:1000px;
+		}
+		80%{
+			width:0px;
+		}
+		100%{
+			width:100px;
+		}
+	}
+</style>
+</head>
+
+<body>
+<div></div><br />
+<div style="-webkit-animation-name:initial; -moz-animation-name:initial; -o-animation-name:initial; -ms-animation-name:initial; animation-name:initial;"></div><br />
+<div></div>
+</body>
+</html>

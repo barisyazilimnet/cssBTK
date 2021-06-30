@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	grid		:	Izgara düzeni içerisindeki element veya elementler için, gelişmiş tüm satır ve sütun işlemlerinin yanı sıra alan yerleştirme özelliklerini belirler.
+Parametreler	:	grid-template-rows | grid-template-columns | grid-template-areas
+Parametreler	:	grid-template-rows | [grid-auto-flow] grid-template-columns
+Parametreler	:	[grid-auto-flow] grid-template-rows | grid-template-columns
+Değerler		:	none | initial
+none			:	Değer yok.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid red;
+	padding:10px;
+	grid:50px 60px 70px 80px / auto auto auto auto auto;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:5px;
+}

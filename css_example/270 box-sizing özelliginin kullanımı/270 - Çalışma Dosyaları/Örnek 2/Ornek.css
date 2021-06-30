@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*	box-sizing	:	HTML elementinin genişlik ve yükseklik değerlerinin ne şekilde hasaplanması gerektiğini belirler.
+Değerler		:	content-box | border-box | initial | inherit
+content-box		:	İçerik kutusu.
+border-box		:	Kenarlık kutusu.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:500px;
+	height:300px;
+	border:10px solid red;
+	padding:50px;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-o-box-sizing:content-box;
+	-ms-box-sizing:content-box;
+	box-sizing:content-box;
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*	transition-property	:	HTML elementine tanımlanmış olan geçiş özelliği için, kullanılması gereken CSS'de tanımlı olan özellik adını belirler.
+Değerler				:	all | property | initial
+all						:	Hepsi.
+property				:	Özellik.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:100px;
+	margin:100px;
+	background-color:grey;
+	border:1px solid black;
+	-webkit-transition:5s;
+	-moz-transition:5s;
+	-o-transition:5s;
+	-ms-transition:5s;
+	transition:5s;
+	-webkit-transition-property:transform;
+	-moz-transition-property:transform;
+	-o-transition-property:transform;
+	-ms-transition-property:transform;
+	transition-property:transform;
+}
+div:hover{
+	-webkit-transform:rotate(1800deg);
+	-moz-transform:rotate(1800deg);
+	-o-transform:rotate(1800deg);
+	-ms-transform:rotate(1800deg);
+	transform:rotate(1800deg);
+}
+#Islem{
+	-webkit-transition-property:initial;
+	-moz-transition-property:initial;
+	-o-transition-property:initial;
+	-ms-transition-property:initial;
+	transition-property:initial;
+}

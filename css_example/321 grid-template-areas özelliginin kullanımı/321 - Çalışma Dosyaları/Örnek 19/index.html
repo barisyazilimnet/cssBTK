@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-template-areas	:	Izgara düzeni içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler.
+	Değerler			:	none | area name
+	none				:	Değer yok.
+	area name			:	Alan adı.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid red;
+		grid-gap:10px;
+		grid-template-areas:"ExtraEgitim1 ExtraEgitim1 . . . ExtraEgitim2 ExtraEgitim2 ExtraEgitim2 ExtraEgitim2 ExtraEgitim2";
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+		
+	}
+	.Islem1{
+		grid-area:ExtraEgitim1;
+	}
+	.Islem2{
+		grid-area:ExtraEgitim2;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar Islem1">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar Islem2">15</div>
+	<div class="IcElemanlar">16</div>
+	<div class="IcElemanlar">17</div>
+	<div class="IcElemanlar">18</div>
+	<div class="IcElemanlar">19</div>
+	<div class="IcElemanlar">20</div>
+</div>
+</body>
+</html>

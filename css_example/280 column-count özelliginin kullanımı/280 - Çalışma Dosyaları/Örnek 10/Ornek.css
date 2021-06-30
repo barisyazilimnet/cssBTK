@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*	column-count	:	HTML elementinin çok sütunlu düzeni için bölünmesi gereken sütun sayısı özelliğini belirler.
+Değerler			:	number | auto | initial | inherit
+number				:	Rakam değeri.
+auto				:	Otomatik değer alır.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	border:2px solid red;
+	padding:10px;
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	-o-column-count:2;
+	-ms-column-count:2;
+	column-count:2;
+}
+#Ornek{
+	-webkit-column-count:inherit; /* -webkit-column-count:2; */
+	-moz-column-count:inherit; /* -moz-column-count:2; */
+	-o-column-count:inherit; /* -o-column-count:2; */
+	-ms-column-count:inherit; /* -ms-column-count:2; */
+	column-count:inherit; /* column-count:2; */
+}

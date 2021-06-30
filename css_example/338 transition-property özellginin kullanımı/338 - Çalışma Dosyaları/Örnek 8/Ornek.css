@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*	transition-property	:	HTML elementine tanımlanmış olan geçiş özelliği için, kullanılması gereken CSS'de tanımlı olan özellik adını belirler.
+Değerler				:	all | property | initial
+all						:	Hepsi.
+property				:	Özellik.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:100px;
+	background-color:grey;
+	border:1px solid black;
+	-webkit-transition:5s, 2s;
+	-moz-transition:5s, 2s;
+	-o-transition:5s, 2s;
+	-ms-transition:5s, 2s;
+	transition:5s, 2s;
+	-webkit-transition-property:width, height;
+	-moz-transition-property:width, height;
+	-o-transition-property:width, height;
+	-ms-transition-property:width, height;
+	transition-property:width, height;
+}
+div:hover{
+	width:1000px;
+	height:600px;
+}

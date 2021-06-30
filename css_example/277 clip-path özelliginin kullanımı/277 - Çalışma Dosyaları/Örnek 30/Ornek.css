@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	clip-path	:	absolute (mutlak / kesin) değeri ile konumlandırılmış bir HTML elementinin gelişmiş kırpma / maskeleme özelliklerini belirler.
+Değerler		:	auto | shape | initial
+auto			:	Otomatik değer alır.
+shape			:	Şekil.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+Shape değerleri	:	inset | circle | ellipse | polygon
+inset			:	İlave.
+circle			:	Daire.
+ellipse			:	Elips.
+polygon			:	Poligon.	*/
+img{
+	position:absolute;
+	clip-path:polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); /* (Path (yol) / Doldurma Kuralı) (Yatay pozisyon | Dikey pozisyon) */
+}

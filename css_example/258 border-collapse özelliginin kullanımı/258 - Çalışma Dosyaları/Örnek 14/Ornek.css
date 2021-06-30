@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	border-collapse	:	HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+Değerler			:	separate | collapse | initial | inherit
+separate			:	Ayrı kenarlık / çerçeve.
+collapse			:	Bitişik kenarlık / çerçeve.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+table#AnaTablo{
+	border:2px solid red;
+	border-collapse:collapse;
+}
+th, td.AnaTabloSutunu{
+	border:2px solid red;
+}
+td.IcTabloSutunu{
+	border:2px dashed blue;
+}
+table#IcTablo1, table#IcTablo2{
+	border:2px dashed blue;
+	border-collapse:inherit; /* border-collapse:collapse; */
+}

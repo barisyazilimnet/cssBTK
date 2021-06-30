@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*	justify-content	:	Esnek kutu içerisinde bulunan elementler tüm alanı kaplamadığında, elementlerin arasındaki hizalama özelliklerini belirler.
+Değerler			:	flex-start | flex-end | center | space-between | space-around | initial
+flex-start			:	Esnek başlangıç.
+flex-end			:	Esnek bitiş.
+center				:	Orta.
+space-between		:	Boşluk arasında.
+space-around		:	Boşluk etrafında.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:flex;
+	border:1px solid red;
+	width:1500px;
+	height:50px;
+	-webkit-justify-content:flex-end;
+	-moz-justify-content:flex-end;
+	-o-justify-content:flex-end;
+	-ms-justify-content:flex-end;
+	justify-content:flex-end;
+}
+.Elemanlar{
+	border:1px solid blue;
+	width:100px;
+}

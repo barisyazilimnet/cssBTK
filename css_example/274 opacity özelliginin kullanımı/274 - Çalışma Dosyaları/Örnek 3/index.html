@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	opacity		:	HTML elementinin opaklık / şeffaflık özelliklerini belirler.
+	Değerler	:	number | initial
+	number		:	Rakam değeri. (0.0 ila 1.0 arasında) (0.0 en şeffaf değer.) (1.0 şeffaflık yok.)
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	div{
+		border:2px solid black;
+		width:500px;
+		height:100px;
+		background-color:darkblue;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+		filter: Alpha(opacity=60);
+		opacity:0.6;
+	}
+	#Ornek{
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: Alpha(opacity=100);
+		opacity:initial;
+	}
+</style>
+</head>
+
+<body>
+<div>Extra Eğitim - Volkan Alakent</div><br />
+<div id="Ornek">Extra Eğitim - Volkan Alakent</div><br />
+<div>Extra Eğitim - Volkan Alakent</div>
+</body>
+</html>

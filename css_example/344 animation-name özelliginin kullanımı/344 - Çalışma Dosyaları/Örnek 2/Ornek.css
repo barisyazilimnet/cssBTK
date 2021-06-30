@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	animation-name	:	HTML elementine atanmış olan animasyonun, @keyframes özelliği için isim tanımlamasını belirler.
+Değerler			:	none | keyframes name | initial
+none				:	Değer yok.
+keyframes name		:	Animasyon aşamaları adı.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:100px;
+	background-color:red;
+	-webkit-animation:5s;
+	-moz-animation:5s;
+	-o-animation:5s;
+	-ms-animation:5s;
+	animation:5s;
+	-webkit-animation-name:none;
+	-moz-animation-name:none;
+	-o-animation-name:none;
+	-ms-animation-name:none;
+	animation-name:none;
+}
+@keyframes ExtraEgitim{
+	from{
+		width:100px;
+	}
+	to{
+		width:1500px;
+	}
+}

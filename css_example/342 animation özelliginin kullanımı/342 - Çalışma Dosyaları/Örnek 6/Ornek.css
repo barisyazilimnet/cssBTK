@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*	animation		:	HTML elementinin tüm animasyon özelliklerini belirler.
+Parametreler		:	animation-name | animation-duration | animation-timing-function | animation-delay | animation-iteration-count | animation-direction | animation-fill-mode
+						animation-play-state
+Varsayılan Değerler	:	none 0 ease 0 1 normal none running
+Değerler			:	animation value | initial
+animation value		:	Animasyon özelliği değeri / değerleri
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	position:relative;
+	width:100px;
+	height:100px;
+	margin:200px;
+	background-color:red;
+	-webkit-animation:ExtraEgitim 1s linear 0s infinite alternate none running;
+	-moz-animation:ExtraEgitim 1s linear 0s infinite alternate none running;
+	-o-animation:ExtraEgitim 1s linear 0s infinite alternate none running;
+	-ms-animation:ExtraEgitim 1s linear 0s infinite alternate none running;
+	animation:ExtraEgitim 1s linear 0s infinite alternate none running;
+}
+@keyframes ExtraEgitim{
+	from{
+		-webkit-transform:rotate(0deg) scale(1.0);
+		-moz-transform:rotate(0deg) scale(1.0);
+		-o-transform:rotate(0deg) scale(1.0);
+		-ms-transform:rotate(0deg) scale(1.0);
+		transform:rotate(0deg) scale(1.0);
+		background-color:red;
+	}
+	to{
+		-webkit-transform:rotate(180deg) scale(2.5);
+		-moz-transform:rotate(180deg) scale(2.5);
+		-o-transform:rotate(180deg) scale(2.5);
+		-ms-transform:rotate(180deg) scale(2.5);
+		transform:rotate(180deg) scale(2.5);
+		background-color:blue;
+	}
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-auto-flow	:	Izgara düzeni içerisindeki element veya elementler için, otomatik yerleşim algoritması özelliklerini belirler.
+	Değerler		:	row | column | row dense | column dense | initial
+	row				:	Satır.
+	column			:	Sütun.
+	row dense		:	Satır yoğunluğu.
+	column dense	:	Sütun yoğunluğu.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		width:500px;
+		border:1px solid red;
+		padding:10px;
+		grid-template-columns:auto auto auto;
+		grid-template-rows:auto auto auto auto;
+		grid-gap:10px;
+		grid-auto-flow:row;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+</div>
+</body>
+</html>

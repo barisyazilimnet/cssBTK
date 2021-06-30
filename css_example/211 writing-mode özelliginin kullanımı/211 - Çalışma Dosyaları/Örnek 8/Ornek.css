@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*	writing-mode	:	Metnin veya içeriğin hizalama yönü özelliklerini belirler.
+Değerler			:	horizontal-tb | vertical-lr | vertical-rl | initial | inherit
+horizontal-tb		:	Yatay sekme.
+vertical-lr			:	Dikey (Sol).
+vertical-rl			:	Dikey (Sağ).
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:200px;
+	height:150px;
+	border:2px solid red;
+	-webkit-writing-mode:vertical-rl;
+	-moz-writing-mode:vertical-rl;
+	-o-writing-mode:vertical-rl;
+	-ms-writing-mode:vertical-rl;
+	writing-mode:vertical-rl;
+}
+#Alan{
+	-webkit-writing-mode:initial;
+	-moz-writing-mode:initial;
+	-o-writing-mode:initial;
+	-ms-writing-mode:initial;
+	writing-mode:initial;
+}

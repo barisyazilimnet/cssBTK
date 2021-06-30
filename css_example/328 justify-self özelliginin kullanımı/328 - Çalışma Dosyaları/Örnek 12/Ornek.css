@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*	justify-self	:	Izgara içerisinde bulunan ve seçilen element veya elementlerin, yatay hizalama özelliklerini belirler.
+Değerler			:	auto | stretch | center | start | end | initial
+auto				:	Otomatik değer alır.
+stretch				:	Uzat / esne.
+center				:	Orta.
+start				:	Başlangıç.
+end					:	Bitiş.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:1000px;
+	height:300px;
+	border:thin solid red;
+	grid-template-columns:auto auto auto;
+	grid-gap:5px;
+	-webkit-justify-items:center;
+	-moz-justify-items:center;
+	-o-justify-items:center;
+	-ms-justify-items:center;
+	justify-items:center;
+}
+.IcElemanlar{
+	width:200px;
+	border:thin dashed blue;
+}
+.Ornek{
+	-webkit-justify-self:end;
+	-moz-justify-self:end;
+	-o-justify-self:end;
+	-ms-justify-self:end;
+	justify-self:end;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Sedgwick+Ave+Display');
+h3{
+	font-family: 'Sedgwick Ave Display', cursive;
+}
+div{
+	font-family: 'Pacifico', cursive;
+}
+p{
+	font-family: 'Kaushan Script', cursive;	
+}

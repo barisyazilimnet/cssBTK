@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	grid-auto-rows	:	Izgara düzeni içerisindeki element veya elementlerin, oluşturulması gereken satırların varsayılan yüksekliğini belirler.
+Değerler			:	auto | max-content | min-content | length | initial
+auto				:	Otomatik değer alır.
+max-content			:	Maksimum içerik.
+min-content			:	Minimum içerik.
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	border:1px solid red;
+	width:800px;
+	padding:10px;
+	grid-auto-rows:min-content;
+}
+.IcElemanlar{
+	-webkit-writing-mode:vertical-rl;
+	-moz-writing-mode:vertical-rl;
+	-o-writing-mode:vertical-rl;
+	-ms-writing-mode:vertical-rl;
+	writing-mode:vertical-rl;
+	border:1px solid blue;
+	padding:10px;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*	radial-gradient()	:	HTML elementinin dairesel arkaplan renk geçişi özelliklerini belirler.
+Parametreler			:	Shape (Şekil) | Size (Boyut) | Direction (Yön) | Colors (Renkler)
+Değerler				:	Ellipse (elips) & Circle (Daire) | farthest-corner (En uzak köşe) & closest-corner (En yakın köşe) & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece | Başlangıç rengi - bitiş rengi	*/
+body{
+	background:-webkit-radial-gradient(red, yellow, black);
+	background:-moz-radial-gradient(red, yellow, black);
+	background:-o-radial-gradient(red, yellow, black);
+	background:-ms-radial-gradient(red, yellow, black);
+	background:radial-gradient(red, yellow, black);
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*	animation-timing-function	:	HTML elementine tanımlanmış olan animasyon döngüsünün hız eğrisi özelliklerini belirler.
+Değerler						:	ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps() | cubic-bezier() | initial
+ease							:	Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+linear							:	Başlangıçtan sona kadar aynı hız.
+ease-in							:	Yavaş olarak başlayarak sona doğru hızlanır.
+ease-out						:	Hızlı olarak başlayarak sona doğru yavaşlar.
+ease-in-out						:	Yavaş olarak başlayarak ortalarda hızlanır ve sona doğru tekrar yavaşlar.
+step-start						:	Animasyon süresine bakılmaksızın doğrudan sona ulaşır.
+step-end						:	Animasyon süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+steps()							:	Başlangıç ve bitiş arasında adımlamalı animasyon işlemi yapar. (1. Parametre : Adım sayısı, 2. Parametre : end | start)
+cubic-bezier()					:	Bezier eğrisi. (http://cubic-bezier.com)
+initial							:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	width:100px;
+	height:50px;
+	border:1px solid grey;
+	line-height:50px;
+	text-align:center;
+	color:grey;
+	-webkit-animation-name:ExtraEgitim;
+	-moz-animation-name:ExtraEgitim;
+	-o-animation-name:ExtraEgitim;
+	-ms-animation-name:ExtraEgitim;
+	animation-name:ExtraEgitim;
+	-webkit-animation-duration:5s;
+	-moz-animation-duration:5s;
+	-o-animation-duration:5s;
+	-ms-animation-duration:5s;
+	animation-duration:5s;
+	-webkit-animation-timing-function:cubic-bezier(0, 0.79, 0.33, 1.01);
+	-moz-animation-timing-function:cubic-bezier(0, 0.79, 0.33, 1.01);
+	-o-animation-timing-function:cubic-bezier(0, 0.79, 0.33, 1.01);
+	-ms-animation-timing-function:cubic-bezier(0, 0.79, 0.33, 1.01);
+	animation-timing-function:cubic-bezier(0, 0.79, 0.33, 1.01);
+}
+@keyframes ExtraEgitim{
+	from{
+		width:100px;
+	}
+	to{
+		width:1500px;
+	}
+}

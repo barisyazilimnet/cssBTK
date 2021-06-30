@@ -1,0 +1,15 @@
+@charset "utf-8";
+div#Bir{
+	width:1000px;
+	height:200px;
+	border:double;
+	border-color:blue;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+div#Iki{
+	width:1500px;
+	height:500px;
+	border:double;
+	border-color:red;
+}

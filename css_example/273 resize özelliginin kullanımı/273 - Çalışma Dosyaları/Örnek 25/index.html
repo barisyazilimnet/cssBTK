@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	resize		:	HTML elementinin kullanıcı tarafından yeniden boyutlandırılabilir olup olmadığı durumunu belirler.
+	Değerler	:	none | both | horizontal | vertical | initial | inherit
+	none		:	Değer yok.
+	both		:	Her ikiside.
+	horizontal	:	Yatay.
+	vertical	:	Dikey.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		width:250px;
+		height:380px;
+		border:2px solid red;
+		padding:20px;
+		overflow:auto;
+		resize:both;
+	}
+	p{
+		width:200px;
+		height:100px;
+		border:2px solid blue;
+		overflow:auto;
+	}
+	#Ornek{
+		resize:inherit; /* resize:both; */
+	}
+</style>
+</head>
+
+<body>
+<div>
+	<p>Extra Eğitim - Volkan Alakent</p>
+	<p id="Ornek">Extra Eğitim - Volkan Alakent</p>
+	<p>Extra Eğitim - Volkan Alakent</p>
+</div>
+</body>
+</html>

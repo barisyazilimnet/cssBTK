@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	justify-content	:	Esnek kutu içerisinde bulunan elementler tüm alanı kaplamadığında, elementlerin arasındaki hizalama özelliklerini belirler.
+	Değerler		:	flex-start | flex-end | center | space-between | space-around | initial
+	flex-start		:	Esnek başlangıç.
+	flex-end		:	Esnek bitiş.
+	center			:	Orta.
+	space-between	:	Boşluk arasında.
+	space-around	:	Boşluk etrafında.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman1, .AnaEleman2{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		display:-ms-flex;
+		display:flex;
+		border:1px solid red;
+		width:1500px;
+		height:50px;
+		-webkit-justify-content:space-between;
+		-moz-justify-content:space-between;
+		-o-justify-content:space-between;
+		-ms-justify-content:space-between;
+		justify-content:space-between;
+	}
+	.Elemanlar1, .Elemanlar2{
+		border:1px solid blue;
+		width:100px;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman1">
+	<div class="Elemanlar1">1</div>
+	<div class="Elemanlar1">2</div>
+	<div class="Elemanlar1">3</div>
+	<div class="Elemanlar1">4</div>
+	<div class="Elemanlar1">5</div>
+	<div class="Elemanlar1">6</div>
+	<div class="Elemanlar1">7</div>
+	<div class="Elemanlar1">8</div>
+	<div class="Elemanlar1">9</div>
+	<div class="Elemanlar1">10</div>
+</div><br />
+<div class="AnaEleman2" style="-webkit-justify-content:initial; -moz-justify-content:initial; -o-justify-content:initial; -ms-justify-content:initial; justify-content:initial;">
+	<div class="Elemanlar2">1</div>
+	<div class="Elemanlar2">2</div>
+	<div class="Elemanlar2">3</div>
+	<div class="Elemanlar2">4</div>
+	<div class="Elemanlar2">5</div>
+	<div class="Elemanlar2">6</div>
+	<div class="Elemanlar2">7</div>
+	<div class="Elemanlar2">8</div>
+	<div class="Elemanlar2">9</div>
+	<div class="Elemanlar2">10</div>
+</div>
+</body>
+</html>

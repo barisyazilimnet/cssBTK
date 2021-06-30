@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	columns		:	HTML elementinin çok sütunlu düzeni için bölünmesi gereken sütunların minimum genişlik ve maksimum sütun sayısı özelliklerini belirler.
+Parametreler	:	column-width | column-count
+Değerler		:	auto | column-width | column-count | initial | inherit
+auto			:	Otomatik değer alır.
+column-width	:	Sütun genişlik değeri.
+column-count	:	Sütun adedi değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-columns:auto;
+	-moz-columns:auto;
+	-o-columns:auto;
+	-ms-columns:auto;
+	columns:auto;
+}

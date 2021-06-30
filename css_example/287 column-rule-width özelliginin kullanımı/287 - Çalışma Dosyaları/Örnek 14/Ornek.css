@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*	column-rule-width	:	HTML elementinin çok sütunlu düzeni için bölünen sütunların aralarındaki dikey ayraç genişliğini belirler.
+Değerler				:	length | thin | medium | thick | initial | inherit
+length					:	Uzunluk değeri.
+thin					:	İnce.
+medium					:	Orta.
+thick					:	Kalın.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-column-rule-style:solid;
+	-moz-column-rule-style:solid;
+	-o-column-rule-style:solid;
+	-ms-column-rule-style:solid;
+	column-rule-style:solid;
+	-webkit-column-rule-width:25px;
+	-moz-column-rule-width:25px;
+	-o-column-rule-width:25px;
+	-ms-column-rule-width:25px;
+	column-rule-width:25px;
+}
+p{
+	-webkit-columns:3;
+	-moz-columns:3;
+	-o-columns:3;
+	-ms-columns:3;
+	columns:3;
+	-webkit-column-gap:100px;
+	-moz-column-gap:100px;
+	-o-column-gap:100px;
+	-ms-column-gap:100px;
+	column-gap:100px;
+	-webkit-column-rule-style:solid;
+	-moz-column-rule-style:solid;
+	-o-column-rule-style:solid;
+	-ms-column-rule-style:solid;
+	column-rule-style:solid;
+}
+#Deneme{
+	-webkit-column-rule-width:inherit; /* -webkit-column-rule-width:25px; */
+	-moz-column-rule-width:inherit; /* -moz-column-rule-width:25px; */
+	-o-column-rule-width:inherit; /* -o-column-rule-width:25px; */
+	-ms-column-rule-width:inherit; /* -ms-column-rule-width:25px; */
+	column-rule-width:inherit; /* column-rule-width:25px; */
+}

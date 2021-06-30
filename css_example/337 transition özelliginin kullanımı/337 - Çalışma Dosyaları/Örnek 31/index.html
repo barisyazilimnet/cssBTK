@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	transition					:	HTML elementinin tüm geçiş özelliklerini belirler.
+	Parametreler				:	transition-property | transition-duration | transition-timing-function | transition-delay
+	Varsayılan Değer			:	all 0s ease 0s
+	Değerler					:	property value (özellik değeri) | initial
+	transition-property			:	CSS özellik adı.
+	transition-duration			:	Geçiş süresi.
+	transition-timing-function	:	Hız eğrisi.
+	transition-delay			:	Duraksama süresi.
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	#Bir{
+		position:absolute;
+		width:200px;
+		height:200px;
+		background-color:blue;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		-o-border-radius:3px;
+		-ms-border-radius:3px;
+		border-radius:3px;
+		-webkit-transition:transform 1s;
+		-moz-transition:transform 1s;
+		-o-transition:transform 1s;
+		-ms-transition:transform 1s;
+		transition:transform 1s;
+	}
+	#Iki{
+		position:absolute;
+		width:200px;
+		height:200px;
+		background-color:red;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		-o-border-radius:3px;
+		-ms-border-radius:3px;
+		border-radius:3px;
+		-webkit-transition:transform 1s;
+		-moz-transition:transform 1s;
+		-o-transition:transform 1s;
+		-ms-transition:transform 1s;
+		transition:transform 1s;
+	}
+	#Iki:hover{
+		-webkit-transform:translate(50px, 50px);
+		-moz-transform:translate(50px, 50px);
+		-o-transform:translate(50px, 50px);
+		-ms-transform:translate(50px, 50px);
+		transform:translate(50px, 50px);
+	}
+</style>
+</head>
+
+<body>
+<div id="Bir"></div>
+<div id="Iki"></div>
+</body>
+</html>

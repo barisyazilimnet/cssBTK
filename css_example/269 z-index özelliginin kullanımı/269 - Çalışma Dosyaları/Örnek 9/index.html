@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	z-index		:	Konumlandırılmış bir HTML elementinin katman / yığın sırasını belirler.
+	Değerler	:	auto | number | initial
+	auto		:	Otomatik değer alır.
+	number		:	Rakam değeri. (En büyük rakam değeri daima en üstte olacaktır.)
+	initial		:	HTML elementi varsayılan biçilendirme değerine döner.	*/
+	div{
+		position:absolute;
+		font-size:40px;
+	}
+	#bir{
+		top:50px;
+		left:50px;
+		z-index:3;
+	}
+	#iki{
+		top:52px;
+		left:48px;
+		color:rgba(102, 102, 102, 0.5);
+		z-index:2;
+	}
+	#uc{
+		top:54px;
+		left:46px;
+		color:rgba(204, 204, 204, 0.5);
+		z-index:1;
+	}
+</style>
+</head>
+
+<body>
+<div id="bir">Extra Eğitim</div>
+<div id="iki">Extra Eğitim</div>
+<div id="uc">Extra Eğitim</div>
+</body>
+</html>

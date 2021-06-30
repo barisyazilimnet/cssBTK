@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*	background	:	HTML elementinin arkaplan özelliğini veye özelliklerini belirler.
+Değerler		:	color | image | repeat | position | size | attachment | origin | clip | initial | inherit
+color			:	Renk.
+image			:	Resim.
+repeat			:	Tekrar et.
+position		:	Pozisyon.
+size			:	Boyut.
+attachment		:	Sayfa hareketine göre davranış.
+origin			:	Resmin başlangıç konumu.
+clip			:	Rengin başlangıç konumu.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:1200px;
+	height:700px;
+	border:10px double red;
+	padding:50px;
+	background:url(Logo.png) no-repeat right top/50px local content-box;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*	justify-content	:	Izgara düzeni içerisinde bulunan elementler tüm alanı kullanmadığında, elementlerin yatay hizalama özelliklerini belirler.
+Değerler			:	stretch | center | start | end | space-between | space-around | space-evenly | initial
+stretch				:	Uzat / esne.
+center				:	Orta.
+start				:	Başlangıç.
+end					:	Bitiş.
+space-between		:	Boşluk arasında.
+space-around		:	Boşluk etrafında.
+space-evenly		:	Eşit boşluk.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:1000px;
+	height:250px;
+	border:thin solid red;
+	padding:10px;
+	grid-template-columns:repeat(4, auto);
+	grid-gap:5px;
+	-webkit-justify-content:start;
+	-moz-justify-content:start;
+	-o-justify-content:start;
+	-ms-justify-content:start;
+	justify-content:start;
+}
+.IcElemanlar{
+	width:100px;
+	border:thin solid blue;
+	padding:5px;
+}

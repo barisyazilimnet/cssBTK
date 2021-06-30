@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	user-select	:	Metnin kullanıcı tarafından seçilebilme durumunu belirler.
+Değerler		:	auto | none | text | all | initial | inherit
+auto			:	Otomatik değer alır.
+none			:	Değer yok. (Metin seçilemez.)
+text			:	Metin. (Metin seçilebilir.)
+all				:	Tümü. (Tüm metin bir seferde seçilebilir.)
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-user-select:auto;
+	-moz-user-select:auto;
+	-o-user-select:auto;
+	-ms-user-select:auto;
+	user-select:auto;
+}

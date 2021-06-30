@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	word-spacing	:	Metnin içerisindeki kelimelerin aralarındaki boşluk değerlerini belirler.
+Değerler			:	normal | length | initial | inherit
+normal				:	Normal.
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	word-spacing:50px;
+}
+#Deneme{
+	word-spacing:initial;
+}

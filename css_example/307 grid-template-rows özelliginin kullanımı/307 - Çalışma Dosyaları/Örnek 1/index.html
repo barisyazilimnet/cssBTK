@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-template-rows	:	Izgara düzeni içerisindeki element veya elementlerin, oluşturulması gereken satır boyutu yüksekliğini belirler.
+	Değerler			:	none | auto | max-content | min-content | length | initial
+	none				:	Değer yok.
+	auto				:	Otomatik değer alır.
+	max-content			:	Maksimum içerik.
+	min-content			:	Minimum içerik.
+	length				:	Uzunluk değeri.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid red;
+		width:500px;
+		padding:10px;
+		grid-template-rows:none none none none none;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+</div>
+</body>
+</html>

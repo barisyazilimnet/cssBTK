@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	column-rule		:	HTML elementinin çok sütunlu düzeni için bölünen sütunların aralarındaki dikey ayraç özelliklerini belirler.
+Parametreler		:	column-rule-width | column-rule-style | column-rule-color
+Değerler			:	rule value | initial | inherit
+rule value			:	Kural değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	-webkit-column-count:4;
+	-moz-column-count:4;
+	-o-column-count:4;
+	-ms-column-count:4;
+	column-count:4;
+	-webkit-column-gap:100px;
+	-moz-column-gap:100px;
+	-o-column-gap:100px;
+	-ms-column-gap:100px;
+	column-gap:100px;
+	-webkit-column-rule:dashed red;
+	-moz-column-rule:dashed red;
+	-o-column-rule:dashed red;
+	-ms-column-rule:dashed red;
+	column-rule:dashed red;
+}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*	column-span	:	HTML elementinin çok sütunlu düzeni için bölünen sütunların içerisindeki bir elementin sütun veya sütunlara yayılması durumunu belirler.
+Değerler		:	none | all | initial | inherit
+none			:	Değer yok.
+all				:	Tümü.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	-o-column-count:3;
+	-ms-column-count:3;
+	column-count:3;
+}
+h1{
+	-webkit-column-span:all;
+	-moz-column-span:all;
+	-o-column-span:all;
+	-ms-column-span:all;
+	column-span:all;
+}
+#Deneme{
+	-webkit-column-span:initial;
+	-moz-column-span:initial;
+	-o-column-span:initial;
+	-ms-column-span:initial;
+	column-span:initial;
+}

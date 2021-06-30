@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	text-shadow		:	Metnin gölgelendirme özelliklerini belirler.
+Parametreler		:	horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | blur-radius (bulanıklık yarıçapı) | color
+Değerler			:	none & length & initial & inherit | blur-radius | color
+none				:	Değer yok.
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+blur-radius			:	Bulanıklık yarıçapı değeri.
+color				:	Renk.	*/
+p{
+	text-shadow:2px 0px 5px red;
+}

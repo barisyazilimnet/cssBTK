@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*	opacity	:	HTML elementinin opaklık / şeffaflık özelliklerini belirler.
+Değerler	:	number | initial
+number		:	Rakam değeri. (0.0 ila 1.0 arasında) (0.0 en şeffaf değer.) (1.0 şeffaflık yok.)
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+div{
+	border:2px solid black;
+	width:500px;
+	height:100px;
+	background-color:darkblue;
+}
+#bir{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: Alpha(opacity=100);
+	opacity:1.0;
+}
+#iki{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: Alpha(opacity=80);
+	opacity:0.8;
+}
+#uc{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: Alpha(opacity=60);
+	opacity:0.6;
+}
+#dort{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: Alpha(opacity=40);
+	opacity:0.4;
+}
+#bes{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: Alpha(opacity=20);
+	opacity:0.2;
+}
+#alti{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: Alpha(opacity=0);
+	opacity:0.0;
+}

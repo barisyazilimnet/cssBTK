@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*	page-break-before	:	Sayfa yazdırma işlemlerinde belirtilecek olan HTML elementinden önce sayfa sonlandırma durumunu belirler.
+Değerler				:	auto | always | initial
+auto					:	Otomatik değer alır.
+always					:	Daima.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.Sonlandir{
+	page-break-before:always;
+}

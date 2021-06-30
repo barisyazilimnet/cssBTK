@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	grid-column-end	:	Izgara düzeni içerisindeki elementin kaçıncı sütunda bitmesi gerektiğini belirler.
+	Değerler		:	auto | column-line | initial
+	auto			:	Otomatik değer alır.
+	column-line		:	Sütun çizgisi.
+	initial			:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+	.AnaEleman{
+		display:grid;
+		border:1px solid red;
+		padding:10px;
+		grid-template-columns:auto auto auto auto auto;
+	}
+	.IcElemanlar{
+		border:1px solid blue;
+		padding:10px;
+	}
+	.Iki{
+		grid-column-end:4;
+	}
+	.Yedi{
+		grid-column-end:5;
+	}
+	.Onuc{
+		grid-column-end:6;
+	}
+</style>
+</head>
+
+<body>
+<div class="AnaEleman">
+	<div class="IcElemanlar">1</div>
+	<div class="IcElemanlar Iki">2</div>
+	<div class="IcElemanlar">3</div>
+	<div class="IcElemanlar">4</div>
+	<div class="IcElemanlar">5</div>
+	<div class="IcElemanlar">6</div>
+	<div class="IcElemanlar Yedi">7</div>
+	<div class="IcElemanlar">8</div>
+	<div class="IcElemanlar">9</div>
+	<div class="IcElemanlar">10</div>
+	<div class="IcElemanlar">11</div>
+	<div class="IcElemanlar">12</div>
+	<div class="IcElemanlar Onuc">13</div>
+	<div class="IcElemanlar">14</div>
+	<div class="IcElemanlar">15</div>
+</div>
+</body>
+</html>

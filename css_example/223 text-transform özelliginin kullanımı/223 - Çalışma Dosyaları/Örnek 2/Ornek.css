@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*	text-transform	:	Metnin büyük harf / küçük harf dönüştürme özelliklerini belirler.
+Değerler			:	none | capitalize | uppercase | lowercase | initial | inherit
+none				:	Değer yok.
+capitalize			:	Her kelimenin ilk harfi büyük harf olur.
+uppercase			:	Kelimenin / kelimelerin tüm harfleri büyük harf olur.
+lowercase			:	Kelimenin / kelimelerin tüm harfleri küçük harf olur.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	text-transform:none;
+}

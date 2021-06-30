@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	grid-row-gap	:	Izgara düzeni içerisindeki element veya elementler için, oluşturulmuş olan satırların aralarındaki boşluk değerini belirler.
+Değerler			:	length | initial
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.	*/
+.AnaEleman{
+	display:grid;
+	width:500px;
+	border:1px solid red;
+	padding:10px;
+	grid-row-gap:10px;
+}
+.IcElemanlar{
+	border:1px solid blue;
+	padding:10px;
+}
+#Islem{
+	grid-row-gap:initial;
+}
