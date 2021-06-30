@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*	border-bottom-style	:	HTML elementinin alt kenarlık / çerçeve stilini belirler.
+Değerler				:	none | hidden | solid | double | dashed | dotted | groove | ridge | inset | outset | initial | inherit
+none					:	Değer yok.
+hidden					:	Gizli.
+solid					:	Düz çizgi.
+double					:	Çift çizgi.
+dashed					:	Kesikli çizgi.
+dotted					:	Noktalı çizgi.
+groove					:	İçe dönük gölgeli çizgi.
+ridge					:	Dışa dönük gölgeli çizgi.
+inset					:	İçe dönük derin çizgi.
+outset					:	Dışa dönük derin çizgi.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:500px;
+	height:300px;
+	border:10px solid blue;
+	border-bottom-style:dashed;
+}
+#bir{
+	width:450px;
+	height:30px;
+	border:5px solid yellow;
+	border-bottom-style:inherit; /* border-bottom-style:dashed; */
+}
+#iki{
+	width:400px;
+	height:30px;
+	border:5px solid black;
+	border-bottom-style:inherit; /* border-bottom-style:dashed; */
+}
+#uc{
+	width:350px;
+	height:30px;
+	border:5px solid red;
+	border-bottom-style:inherit; /* border-bottom-style:dashed; */
+}
+#dort{
+	width:300px;
+	height:30px;
+	border:5px solid green;
+	border-bottom-style:inherit; /* border-bottom-style:dashed; */
+}
+#bes{
+	width:250px;
+	height:30px;
+	border:5px solid grey;
+	border-bottom-style:inherit; /* border-bottom-style:dashed; */
+}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	background-clip		:	HTML elementine atanmış olan arkaplan renginin başlangıç konumunu belirler.
+Değerler				:	padding-box | border-box | content-box | initial | inherit
+padding-box				:	Dolgu kutusu.
+border-box				:	Kenarlık kutusu.
+content-box				:	İçerik kutusu.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:200px;
+	height:125px;
+	border:10px double red;
+	padding:50px;
+	background-color:blue;
+}
+#Bir{
+	background-clip:padding-box;
+}
+#Iki{
+	background-clip:border-box;
+}
+#Uc{
+	background-clip:content-box;
+}

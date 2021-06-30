@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:lang()	:	Belirtilen HTML elementinin lang (dil) özelliğine göre stil tanımlar.	*/
+div:lang("it"){ /* HATA */
+	color:red;
+}

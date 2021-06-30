@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:first-child	:	Belirtilen HTML elementi baz alınarak, üst elementine göre bitişik ilk child (çocuk) durumundaki elemente stil tanımlar.	*/
+p:first-child{
+	color:red;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	border-top-right-radius	:	HTML elementinin sağ üst köşe kenarlık / çerçeve yuvarlaklığını belirler.
+	Değerler				:	length | % | initial | inherit
+	length					:	Uzunluk değeri.
+	%						:	Yüzde değeri.
+	initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	#Bir{
+		width:1000px;
+		height:200px;
+		border:4px solid red;
+		-webkit-border-top-right-radius:50px;
+		-moz-border-top-right-radius:50px;
+		-o-border-top-right-radius:50px;
+		-ms-border-top-right-radius:50px;
+		border-top-right-radius:50px;
+	}
+	#Iki{
+		width:800px;
+		height:150px;
+		border:4px solid red;
+		-webkit-border-top-right-radius:inherit; /* -webkit-border-top-right-radius:50px; */
+		-moz-border-top-right-radius:inherit; /* -moz-border-top-right-radius:50px; */
+		-o-border-top-right-radius:inherit; /* -o-border-top-right-radius:50px; */
+		-ms-border-top-right-radius:inherit; /* -ms-border-top-right-radius:50px; */
+		border-top-right-radius:inherit; /* border-top-right-radius:50px; */
+	}
+</style>
+</head>
+
+<body>
+<div id="Bir"><br />
+	<div id="Iki"> </div>
+</div>
+</body>
+</html>

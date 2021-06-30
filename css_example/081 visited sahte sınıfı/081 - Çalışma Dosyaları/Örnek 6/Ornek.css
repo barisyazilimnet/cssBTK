@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:visited	:	Daha önce açılmış link'in rengini tanımlar.	*/
+a[id="Kimlik"]:visited{
+	color:red;
+}

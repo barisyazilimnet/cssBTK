@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	::selection	:	Belirtilen HTML elementinin kullanıcı tarafından seçilen kısmına stil tanımlar.	*/
+li::-webkit-selection{
+	background-color:red;
+	color:white;
+}
+li::-moz-selection{
+	background-color:red;
+	color:white;
+}
+li::-o-selection{
+	background-color:red;
+	color:white;
+}
+li::-ms-selection{
+	background-color:red;
+	color:white;
+}
+li::selection{
+	background-color:red;
+	color:white;
+}

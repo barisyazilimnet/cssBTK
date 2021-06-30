@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	border-bottom-color	:	HTML elementinin alt kenarlık / çerçeve rengini belirler.
+Değerler				:	color | transparent | initial | inherit
+color					:	Renk değeri.
+transparent				:	Transparan değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:250px;
+	height:50px;
+	border:10px solid grey;
+	border-bottom-color:inherit;
+}

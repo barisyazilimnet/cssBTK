@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	calc()		:	Değer heseplama işlemleri için kullanılır.
+	Değerler	:	+ | - | * | /
+	+			:	Toplama
+	-			:	Çıkartma
+	*			:	Çarpma
+	/			:	Bölme	*/
+	div#Menu{
+		background-color:yellow;
+		width:300px;
+		height:500px;
+		float:left;
+	}
+	div#Sag{
+		background-color:blue;
+		width:-webkit-calc(100% - 300px);
+		width:-moz-calc(100% - 300px);
+		width:-o-calc(100% - 300px);
+		width:-ms-calc(100% - 300px);
+		width:calc(100% - 300px);
+		height:500px;
+		float:left;
+	}
+</style>
+</head>
+
+<body>
+<div id="Menu">Menü Alanı</div>
+<div id="Sag">Sağ İçerik Alanı</div>
+</body>
+</html>

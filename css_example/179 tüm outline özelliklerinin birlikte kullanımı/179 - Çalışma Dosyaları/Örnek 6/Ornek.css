@@ -1,0 +1,10 @@
+@charset "utf-8";
+div{
+	width:500px;
+	height:100px;
+	border:10px solid blue;
+	outline-width:4px;
+	outline-color:red;
+	outline-style:hidden;
+	outline-offset:2px;
+}

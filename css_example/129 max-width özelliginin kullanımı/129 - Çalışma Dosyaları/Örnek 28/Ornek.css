@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*	max-width	:	HTML elementinin maksimum genişliğini belirler.
+Değerler		:	none | length | % | initial | inherit
+none			:	Değer yok.
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin değerini alır.	*/
+div[name="Bir"]{
+	background-color:black;
+	max-width:80%;
+}
+div[name="Iki"]{
+	background-color:blue;
+	max-width:inherit; /* max-width:80%; */
+}
+div[name="Uc"]{
+	background-color:green;
+	max-width:60%;
+}
+div[name="Dort"]{
+	background-color:red;
+	max-width:inherit; /* max-width:60%; */
+}
+div[name="Bes"]{
+	background-color:grey;
+	max-width:inherit; /* max-width:60%; */
+}

@@ -1,0 +1,21 @@
+/*	min-height	:	HTML elementinin minimum yüksekliğini belirler.
+Değer			:	length | % | initial | inherit
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+#AnaEleman{
+	background-color:blue;
+	height:50px;
+}
+#UstEleman{
+	min-height:25px;
+}
+#Bir{
+	background-color:yellow;
+	min-height:inherit; /* min-height:25px; */
+}
+#Iki{
+	background-color:yellow;
+	min-height:inherit; /* min-height:25px; */
+}

@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	:hover	:	Belirtilen HTML elementinin mouse (fare) üzerine geldiğinde stil tanımlar. Belirtilen HTML elementinin mouse (fare) üzerinden ayrıldığında stil normale döner.	*/
+div:hover{
+	background-color:#CCCCCC;
+	font-weight:bold;
+}

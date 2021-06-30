@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:in-range	:	Belirtilen HTML elementi bilgi girişi, belirtilen aralıklar dahilinde bir değer olduğunda stil tanımlar. Belirtilen HTML elementi bilgi girişi, belirtilen aralıklar dışında bir değer olduğunda stil normale döner.	*/
+input:in-range{
+	color:red;
+}

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*	::first-letter	:	Belirtilen HTML elementinin ilk karakterine stil tanımlar.	*/
+p#Bir::first-letter{
+	color:red;
+	font-size:40px;
+}
+div[name="Deneme"]::first-letter{
+	color:blue;
+	font-size:40px;
+}

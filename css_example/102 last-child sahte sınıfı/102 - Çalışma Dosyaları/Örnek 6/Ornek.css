@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:last-child	:	Belirtilen HTML elementi baz alınarak, üst elementine göre bitişik son child (çocuk) durumundaki elemente stil tanımlar.	*/
+div:last-child{
+	color:red;
+}

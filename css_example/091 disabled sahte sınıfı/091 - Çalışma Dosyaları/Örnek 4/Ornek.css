@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*	:disabled	:	Belirtilen HTML elementi ektin olmadığında stil tanımlar.	*/
+input:disabled{
+	background-color:#CCCCCC;
+	color:red;
+	font-weight:bold;
+}
+textarea:disabled{
+	background-color:#CCCCCC;
+	color:red;
+	font-weight:bold;
+}

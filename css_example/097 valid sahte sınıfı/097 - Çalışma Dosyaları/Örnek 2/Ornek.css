@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:valid	:	Belirtilen HTML elementi bilgi girişi geçerli bir değer olduğunda stil tanımlar. Belirtilen HTML elementi bilgi girişi geçersiz bir değer olduğunda stil normale döner.	*/
+input:valid{
+	background-color:red;
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*	border-top	:	HTML elementinin üst kenarlık / çerçeve özelliklerini belirler.
+Parametreler	:	length | style | color
+Değerler		:	length & initial & inherit & thin & medium & thick | none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset | color
+length			:	Uzunluk değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.
+thin			:	İnce.
+medium			:	Orta.
+thick			:	Kalın.
+none			:	Değer yok.
+hidden			:	Gizli.
+solid			:	Düz çizgi.
+double			:	Çift çizgi.
+dashed			:	Kesikli çizgi.
+dotted			:	Noktalı çizgi.
+groove			:	İçe dönük gölgeli çizgi.
+ridge			:	Dışa dönük gölgeli çizgi.
+inset			:	İçe dönük derin çizgi.
+outset			:	Dışa dönük derin çizgi.
+color			:	Renk.	*/
+div#aaa{
+	width:500px;
+	height:20px;
+	border-top:none;
+}
+div#bbb{
+	width:500px;
+	height:20px;
+	border-top:hidden;
+}
+div#ccc{
+	width:500px;
+	height:20px;
+	border-top:8px solid red;
+}
+div#ddd{
+	width:500px;
+	height:20px;
+	border-top:8px double red;
+}
+div#eee{
+	width:500px;
+	height:20px;
+	border-top:8px dashed red;
+}
+div#fff{
+	width:500px;
+	height:20px;
+	border-top:8px dotted red;
+}
+div#ggg{
+	width:500px;
+	height:20px;
+	border-top:8px groove red;
+}
+div#hhh{
+	width:500px;
+	height:20px;
+	border-top:8px ridge red;
+}
+div#iii{
+	width:500px;
+	height:20px;
+	border-top:8px inset red;
+}
+div#jjj{
+	width:500px;
+	height:20px;
+	border-top:8px outset red;
+}

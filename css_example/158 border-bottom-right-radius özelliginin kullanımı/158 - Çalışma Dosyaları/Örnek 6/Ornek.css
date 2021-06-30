@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	border-bottom-right-radius	:	HTML elementinin sağ alt köşe kenarlık / çerçeve yuvarlaklığını belirler.
+Değerler						:	length | % | initial | inherit
+length							:	Uzunluk değeri.
+%								:	Yüzde değeri.
+initial							:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit							:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:600px;
+	height:100px;
+	border:4px solid red;
+	-webkit-border-bottom-right-radius:25%;
+	-moz-border-bottom-right-radius:25%;
+	-o-border-bottom-right-radius:25%;
+	-ms-border-bottom-right-radius:25%;
+	border-bottom-right-radius:25%;
+}

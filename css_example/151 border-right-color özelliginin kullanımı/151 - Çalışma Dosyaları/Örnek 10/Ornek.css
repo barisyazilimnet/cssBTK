@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	border-right-color	:	HTML elementinin sağ kenarlık / çerçeve rengini belirler.
+Değerler				:	color | transparent | initial | inherit
+color					:	Renk değeri.
+transparent				:	Transparan değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır. */
+div{
+	width:500px;
+	height:50px;
+	border:5px dashed rgba(255, 0, 0, 1.0);
+	border-right-color:blue;
+}
+p{
+	width:300px;
+	height:10px;
+	border:5px dashed rgba(0, 255, 0, 1.0);
+	border-right-color:inherit; /* border-right-color:blue; */
+}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	::before	:	Belirtilen HTML elementinin öncesine içerik atayarak stil tanımlar.	*/
+button::before{
+	content:"\2600 ";
+}

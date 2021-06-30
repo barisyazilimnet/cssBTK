@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*	:enabled	:	Belirtilen HTML elementi ektin olduğunda stil tanımlar.	*/
+input:enabled{
+	background-color:#CCCCCC;
+	color:red;
+	font-weight:bold;
+}

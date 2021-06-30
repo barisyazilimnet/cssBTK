@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:root	:	HTML belgesinin kök (html) elementine stil tanımlar.	*/
+:root{
+	background-color:red;
+}

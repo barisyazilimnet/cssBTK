@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	background-color	:	HTML elementinin arkaplan rengini belirler.
+Değerler				:	transparent | color | initial | inherit
+transparent				:	Transparan.
+color					:	Renk.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+input{
+	width:200px;
+	height:20px;
+	border:2px solid red;
+	background-color:yellow;
+}

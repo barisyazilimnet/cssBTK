@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	background-size	:	HTML elementine atanmış olan arkaplan resminin boyutunu belirler.
+Değerler			:	auto | length | % | cover | contain | initial | inherit
+auto				:	Otomatik değer alır.
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+cover				:	Kapak.
+contain 			:	İçerme.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	border:4px solid black;
+	background-image:url(Resim.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+}

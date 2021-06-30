@@ -1,0 +1,10 @@
+/*	min-height	:	HTML elementinin minimum yüksekliğini belirler.
+Değer			:	length | % | initial | inherit
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	background-color:yellow;
+	min-height:10px;
+}

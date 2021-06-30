@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	:read-only	:	Belirtilen HTML elementi sadece okunabilir olduğunda stil tanımlar.	*/
+textarea:-webkit-read-only{
+	color:red;
+}
+textarea:-moz-read-only{
+	color:red;
+}
+textarea:-o-read-only{
+	color:red;
+}
+textarea:-ms-read-only{
+	color:red;
+}
+textarea:read-only{
+	color:red;
+}

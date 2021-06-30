@@ -1,0 +1,4 @@
+@charset "utf-8";
+a[href^="https"][href*="extra"][href$="com"]{
+	color:orange;
+}

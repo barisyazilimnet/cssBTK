@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	border-left-width	:	HTML elementinin sol kenarlık / çerçeve genişliğini belirler.
+Değerler				:	length | initial | inherit | thin | medium | thick
+length					:	Uzunluk değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.
+thin					:	İnce.
+medium					:	Orta.
+thick					:	Kalın.	*/
+div{
+	width:1000px;
+	height:60px;
+	border:10px solid orange;
+	border-left-width:250px;
+}
+p{
+	width:600px;
+	height:10px;
+	border:10px solid blue;
+	border-left-width:inherit; /* border-left-width:250px; */
+}

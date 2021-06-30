@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*	:optional	:	Belirtilen HTML elementine bilgi girişi opsiyonel olduğunda stil tanımlar.	*/
+input[type="text"]:optional{
+	border:2px solid #FF0000;
+	width:100%;
+	height:30px;
+	color:red;
+	background-color:yellow;
+	font-size:20px;
+}

@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	:any-link	:	Doküman içerisinde bulunan HTML'in link elementinin / elementlerinin URL değeri boş değil ise stil tanımlar.	*/
+a:any-link{
+	color:red;
+	text-decoration:none;
+}

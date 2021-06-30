@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	min-width	:	HTML elementinin minimum genişliğini belirler.
+Değerler		:	length | % | initial | inherit
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+#Bir{
+	background-color:blue;
+	width:1000px;
+}
+#Iki{
+	background-color:yellow;
+	min-width:1500px;
+}

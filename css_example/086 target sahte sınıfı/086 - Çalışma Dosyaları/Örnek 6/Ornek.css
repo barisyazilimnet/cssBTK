@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	:target	:	Belirtilen HTML elementine çapa türünde link'ler ile bağlanmış olan ve tıklandığında hedeflenmiş olan elemente stil tanımlaması yapar.	*/
+ul:target{
+	color:blue;
+	background-color:yellow;
+}

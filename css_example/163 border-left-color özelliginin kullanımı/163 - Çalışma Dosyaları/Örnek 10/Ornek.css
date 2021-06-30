@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	border-left-color	:	HTML elementinin sol kenarlık / çerçeve rengini belirler.
+Değerler				:	color | transparent | initial | inherit
+color					:	Renk değeri.
+transparent				:	Transparan değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:1000px;
+	height:130px;
+	border:20px solid red;
+	border-left-color:grey;
+}
+p{
+	width:80px;
+	height:60px;
+	border:20px solid red;
+	border-left-color:inherit; /* border-left-color:grey; */
+}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*	margin-bottom	:	HTML elementinin alt kenar boşluğu / dış boşluk özelliklerini belirler.
+Değerler			:	length | % | auto | initial | inherit
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+auto				:	Otomatik değer alır.
+initial 			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div#AnaEleman{
+	width:85px;
+	height:244px;
+	border:2px solid red;
+	margin-bottom:100px;
+}
+div.IcElemanlar{
+	width:83px;
+	height:18px;
+	border:2px solid blue;
+	margin-bottom:inherit; /* margin-bottom:100px; */
+}

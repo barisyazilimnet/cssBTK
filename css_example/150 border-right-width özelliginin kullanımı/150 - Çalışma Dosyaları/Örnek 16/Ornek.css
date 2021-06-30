@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	border-right-width	:	HTML elementinin sağ kenarlık / çerçeve genişliğini belirler.
+Değerler				:	length | initial | inherit | thin | medium | thick
+length					:	Uzunluk değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.
+thin					:	İnce.
+medium					:	Orta.
+thick					:	Kalın.	*/
+.Bir{
+	width:500px;
+	height:60px;
+	border:2px solid blue;
+	border-right-width:20px;
+}
+.Iki{
+	width:200px;
+	height:20px;
+	border:2px solid red;
+	border-right-width:inherit; /* border-right-width:20px; */
+}

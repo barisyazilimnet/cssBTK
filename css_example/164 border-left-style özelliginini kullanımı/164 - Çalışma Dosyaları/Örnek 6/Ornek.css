@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*	border-left-style	:	HTML elementinin sol kenarlık / çerçeve stilini belirler.
+Değerler				:	none | hidden | solid | double | dashed | dotted | groove | ridge | inset | outset | initial | inherit
+none					:	Değer yok.
+hidden					:	Gizli.
+solid					:	Düz çizgi.
+double					:	Çift çizgi.
+dashed					:	Kesikli çizgi.
+dotted					:	Noktalı çizgi.
+groove					:	İçe dönük gölgeli çizgi.
+ridge					:	Dışa dönük gölgeli çizgi.
+inset					:	İçe dönük derin çizgi.
+outset					:	Dışa dönük derin çizgi.	
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:500px;
+	height:100px;
+	border:10px double red;
+	border-left-style:solid;
+}

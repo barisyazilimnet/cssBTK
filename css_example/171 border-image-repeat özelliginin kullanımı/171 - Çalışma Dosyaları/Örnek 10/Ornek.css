@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	border-image-repeat	:	HTML elementi kenarlık / çerçeve resminin tekrarlanma özelliklerini belirler.
+Değerler				:	repeat | round | stretch | initial | inherit
+repeat					:	Tekrarla.
+round					:	Yuvarla.
+stretch					:	Uzatma & Germe & Esnet.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	width:500px;
+	height:100px;
+	border:30px solid transparent;
+	border-image-source:url(Resim.png);
+	border-image-slice:30;
+	border-image-width:30px;
+	border-image-repeat:round;
+}

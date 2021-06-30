@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	:checked	:	Belirtilen HTML elementi seçildiğinde stil tanımlar. Belirtilen HTML elementi seçimi kaldırıldığında stil normale döner.	*/
+input:checked{
+	width:20px;
+	height:20px;
+}

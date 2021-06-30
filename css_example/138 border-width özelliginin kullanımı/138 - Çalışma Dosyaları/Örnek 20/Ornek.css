@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	border-width	:	HTML elementinin kenarlık / çerçeve genişliğini belirler.
+Değerler			:	length | initial | inherit | thin | medium | thick
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+thin				:	İnce.
+medium				:	Orta.
+thick				:	Kalın.	*/
+span{
+	border:solid red;
+	border-width:5px 10px; /* 1. Parametre : Üst ve Alt, 2. Parametre : Sağ ve Sol */
+}

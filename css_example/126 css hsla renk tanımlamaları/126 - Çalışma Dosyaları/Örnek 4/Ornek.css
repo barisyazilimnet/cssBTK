@@ -1,0 +1,34 @@
+@charset "utf-8";
+.Bir{
+	background-color:hsla(106, 73%, 17%, 0.0);
+}
+.Iki{
+	background-color:hsla(106, 73%, 17%, 0.1);
+}
+.Uc{
+	background-color:hsla(106, 73%, 17%, 0.2);
+}
+.Dort{
+	background-color:hsla(106, 73%, 17%, 0.3);
+}
+.Bes{
+	background-color:hsla(106, 73%, 17%, 0.4);
+}
+.Alti{
+	background-color:hsla(106, 73%, 17%, 0.5);
+}
+.Yedi{
+	background-color:hsla(106, 73%, 17%, 0.6);
+}
+.Sekiz{
+	background-color:hsla(106, 73%, 17%, 0.7);
+}
+.Dokuz{
+	background-color:hsla(106, 73%, 17%, 0.8);
+}
+.On{
+	background-color:hsla(106, 73%, 17%, 0.9);
+}
+.Onbir{
+	background-color:hsla(106, 73%, 17%, 1.0);
+}

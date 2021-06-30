@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	::before	:	Belirtilen HTML elementinin öncesine içerik atayarak stil tanımlar.	*/
+div::before{
+	content:"\2600 \2601 \2602 \2603 ";
+}

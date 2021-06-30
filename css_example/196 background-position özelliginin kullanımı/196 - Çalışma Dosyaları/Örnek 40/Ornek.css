@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	background-position	:	HTML elementine atanmış olan arkaplan resminin konum özelliklerini belirler.
+Değerler				:	length | % | position | initial | inherit
+length					:	Uzunluk değeri.
+%						:	Yüzde değeri.
+position				:	Pozisyon değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.
+Pozisyon değerleri		:	top | right | bottom | left | center
+top						:	Üst.
+right					:	Sağ.
+bottom					:	Alt.
+left					:	Sol.
+center					:	Orta.	*/
+div{
+	width:1000px;
+	height:500px;
+	border:2px solid red;
+	background-image:url(Logo.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+}

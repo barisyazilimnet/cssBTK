@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	margin-bottom	:	HTML elementinin alt kenar boşluğu / dış boşluk özelliklerini belirler.
+Değerler			:	length | % | auto | initial | inherit
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+auto				:	Otomatik değer alır.
+initial 			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:83px;
+	height:18px;
+	border:2px solid blue;
+	margin:50px;
+	margin-bottom:0px;
+}

@@ -1,0 +1,4 @@
+@charset "utf-8";
+div[name=""], div[name="Bicimlendirme"], div[name="Isaretleme"], [name="Baslik"]{
+	color:red;
+}

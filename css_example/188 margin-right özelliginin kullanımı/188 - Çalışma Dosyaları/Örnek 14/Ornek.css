@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	margin-right	:	HTML elementinin sağ kenar boşluğu / dış boşluk özelliklerini belirler.
+Değerler			:	length | % | auto | initial | inherit
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+auto				:	Otomatik değer alır.
+initial 			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	float:right;
+	width:500px;
+	height:20px;
+	border:1px solid red;
+	margin-right:auto;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	padding-right	:	HTML elementinin sağ dolgu / iç boşluk özelliklerini belirler.
+Değerler			:	length | % | initial | inherit
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div#AnaElement{
+	width:185px;
+	height:20px;
+	border:1px solid red;
+	padding-right:100px;
+}
+div#IcElement{
+	width:83px;
+	height:18px;
+	border:1px solid blue;
+	padding-right:inherit; /* padding-right:100px; */
+}

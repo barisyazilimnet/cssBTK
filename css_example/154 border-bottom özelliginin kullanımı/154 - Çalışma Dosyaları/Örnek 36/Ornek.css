@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*	border-bottom	:	HTML elementinin alt kenarlık / çerçeve özelliklerini belirler.
+Parametreler		:	length | style | color
+Değerler			:	length & initial & inherit & thin & medium & thick | none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset | color
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+thin				:	İnce.
+medium				:	Orta.
+thick				:	Kalın.
+none				:	Değer yok.
+hidden				:	Gizli.
+solid				:	Düz çizgi.
+double				:	Çift çizgi.
+dashed				:	Kesikli çizgi.
+dotted				:	Noktalı çizgi.
+groove				:	İçe dönük gölgeli çizgi.
+ridge				:	Dışa dönük gölgeli çizgi.
+inset				:	İçe dönük derin çizgi.
+outset				:	Dışa dönük derin çizgi.
+color				:	Renk.	*/
+div{
+	width:1000px;
+	height:50px;
+	border-bottom:4px inset red;
+}

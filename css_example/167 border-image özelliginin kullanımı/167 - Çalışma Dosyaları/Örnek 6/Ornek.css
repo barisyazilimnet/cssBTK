@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*	border-image	:	HTML elementinin kenarlık / çerçeve resim özelliklerini belirler.
+Parametreler		:	image | slice | repeat
+Değerler			:	image & initial & inherit | length & % | repeat & round & stretch
+image				:	Resim değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+repeat				:	Tekrarla.
+round				:	Yuvarla.
+stretch				:	Uzat & Gerdir & Esnet.	*/
+div{
+	width:400px;
+	height:200px;
+	border:30px solid transparent;
+	-webkit-border-image:url(Resim.png) 33%;
+	-moz-border-image:url(Resim.png) 33%;
+	-o-border-image:url(Resim.png) 33%;
+	-ms-border-image:url(Resim.png) 33%;
+	border-image:url(Resim.png) 33%;
+}

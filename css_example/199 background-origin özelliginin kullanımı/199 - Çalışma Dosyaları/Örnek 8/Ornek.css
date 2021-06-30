@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*	background-origin	:	HTML elementine atanmış olan arkaplan resminin başlangıç konumunu belirler.
+Değerler				:	padding-box | border-box | content-box | initial | inherit
+padding-box				:	Dolgu kutusu.
+border-box				:	Kenarlık kutusu.
+content-box				:	İçerik kutusu.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:200px;
+	height:125px;
+	border:10px double red;
+	padding:50px;
+	background-image:url(Resim.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+#Bir{
+	background-origin:padding-box;
+}
+#Iki{
+	background-origin:border-box;
+}
+#Uc{
+	background-origin:content-box;
+}
+div#Uc{
+	background-origin:initial;
+}

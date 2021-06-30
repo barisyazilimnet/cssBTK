@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	background-attachment	:	HTML elementine atanmış olan arkaplan resminin sayfa haraketlerine göre davranış özelliklerini belirler.
+	Değerler				:	scroll | fixed | local | initial | inherit
+	scroll					:	Kaydırma.
+	fixed					:	Sabit.
+	local					:	Yerel.
+	initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div#Bir{
+		width:800px;
+		height:500px;
+		border:2px solid blue;
+		background-image:url(Logo.png);
+		background-repeat:no-repeat;
+		background-size:177px 100px;
+		background-attachment:scroll;
+		overflow:auto;
+	}
+	div#Iki{
+		width:700px;
+		height:300px;
+		border:2px solid red;
+		background-image:url(Logo.png);
+		background-repeat:no-repeat;
+		background-size:177px 100px;
+		background-attachment:inherit; /* background-attachment:scroll; */
+		overflow:auto;
+	}
+</style>
+</head>
+
+<body>
+<div id="Bir"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<div id="Iki">Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim<br />Extra Eğitim</div>
+</div>
+</body>
+</html>

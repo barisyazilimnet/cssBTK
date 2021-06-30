@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	:required	:	Belirtilen HTML elementine bilgi girişi zorunlu olduğunda stil tanımlar.	*/
+	input:required{
+		border:2px solid #FF0000;
+		width:100%;
+		height:30px;
+		color:red;
+		background-color:yellow;
+		font-size:20px;
+	}
+</style>
+</head>
+
+<body>
+<form action="https://www.google.com.tr/search" method="get">
+	<div>Google'da Aranacak Değer :</div>
+	<input name="q" type="text" required><br /><br />
+	<input type="submit" value="Gönder">
+</form>
+</body>
+</html>

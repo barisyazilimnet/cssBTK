@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	background-attachment	:	HTML elementine atanmış olan arkaplan resminin sayfa haraketlerine göre davranış özelliklerini belirler.
+Değerler					:	scroll | fixed | local | initial | inherit
+scroll						:	Kaydırma.
+fixed						:	Sabit.
+local						:	Yerel.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+body{
+	background-image:url(Logo.png);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}

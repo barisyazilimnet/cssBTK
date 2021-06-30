@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*	border-image-source	:	HTML elementinin kenarlık / çerçeve resmini belirler.
+Değerler				:	none | image | initial | inherit
+none					:	Değer yok.
+image					:	Resim dosyası.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:400px;
+	height:200px;
+	border:20px solid transparent;
+	border-image:url(Resim.png);
+	border-image-source:none;
+}

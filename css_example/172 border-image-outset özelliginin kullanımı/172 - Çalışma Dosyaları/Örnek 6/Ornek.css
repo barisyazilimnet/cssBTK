@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	border-image-outset	:	HTML elementi kenarlık / çerçeve resminin, kenarlık / çerçeve sınırından dışa taşma özelliklerini belirtir.
+Değerler				:	length | initial | inherit
+length					:	Uzunluk değeri.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerinei alır.	*/
+div{
+	width:50%;
+	height:50px;
+	border:10px solid red;
+	-webkit-border-image:url(Resim.png) 30 round;
+	-moz-border-image:url(Resim.png) 30 round;
+	-o-border-image:url(Resim.png) 30 round;
+	-ms-border-image:url(Resim.png) 30 round;
+	border-image:url(Resim.png) 30 round;
+	border-image-outset:20px 2px 30px; /* 1. Parametre : Üst, 2. Parametre : Sağ ve Sol, 3. Parametre : Alt */
+}

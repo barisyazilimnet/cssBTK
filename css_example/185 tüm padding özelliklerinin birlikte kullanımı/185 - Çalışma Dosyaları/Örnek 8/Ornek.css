@@ -1,0 +1,9 @@
+@charset "utf-8";
+div{
+	width:83px;
+	height:18px;
+	border:4px double red;
+	padding-top:100px;
+	padding-right:50px;
+	padding-left:50px;
+}

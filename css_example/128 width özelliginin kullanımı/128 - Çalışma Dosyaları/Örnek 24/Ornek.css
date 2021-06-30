@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	width	:	HTML elementinin genişliğini belirler.
+Değerler	:	auto | length | % | initial | inherit
+auto		:	Otomatik değer alır.
+length		:	Uzunluk değeri.
+%			:	Yüzde değeri.
+initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div#Bir{
+	background-color:black;
+	width:80%;
+}
+div#Iki{
+	background-color:red;
+	width:inherit; /* width:80%; */
+}
+div#Uc{
+	background-color:blue;
+	width:50%;
+}
+div#Dort{
+	background-color:yellow;
+	width:inherit; /* width:50%; */
+}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:only-of-type	:	Belirtilen HTML elementi baz alınarak, üst elementine göre kardeş element türleride eşleşen tek child (çocuk) durumundaki elemente stil tanımlar.	*/
+p:only-of-type{
+	color:red;
+}

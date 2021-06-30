@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	margin-right	:	HTML elementinin sağ kenar boşluğu / dış boşluk özelliklerini belirler.
+	Değerler		:	length | % | auto | initial | inherit
+	length			:	Uzunluk değeri.
+	%				:	Yüzde değeri.
+	auto			:	Otomatik değer alır.
+	initial 		:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		float:right;
+	}
+	div{
+		width:1000px;
+		height:20px;
+		border:1px solid red;
+		margin-right:150px;
+	}
+	span{
+		float:right;
+	}
+	span#AAA{
+		margin-right:inherit; /* margin-right:50px; */
+	}
+	span#BBB{
+		margin-right:inherit; /* margin-right:50px; */
+	}
+	span#CCC{
+		margin-right:inherit; /* margin-right:50px; */
+	}
+</style>
+</head>
+
+<body>
+<div>
+	<span id="AAA">Görsel Eğitim Setleri</span> <span id="BBB">Extra Eğitim</span> <span id="CCC">Volkan Alakent</span>
+</div>
+</body>
+</html>

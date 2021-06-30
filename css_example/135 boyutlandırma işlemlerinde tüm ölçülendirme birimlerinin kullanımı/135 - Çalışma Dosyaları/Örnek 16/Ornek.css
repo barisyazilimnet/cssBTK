@@ -1,0 +1,25 @@
+@charset "utf-8";
+#bir{
+	background-color:yellow;
+	width:500.50px;
+}
+#iki{
+	background-color:yellow;
+	width:500.75pt;
+}
+#uc{
+	background-color:yellow;
+	width:50.3pc;
+}
+#dort{
+	background-color:yellow;
+	width:100.12mm;
+}
+#bes{
+	background-color:yellow;
+	width:8.34cm;
+}
+#alti{
+	background-color:yellow;
+	width:3.69in;
+}

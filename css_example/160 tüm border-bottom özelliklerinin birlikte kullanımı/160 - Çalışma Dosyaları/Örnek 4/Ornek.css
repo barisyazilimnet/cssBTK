@@ -1,0 +1,19 @@
+@charset "utf-8";
+p{
+	width:600px;
+	height:300px;
+	border:10px double blue;
+	border-bottom-width:6px;
+	border-bottom-style:solid;
+	border-bottom-color:red;
+	-webkit-border-bottom-left-radius:25px;
+	-moz-border-bottom-left-radius:25px;
+	-o-border-bottom-left-radius:25px;
+	-ms-border-bottom-left-radius:25px;
+	border-bottom-left-radius:25px;
+	-webkit-border-bottom-right-radius:25px;
+	-moz-border-bottom-right-radius:25px;
+	-o-border-bottom-right-radius:25px;
+	-ms-border-bottom-right-radius:25px;
+	border-bottom-right-radius:25px;
+}

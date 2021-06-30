@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	:visited	:	Daha önce açılmış link'in rengini tanımlar.	*/
+a:visited{
+	color:red;
+	text-decoration:none;
+}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*	:nth-last-child()	:	Belirtilen HTML elementi baz alınarak, üst elementine göre kardeş element türüne bakılmaksızın, son child (çocuk) durumundaki elementten başlayarak sıra numarasına / numaralarına göre stil tanımlar.
+	odd		:	Tek haneye göre sıralama
+	even	:	Çift haneye göre sıralama	*/
+ul li:nth-child(1n+4):nth-last-child(1n+6){
+	background-color:#F1F1F1;
+}

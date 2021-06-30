@@ -1,0 +1,11 @@
+@charset "utf-8";
+div{
+	width:400px;
+	height:200px;
+	border:10px solid transparent;
+	-webkit-border-image:linear-gradient(blue, yellow, red) 10;
+	-moz-border-image:linear-gradient(blue, yellow, red) 10;
+	-o-border-image:linear-gradient(blue, yellow, red) 10;
+	-ms-border-image:linear-gradient(blue, yellow, red) 10;
+	border-image:linear-gradient(blue, yellow, red) 10;
+}

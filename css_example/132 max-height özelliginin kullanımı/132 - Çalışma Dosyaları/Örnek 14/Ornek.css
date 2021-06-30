@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	max-height	:	HTML elementinin maksimum yüksekliğini belirler.
+Değerler		:	none | length | % | initial | inherit
+none			:	Değer yok.
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	background-color:blue;
+	height:100px;
+}
+p{
+	background-color:yellow;
+	max-height:200px;
+}

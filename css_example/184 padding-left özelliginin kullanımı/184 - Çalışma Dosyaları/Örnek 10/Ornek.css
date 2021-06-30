@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	padding-left	:	HTML elementinin sol dolgu / iç boşluk özelliklerini belirler.
+Değerler			:	length | % | initial | inherit
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div[name="Deneme"]{
+	width:100px;
+	height:20px;
+	border:1px solid red;
+	padding-left:15px;
+}
+div[name="Sonuc"]{
+	width:83px;
+	height:18px;
+	border:1px dashed blue;
+	padding-left:inherit; /* padding-left:15px; */
+}

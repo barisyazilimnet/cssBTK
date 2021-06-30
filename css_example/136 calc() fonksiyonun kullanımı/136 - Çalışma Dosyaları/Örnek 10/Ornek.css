@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	calc()		:	Değer heseplama işlemleri için kullanılır.
+Değerler		:	+ | - | * | /
++				:	Toplama
+-				:	Çıkartma
+*				:	Çarpma
+/				:	Bölme	*/
+div{
+	background-color:yellow;
+	height:-webkit-calc(300px + 200px);
+	height:-moz-calc(300px + 200px);
+	height:-o-calc(300px + 200px);
+	height:-ms-calc(300px + 200px);
+	height:calc(300px + 200px);
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	border-bottom-width	:	HTML elementinin alt kenarlık / çerçeve genişliğini belirler.
+	Değerler			:	length | initial | inherit | thin | medium | thick
+	length				:	Uzunluk değeri.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.
+	thin				:	İnce.
+	medium				:	Orta.
+	thick				:	Kalın.	*/
+	p{
+		width:500px;
+		height:50px;
+		border:2px solid blue;
+		border-bottom-width:15px;
+	}
+	p[name="Islem"]{
+		border-bottom-width:initial;
+	}
+</style>
+</head>
+
+<body>
+<p> </p>
+<p name="Islem"> </p>
+</body>
+</html>

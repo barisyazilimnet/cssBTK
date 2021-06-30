@@ -1,0 +1,9 @@
+@charset "utf-8";
+p{
+	width:750px;
+	height:250px;
+	border:8px double red;
+	border-right-width:16px;
+	border-right-style:solid;
+	border-right-color:#FF9900;
+}

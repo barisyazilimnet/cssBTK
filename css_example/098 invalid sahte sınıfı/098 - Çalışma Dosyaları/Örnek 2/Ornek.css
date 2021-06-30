@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:invalid	:	Belirtilen HTML elementi bilgi girişi geçersiz bir değer olduğunda stil tanımlar. Belirtilen HTML elementi bilgi girişi geçerli bir değer olduğunda stil normale döner.	*/
+input:invalid{
+	background-color:yellow;
+}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*	:nth-of-type()	:	Belirtilen HTML elementi baz alınarak, üst elementine göre kardeş element türleride eşleşen, ilk child (çocuk) durumundaki elementten başlayarak sıra numarasına / numaralarına göre stil tanımlar.
+	odd		:	Tek haneye göre sıralama
+	even	:	Çift haneye göre sıralama	*/
+div:nth-of-type(3n+7){
+	background-color:#F1F1F1;
+}	

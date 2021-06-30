@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*	outline		:	HTML elementinin anahat özelliklerini belirler.
+Parametreler	:	length & thin & medium & thick & initial & inherit | none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset | color & invert
+length			:	Uzunluk değeri.
+thin			:	İnce.
+medium			:	Orta.
+thick			:	Kalın.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.
+none			:	Değer yok.
+hidden			:	Gizli.
+solid			:	Düz çizgi.
+double			:	Çift çizgi.
+dashed			:	Kesikli çizgi.
+dotted			:	Noktalı çizgi.
+groove			:	İçe dönük gölgeli çizgi.
+ridge			:	Dışa dönük gölgeli çizgi.
+inset			:	İçe dönük derin çizgi.
+outset			:	Dışa dönük derin çizgi.
+color			:	Renk.
+invert			:	Ters Çevir.	*/
+div{
+	width:1000px;
+	height:100px;
+	border:4px solid blue;
+	outline:4px solid red;
+}

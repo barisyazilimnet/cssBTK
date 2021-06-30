@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	outline-width	:	HTML elementinin anahat genişliğini belirler.
+Değerler			:	length | thin | medium | thick | initial | inherit
+length				:	Uzunluk değeri.
+thin				:	İnce.
+medium				:	Orta.
+thick				:	Kalın.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:1000px;
+	height:100px;
+	outline:solid;
+	outline-width:6px;
+}

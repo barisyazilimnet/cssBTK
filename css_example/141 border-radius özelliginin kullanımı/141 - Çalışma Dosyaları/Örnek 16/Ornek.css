@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	border-radius	:	HTML elementinin kenarlık / çerçeve köşelerinin yuvarlaklığını belirler.
+Değerler			:	length | % | initial | inherit
+length				:	Uzunluk değeri.
+%					:	Yüzde değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:200px;
+	height:200px;
+	border:2px solid #F00;
+	-webkit-border-radius:10px 30px; /* 1. Parametre : Üst ve Alt, 2. Parametre : Sağ ve Sol */ 
+	-moz-border-radius:10px 30px; /* 1. Parametre : Üst ve Alt, 2. Parametre : Sağ ve Sol */ 
+	-o-border-radius:10px 30px; /* 1. Parametre : Üst ve Alt, 2. Parametre : Sağ ve Sol */ 
+	-ms-border-radius:10px 30px; /* 1. Parametre : Üst ve Alt, 2. Parametre : Sağ ve Sol */ 
+	border-radius:10px 30px; /* 1. Parametre : Üst ve Alt, 2. Parametre : Sağ ve Sol */ 
+}

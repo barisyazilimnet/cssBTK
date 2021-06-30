@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*	background-image	:	HTML elementinin arkaplan resmini belirler.
+Değerler				:	none | image | initial | inherit
+none					:	Değer yok.
+image					:	Resim.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:1000px;
+	height:100px;
+	border:2px solid red;
+	background-image:url(Desen.jpg);
+}

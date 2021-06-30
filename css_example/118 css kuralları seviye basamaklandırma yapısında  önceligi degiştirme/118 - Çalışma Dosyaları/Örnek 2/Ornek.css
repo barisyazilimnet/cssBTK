@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*	!important	:	CSS kurallarında kullanılan seviye basamaklandırma yapısı dahilinde, tanımlandığı özellik ve değerin en yüksek seviye değeri olarak atanmasını sağlar. */
+div{
+	color:blue !important;
+}
+div#Kimlik{
+	color:red;
+}
+div.Sinif{
+	color:green;
+}

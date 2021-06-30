@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*	outline-color	:	HTML elementinin anahat rengini belirler.
+Değerler			:	color | invert | initial | inherit
+color				:	Renk.
+invert				:	Ters Çevir.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:1000px;
+	height:290px;
+	outline:4px solid red;
+	outline-color:blue;
+}
+p{
+	width:900px;
+	height:30px;
+	outline:4px solid red;
+	outline-color:inherit; /* outline-color:blue; */
+}

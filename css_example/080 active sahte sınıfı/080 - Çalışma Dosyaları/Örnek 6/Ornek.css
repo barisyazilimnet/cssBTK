@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	:active	:	Belirtilen HTML elementi aktif olduğunda stil tanımlar.	*/
+a[id="Kimlik"]:active{
+	color:red;
+	text-decoration:none;
+}

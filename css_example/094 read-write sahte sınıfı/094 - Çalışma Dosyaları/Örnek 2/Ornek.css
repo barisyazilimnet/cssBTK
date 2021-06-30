@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*	:read-write	:	Belirtilen HTML elementi okunabilir ve yazılabilir (düzenlenebilir) olduğunda stil tanımlar.	*/
+input:-webkit-read-write{
+	color:red;
+}
+input:-moz-read-write{
+	color:red;
+}
+input:-o-read-write{
+	color:red;
+}
+input:-ms-read-write{
+	color:red;
+}
+input:read-write{
+	color:red;
+}

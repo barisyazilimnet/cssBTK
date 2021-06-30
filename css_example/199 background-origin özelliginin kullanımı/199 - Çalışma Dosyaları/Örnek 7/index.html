@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	background-origin	:	HTML elementine atanmış olan arkaplan resminin başlangıç konumunu belirler.
+	Değerler			:	padding-box | border-box | content-box | initial | inherit
+	padding-box			:	Dolgu kutusu.
+	border-box			:	Kenarlık kutusu.
+	content-box			:	İçerik kutusu.
+	initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		width:200px;
+		height:125px;
+		border:10px double red;
+		padding:50px;
+		background-image:url(Resim.jpg);
+		background-size:100%;
+		background-repeat:no-repeat;
+	}
+	#Bir{
+		background-origin:padding-box;
+	}
+	#Iki{
+		background-origin:border-box;
+	}
+	#Uc{
+		background-origin:content-box;
+	}
+	div#Uc{
+		background-origin:initial;
+	}
+</style>
+</head>
+
+<body>
+<div id="Bir">Extra Eğitim - Volkan Alakent</div><br />
+<div id="Iki">Extra Eğitim - Volkan Alakent</div><br />
+<div id="Uc">Extra Eğitim - Volkan Alakent</div>
+</body>
+</html>

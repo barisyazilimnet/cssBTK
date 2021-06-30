@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*	outline-offset	:	HTML elementi için anahat ile kenarlık / çerçeve arasındaki mesafeyi belirler.
+Değerler			:	length | initial | inherit
+length				:	Uzunluk değeri.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div{
+	width:1000px;
+	height:100px;
+	border:2px solid blue;
+	outline:2px solid red;
+	outline-offset:5px;
+}
+#Deneme{
+	outline-offset:initial;
+}

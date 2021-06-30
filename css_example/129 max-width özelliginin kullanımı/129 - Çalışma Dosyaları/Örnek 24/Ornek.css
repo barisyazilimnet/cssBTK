@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*	max-width	:	HTML elementinin maksimum genişliğini belirler.
+Değerler		:	none | length | % | initial | inherit
+none			:	Değer yok.
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin değerini alır.	*/
+div{
+	background-color:yellow;
+	max-width:50%;
+}

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*	:optional	:	Belirtilen HTML elementine bilgi girişi opsiyonel olduğunda stil tanımlar.	*/
+textarea:optional{
+	border:2px solid #000000;
+	width:100%;
+	height:25px;
+	color:#000000;
+	background-color:white;
+	font-size:20px;
+}

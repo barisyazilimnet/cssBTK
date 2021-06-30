@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:only-child	:	Belirtilen HTML elementi baz alınarak, üst elementine göre bitişik tek child (çocuk) durumundaki elemente stil tanımlar.	*/
+div:only-child{
+	color:red;
+}

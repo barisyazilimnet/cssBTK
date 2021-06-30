@@ -1,0 +1,6 @@
+@charset "utf-8";
+a[lang="tr-TR"]:link, a[lang="tr-TR"]:visited, a[lang="tr-TR"]:hover, a[lang="tr-TR"]:active{
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+}

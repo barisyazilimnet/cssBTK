@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	border-image-slice	:	HTML elementi kenarlık / çerçeve resminin dilimleme özelliklerini belirler.
+Değerler				:	length | % | fill | initial | inherit
+length					:	Uzunluk değeri.
+%						:	Yüzde değeri.
+fill					:	Doldurma.
+initial					:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit					:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	width:200px;
+	height:200px;
+	border:30px solid transparent;
+	border-image-source:url(Resim.png);
+	border-image-slice:30 10 fill;
+}

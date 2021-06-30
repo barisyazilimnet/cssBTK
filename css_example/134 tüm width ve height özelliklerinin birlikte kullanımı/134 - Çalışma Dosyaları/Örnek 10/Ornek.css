@@ -1,0 +1,6 @@
+@charset "utf-8";
+div{
+	background-color:yellow;
+	max-width:25%;
+	min-height:100px;
+}

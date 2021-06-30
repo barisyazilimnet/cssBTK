@@ -1,0 +1,1 @@
+alert("A'dan Z'ye CSS Görsel Eğitim Seti");

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*	border-top-left-radius	:	HTML elementinin sol üst köşe kenarlık / çerçeve yuvarlaklığını belirler.
+Değerler					:	length | % | initial | inherit	
+length						:	Uzunluk değeri.
+%							:	Yüzde değeri.
+initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+div.Ilk{
+	width:500px;
+	height:300px;
+	border:8px double blue;
+	-webkit-border-top-left-radius:30px;
+	-moz-border-top-left-radius:30px;
+	-o-border-top-left-radius:30px;
+	-ms-border-top-left-radius:30px;
+	border-top-left-radius:30px;
+}
+div.Son{
+	width:400px;
+	height:240px;
+	border:8px double blue;
+	-webkit-border-top-left-radius:inherit; /* border-top-left-radius:30px; */
+	-moz-border-top-left-radius:inherit; /* border-top-left-radius:30px; */
+	-o-border-top-left-radius:inherit; /* border-top-left-radius:30px; */
+	-ms-border-top-left-radius:inherit; /* border-top-left-radius:30px; */
+	border-top-left-radius:inherit; /* border-top-left-radius:30px; */
+}

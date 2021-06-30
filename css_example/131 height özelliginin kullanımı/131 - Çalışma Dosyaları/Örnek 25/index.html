@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	height		:	HTML elementinin yüksekliğini belirler.
+	Değerler	:	auto | length | % | initial | inherit
+	auto		:	Otomatik değer alır.
+	length		:	Uzunluk değeri.
+	%			:	Yüzde değeri.
+	initial		:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit		:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	p#Bir{
+		background-color:red;
+		height:100px;
+	}
+	p#Iki{
+		background-color:red;
+		height:inherit; /* Üst Elementi body olduğu için height içeriği kadar yükseklik alır. */
+	}
+</style>
+</head>
+
+<body>
+<p id="Bir">Extra Eğitim</p>
+<p id="Iki">Volkan Alakent</p>
+</body>
+</html>

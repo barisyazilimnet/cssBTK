@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*	:required	:	Belirtilen HTML elementine bilgi girişi zorunlu olduğunda stil tanımlar.	*/
+input:required{
+	border:2px solid #FF0000;
+	width:100%;
+	height:30px;
+	color:red;
+	background-color:yellow;
+	font-size:20px;
+}

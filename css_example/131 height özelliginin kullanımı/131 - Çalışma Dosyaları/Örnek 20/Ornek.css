@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	height		:	HTML elementinin yüksekliğini belirler.
+Değerler		:	auto | length | % | initial | inherit
+auto			:	Otomatik değer alır.
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+p{
+	background-color:yellow;
+	height:300px;
+}
+p{
+	height:initial;
+}

@@ -1,0 +1,4 @@
+@charset "utf-8";
+span[name="Bicimlendirme"], li > span[name="Seneryo"], ul span[name=""]{
+	background-color:yellow;
+}

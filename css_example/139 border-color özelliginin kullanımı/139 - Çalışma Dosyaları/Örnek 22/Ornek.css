@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*	border-color	:	HTML elementinin kenarlık / çerçeve rengini belirler.
+Değerler			:	color | transparent | initial | inherit
+color				:	Renk.
+transparent			:	Transparan.
+initial				:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit				:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+span{
+	border:4px solid;
+	border-color:rgba(255, 0, 4, 0.75) rgba(255, 0, 4, 0.50) rgba(255, 0, 4, 0.25) transparent;
+}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*	:focus	:	Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementine odağından çıkıldığında stil normale döner.	*/
+:focus{
+	background-color:yellow;
+}

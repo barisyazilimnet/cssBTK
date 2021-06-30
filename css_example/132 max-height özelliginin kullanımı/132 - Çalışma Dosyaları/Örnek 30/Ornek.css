@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*	max-height	:	HTML elementinin maksimum yüksekliğini belirler.
+Değerler		:	none | length | % | initial | inherit
+none			:	Değer yok.
+length			:	Uzunluk değeri.
+%				:	Yüzde değeri.
+initial			:	HTML elementi varsayılan biçimlendirme değerine döner.
+inherit			:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+#AnaEleman{
+	background-color:blue;
+	height:40px;
+}
+#Araci{
+	background-color:blue;
+	max-height:10px;
+}
+#Bir{
+	background-color:yellow;
+	max-height:inherit; /* max-height:10px; */
+}
+#Iki{
+	background-color:red;
+	max-height:inherit; /* max-height:10px; */
+}

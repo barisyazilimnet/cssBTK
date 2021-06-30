@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Extra Eğitim</title>
+<style>
+/*	border-bottom-left-radius	:	HTML elementinin sol alt köşe kenarlık / çerçeve yuvarlaklığını belirler.
+	Değerler					:	length | % | initial | inherit
+	length						:	Uzunluk değeri.
+	%							:	Yüzde değeri.
+	initial						:	HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit						:	HTML elementi üst elementinin biçimlendirme değerini alır.	*/
+	div{
+		width:500px;
+		height:100px;
+		border:4px dashed blue;
+		-webkit-border-bottom-left-radius:25px 30%;
+		-moz-border-bottom-left-radius:25px 30%;
+		-o-border-bottom-left-radius:25px 30%;
+		-ms-border-bottom-left-radius:25px 30%;
+		border-bottom-left-radius:25px 30%;
+	}
+	p{
+		width:400px;
+		height:60px;
+		border:4px dashed red;
+		-webkit-border-bottom-left-radius:inherit; /* -webkit-border-bottom-left-radius:25px 30%; */
+		-moz-border-bottom-left-radius:inherit; /* -moz-border-bottom-left-radius:25px 30%; */
+		-o-border-bottom-left-radius:inherit; /* -o-border-bottom-left-radius:25px 30%; */
+		-ms-border-bottom-left-radius:inherit; /* -ms-border-bottom-left-radius:25px 30%; */
+		border-bottom-left-radius:inherit; /* border-bottom-left-radius:25px 30%; */
+	}
+</style>
+</head>
+
+<body>
+<div>
+	<p> </p>
+</div>
+</body>
+</html>
