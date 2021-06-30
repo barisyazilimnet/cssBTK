@@ -1,0 +1,1 @@
+alert("BK Yazılım'a Hoşgeldiniz :D");

@@ -1,0 +1,1824 @@
+@charset "utf-8"; /*dosyanın karakter tanımlaması */
+/*@import "ek1.css"; diger css doyaları eklenebilir */
+/* @import url("ek1.css"); */
+
+/*
+özellikler
+width{
+    alabildigi degerler
+    auto    =>  otomatik deger (belirtilen elemenan bir üstündeki elemana göre biçimlenir)
+    length(px)  =>  uzunluk degeri
+    %       =>  yüzde degeri
+    initial =>  html elemanı varsayılan biçimlendirme degerine döner
+    inherit =>  html elemanı üst elemanının biçimlendirme degerini alır
+}
+max-width{
+    maximum alabilcegi deger
+    eger bir üst eleman width degeri daha düşükse taşma yapmaz üst elemanın degerini alır
+    sayfa ilk yüklendiginde belirtilen deger kadar alan kaplar tarayıcı küçüldükçe oda küçülür
+    none /length / % / initial / inherit
+}
+min-width{
+    sayfa ilk yüklendiginde sayfanın tamamını kaplar tarayıcı küçüldükçe küçülür 
+    belirtilen degere geldiginde küçülme durur artık küçülmez
+    length / % / initial / inherit
+}
+  height{
+    alabildigi degerler
+    auto    =>  otomatik deger (belirtilen elemenan bir üstündeki elemana göre biçimlenir)
+    length(px)  =>  uzunluk degeri
+    %       =>  yüzde degeri
+    initial =>  html elemanı varsayılan biçimlendirme degerine döner
+    inherit =>  html elemanı üst elemanının biçimlendirme degerini alır
+}
+max-height{
+    içerik oldugu kadar yükseklik verir eger içerigin yüksekligi belirtilen degerden yüksekse dışa taşar
+    maximum alabilcegi deger
+    none /length / % / initial / inherit
+    yüzde degeri iç içe eleman oldugu zaman çalışır        
+}
+min-height{
+    length / % / initial / inherit
+}
+overflow{ dışa taşan kısımlarla ilgili işlemler
+    overflow:hidden; dışa taşan kısımları gizler
+    owerflow:scroll; dışa taşan kısımlar için kaydırma çubugu koyar
+}
+calc(){
+    işlemler => + / - / * / /
+    toplama     çıkarma     bölme   çarpma
+    width:calc(25% + 200px); örnek kullanım 
+    genişlik tam genişligin yüzde 25 in 200 px fazlası
+    witdh:calc(300px * 2.2); 660px
+    özellik kullanılırken /*! prefixlerle kullanılması önerilir
+}
+border{
+    parametreler : length | style | color
+    degerler : length  & initial & inherit & thin & medium & thick | none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset | color 
+}
+border-width{
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+border-color{
+    color & transparent & initial & inherit
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+border-style{
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+border-radius{
+    length / % / initial / inherit
+    /*! prefixlerle kullanılması önerilir.
+    hep sol tarafa işlem uygular
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+border-bottom-right-radius,
+border-bottom-left-radius,
+border-top-left-radius,
+border-top-right-radius{
+    prefixlerle birlikte kullanılması öneriliyor
+    2 deger verilirse ilk beliritlen deger genişlik üzerinden ikinci belirtilen deger yükseklik üzerinden hesaplanır
+    ilk deger yatayda ikinci deger dikeyde
+}
+border-image{
+    elemanın kenarlık resim özelliklerini belirler
+    degerler : image / slice / repeat
+    parametreler
+    image : image / initial / inherit (linear-gradient(renkler(istediginiz kadar renk yazabilirsiniz aralara virgül koymayı unutmayın))=> geçişli renkler elde edilir)
+    slice : length / % (uzunluk degeri kullanıldıgı zaman px vb. kullanılmaz sadece % degeri kullanılırken yazılır) 
+    (4 parametre alabilir)
+    (1. parametre => sag üstten yükseklik / 2.parametre => sag üstten genişlik / 3.parametre => sag alttan yükseklik / 4.parametre => sol üstten genişlik )
+    (2 parametrede alabilir)
+    (1. parametre => sag üstten yükseklik / 2.parametre => sag üstten genişlik)
+    (3 parametre alabilir) kullanılması çok fazla önerilmiyor resimler karışıyor
+    (1. parametre => sag üstten yükseklik / 2.parametre => sag üstten genişlik / 3.parametre => sag alttan yükseklik)
+    repeat : repeat / round / stretch
+    image => resim degeri (border görünümü şeffaf olmalı) (resim eklenirken url() yapısı kullanılmalı) kenarlıgın köşelerine resmi ekler
+    repeat => tekrarla veya tekrar et (köşelere gelen degerlenden resmin kalan kısımlarını tekrar ettirir)
+    round => yuvarla (resimdeki kırılmaları yok eder tam deger gösterir)
+    stretch => uzat & gerdir & esnet (3. deger yazılmadıgı zaman varsayılan degerdir.)(köşelere gelen degerlerden resmin kalan kısmını uzatır)
+    /*! prefixlerle kullanılması önerilir
+}
+border-image-source{
+    elemanın kenarlık resmini belirler
+    degerler : none / image / initial / inherit
+    resim eklenirken url() kullanılır
+}
+border-image-slice{
+    elemanın kenarlık resminin dilinleme özelligini belirler
+    degerler : length / % / fill / initial / inherit
+    fill => doldurma (elemanın arka planını doldurur)
+    fill kullanılırken ölçü degeride kullanılır genellikle yüzde degeri tavsiye edilir
+    border-image-slice: 20% fill; örnek kullanımdır
+    border-image-slice: 20% 25% fill; çift parametreli(sag üst yükseklik, sag üst genişlik şeklinde hesaplanır) örnek kullanımdır
+}
+border-image-width{
+    elemanın kenarlık resminin genişligini belirler
+    degerler : auto / length / % / initial / inherit
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+border-image-repeat{
+    elemanın kenarlık resminin tekrarlanmasını belirler
+    degerler : repeat / round / stretch / initial / inherit
+    repeat => tekrarla
+    round => yuvarla
+    stretch => uzatma & germe & esnet
+    varsayılan deger stretch dir
+}
+border-image-outset{
+    elemanın kenarlık resminin, kenarlık sınırından dışa taşma özelligini belirler
+    kenarlıgı dışa dogru kaydırır
+    degerler : length / initial / inherit
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+outline{
+    elemanın anahat / dış çizgi özelligini belirler
+    degerler : length  & initial & inherit & thin & medium & thick | none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset | color & invert
+    invert => ters çevir (anahat diger elementin üzerine denk geldigi zaman denk gelen yerin rengini degiştirir)
+    bütün outline özelliklerinde tüm kenarlar için tek parametre kullanılır
+}
+outline-offset{
+    elemanın anahat ile kenarlık arasındaki mesafeyi belirler
+    degerler : length & initial & inherit
+    negatif(-) degerde alır eger negatif deger verilirse anahat içe dogru gelir
+}
+padding{
+    degerler : length & % & initial & inherit
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+    yüzde degeri kullanılırsa üst elementine göre hesaplanır
+}
+margin{
+    degerler :length & % & auto & initial & inherit
+    tek parametre
+    üst / sağ / alt / sol  4 parametre
+    üst / sag - sol / alt  3 parametre
+    üst - alt / sağ - sol  2 parametre
+}
+background-image{
+    resimler belirtilirler url() yapısı kullanılır
+}
+background-repeat{
+    elemana atanmış olan arkaplan resminin tekrarlanma özelliklerini belirler
+    degerler : repeat / space / round / no-repeat / repeat-x / repeat-y / initial / inherit
+    repeat : Tekrar et (varsayılan degerdir)
+    space : boşluk (resim bütün kalacak ve aralarında boşluk oluşacak sekilde tekrarlar)(x ekseni boyunca tekrar eder)
+    round : yuvarla
+    no-repeat : tekrar yok
+    repeat-x : x ekseni boyunca tekrar et
+    repeat-y : y ekseni boyunca tekrar et
+}
+background-size{
+    elemana atanmış olan arkaplan resminin boyutunu belirler
+    degerler : auto / length / % / cover / contain / initial / inherit
+    cover : kapak (yatayda kırpma yapmaz)(sayfa ufaltılırsa eni hiçbir zaman degişmez ama yüksekligini resmin geldigi yere kadar alır)
+    contain : içerme (içerik kadar alanı kaplar)
+    length ve % degerinde 
+        tek parametre verilirse genişlik olur yüksekligi otomatik alır 
+        iki parametre verilirse ilk parametre genişlik ikinci parametre yükseklik
+}
+background-position{
+    elemana atanmış olan arkaplan resminin konum özelligini belirler
+    degerler : length / % / position / initial / inherit
+    pozisyon degerleri : top / right / left / bottom / center
+    position : poziyson degeri
+    dogru kullanımı iki paremetreli olanıdır
+    ilk parametre x ekseni üzerinde ilerletir ikinci parametre y ekseninde ilerletir
+    pozisyon degerlerin kullanımı
+    background-position:left top;(sol üst köşe) (sıralama fark etmez)
+    background-position:top left; (üst sol köşe) (üsttekiyle aynı konumda durur)
+}
+background-attachment{
+    elemana atanmış olan arkaplan resminin sayfa hareketlerine göre davranış özelliklerini belirler
+    degerler : scroll / fixed / local / initial / inherit
+    scroll : kaydırma (arkaplan resmi sayfada çıkan scroll çubugunu kaydırdıkça birlikte kayar.)(eleman içinde sabit kalır body içinde kayar)
+    fixed : sabit (içerik kayar ama arkaplan resmi sabit kalır)
+    local : yerel (her türlü kayar)
+}
+background-origin{
+    elemana atanmış olan arkaplan resminin  başlangıç konumunu belirler
+    degerler : padding-box / border-box / content-box / initial / inherit
+    padding-box : dolgu kutusu (padding başlangıç yerinden resmi başlat)
+    border-box : kenarlık kutusu (border ın başladıgı yerden başlar)
+    content-box : içerik kutusu (içerige göre arkaplan resmi koyar)
+}
+background-clip{
+    elemana atanmış olan arkaplan renginin  başlangıç konumunu belirler
+    degerler : padding-box / border-box / content-box / initial / inherit
+    padding-box : dolgu kutusu (padding başlangıç yerinden resmi başlat)
+    border-box : kenarlık kutusu (border ın başladıgı yerden başlar)
+    content-box : içerik kutusu (içerige göre arkaplan resmi koyar)
+}
+background-blend-mode{
+    elemana atanmış olan arkaplan resimlerinin karıştırma modu özelliklerini belirler
+    degerler : normal / multiply / screen / overlay / darken / lighten / color-dodge / color-burn / hard-light / soft-light / difference / exclusion / hue / saturation / color / luminosity
+    
+    normal : Normal
+    multiply : çogaltma
+    screen : ekran
+    overlay : kaplama
+    darken : karartma
+    lighten : hafifletme
+    color-dodge : renk kaçırma
+    color-burn : renk yakma
+    hard-light : sert ışık
+    soft-light : yumuşak ışık
+    difference : fark
+    exclusion : hariç tutma
+    hue : renk
+    saturation : doyma
+    color : renk
+    luminosity : parlaklık
+}
+background{
+    elemanın arkaplan özelliginin ve özelliklerini belirler
+    degerler : color / image / repeat / position / size / attachment / origin / clip / initial / inherit
+    color : renk
+    image : resim 
+    repeat : tekrar
+    position : pozisyon
+    size : boyut (boyut vermek için boşluk yerin taksim "/" kullanılır)
+    attachment : sayfa hareketine göre davranışı
+    origin : resmin başlangıç konumu
+    clip : rengin başlangıç konumu
+    her özelligin arasına boşluk bırakarak kullanabilirsiniz
+    çift resim kullanıldıgı zaman rengi en sona eklenmelidir 
+}
+linear-gradient(){
+    elemanın dogrusal arkaplan renk geçiş özelliklerini belirler
+    parametreler : direction(yön) / colors(renkler)
+    degerler : başlangıç noktası & açı - derece / başlangıç rengi - bitiş rengi
+    /*! prefixlerle kullanılması önerilir 
+    linear-gradient(yön parametresi & derece, renkler(yüzde kaçtan başlayacagı belirtilebilir))
+    yön parametresi : sag, sol, üst, alt / ikili kullanımlarda yazılan yerde bitirir (başına "to" kullanılır)
+    derece : sag=> 90deg, üst=> 0deg, alt=>180deg, sol=>-90deg (köşelerede derece yazılabilir)(derecenin gösterdigi yerde bitirir)(solda olacak eksiyle sagda olacaksa normal kullanılır) ( bütün derece rakalmarı kullanılabilir)
+}
+repeating-linear-gradient(){
+    elemanın dogrusal arkaplan renk geçişi tekrarlanma özelliklerini belirler
+    parametreler : direction(yön) / colors
+    degerler : başlangıç noktası & açı - derece / başlangıç rengi - bitiş rengi
+    repeating-linear-gradient(yön,renk1 0%(yüzde 0 dan başla), renk2 25%(yüzde 25 olunca başla ve elemanı veya safyaı her yüzde 25 de böl(dilimle(dilimleme olayu en son yazılan rengin yüzdesine baglıdır))))
+    /*! prefixlerle kullanılması önerilir
+}
+radial-gradient(){
+    elemanın dairesel renk geçişi özelliklerini belirler
+    parametreler : shape(şekil) / size(boyut) / direction(yön) / colors
+    degerler : ellipse(elips) & circle(daire) / farthest-corner(en uzak köşe) & closest-corner(en yakın köşe) & farthest-side(en uzak taraf) & closest-side(en yakın taraf) / başlangıç noktası & açı - derece / başlangıç rengi - bitiş rengi
+    /*! prefixlerle kullanılması önerilir
+}
+repeatin-radial-gradient(){
+    elemanın dairesel arkaplan renk geçişi tekrarlanma özelliklerini belirler
+    parametreler : shape(şekil) / size(boyut) / direction(yön) / colors
+    degerler : ellipse(elips) & circle(daire) / farthest-corner(en uzak köşe) & closest-corner(en yakın köşe) & farthest-side(en uzak taraf) & closest-side(en yakın taraf) / başlangıç noktası & açı - derece / başlangıç rengi - bitiş rengi-dilimleme
+    /*! prefixlerle kullanılması önerilir
+}
+direction{
+    metnin veya içerigin akış yönü özelliklerini belirler
+    degerler : ltr(varsayılan) / rtl / initial / inherit
+    ltr : soldan saga
+    rtl : sagdan sola
+}
+unicode-bidi{
+    metnin direciton özelligi ile belirtilmiş akış yönü özelliginin döndürme durumunu belirler
+    degerler : normal / embed / bidi-override / initial / inherit
+    normal : normal
+    embed : gömülü (sistemde gömülü olan yazı yönüne çevirir)
+    bidi-override : geçersiz kılma (ters çevirir)
+}
+writing-mode{
+    metnin veya içerigin hizalama yönü özelliklerini belirler
+    yukarıdan aşagı dogru yazar
+    degerler : horizontal-tb / vertical-lr / vertical-rl / initial / inherit
+    horizontal-tb : yatay sekme
+    vertical-lr : dikey(solda hizalama)
+    vertical-rl : dikey(sagda hizalama)
+    /*! prefixlerle kullanılması önerilir
+}
+text-orientation{
+    metnin writing-mode özelligi ile belirtilmiş hizalama yönü özelliginin döndürme durumunu belirler
+    degerler : mixed (varsayılan) / upright / initial / inherit
+    mixed : karışık
+    upright : dik
+    /*! prefixlerle kullanılması önerilir
+}
+line-height{
+    metin blogunda bulunan satırların yüksekligini belirler
+    degerler : normal / length / number / % / initial / inherit
+    number : rakam degeri
+    (-) deger alamaz
+}
+text-indent{
+    metin blogunda bulunan ilk satırın girintisini belirler
+    degerler : length / % / initial / inherit
+}
+letter-spacing{
+    metin içerisndeki karakterlerin aralarındaki boşluk degerini belirler
+    degerler : normal / length / initial / inherit
+    (-)deger alabilir
+}
+word-spacing{
+    metin içerisndeki kelimeler aralarındaki boşluk degerini belirler
+    degerler : normal / length / initial / inherit
+}
+white-space{
+    element içerisnde bulunan metin boşluk degerleri için davranış özelliklerini belirler
+    degerler : normal / nowrap / pre / pre-line / pre-wrap / initial / inherit
+    nowrap : satır boşluk dizeleri ile birlikte metin boşluk dizeleride tek boşluk olur ve satır sonları hiçbir zaman alt satıra geçmez
+    pre : satır boşluk dizeleri ile birlikte metin boşluk dizeleride korunur ve satır sonları hiçbir zaman alt satıra geçmez
+    pre-line : satır boşluk dizeleri korunur ve metin içi boşluk dizeleri tek boşluk olur
+    pre-wrap : satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de korunur
+}
+tab-size{
+    element içerisnde bulunan metnin içerdiği sekme karakterinin genişliğini belirler
+    kullanılabilmesi için metnin ya html in pre tagı içerisinde yazılması lazım yada white-space özelligine pre özellikleri verilmesi lazım
+    verilen deger metin içine dahil olacak şekilde üstüne boşluk ekleyerek çalışır
+    degerler : number / length / initial / inherit
+    number : rakam (x karakteri)
+    length : uzunluk degeri
+}
+text-align{
+    metnin veya içerigin yatay hizalama özelliklerini belirler
+    degerler : left / right / center / justify / initial / inherit
+    left : sol
+    right : sag
+    center : orta
+    justify : saga ve sola eşit
+}
+text-align-right{
+    metnin son satırının ve metnin justify degeri atanmış olan satırlarının yatay hizalama özelliklerini belirler
+    degerler : auto / left / right / center / justify / start / end / initial / inherit
+    auto : otomatik deger ( varsayılan )(metnin akış yönüne göre işlem yapar)
+    left : sol
+    right : sag 
+    center : orta
+    justify : saga ve sola hizalı
+    start : başlangıç
+    end : bitiş
+    /*! prefixlerle kullanılması önerilir
+}
+vertical-align{
+    metnin veya içerigin dikey hizalama özelliklerini belirler
+    degerler : baseline / length / % / sub / super / top / text-top / middle / bottom / text-bottom / initial / inherit
+    baseline : alt köşeden başlar (varsayılan)
+    length : uzunluk degeri (pozitif degerde varsayılan konumunun yukarısına dogru çıkar)(negatif degerde varsayılan konumunun aşagısına dogru iner)
+    % : yüzde degeri (kendi içeriginin yüksekliginini baz alarak çalışır)(pozitif degerde varsayılan konumunun yukarısına dogru çıkar)(negatif degerde varsayılan konumunun aşagısına dogru iner)
+    sub : alt simge
+    super : üst simge
+    top : en üstten
+    text-top : metnin veya içerigin üst hizasından 
+    middle : ortadan
+    bottom : en alttan
+    text-bottom : metnin veya içerigin alt hizasından
+}
+user-select{
+    metnin kullanıcı tarafından seçilebilme durumunu belirler
+    eger içiçe element kullanıyorsa ve üst elemente user select özelligi verilmişse içindeki elementlerin user select özelligi sıfırlanıp tekrar içteki elementlerin bir tanesine inherit ile özellik 
+    atanmışsa üst elementin özelligini alır hepsine uygular
+    degerler : auto / none / text / all
+    auto : otomatik deger (varsayılan)
+    none : deger yok (metin seçilemez)
+    text : metin (metin seçilebilir)
+    all : tümü (tüm metin bir seferde seçilebilir)
+    /*! prefixlerle kullanılması önerilir
+}
+text-transform{
+    metnin büyük harf / küçük harf dönüştürme özelliklerini belirler
+    degerler : none / capitalize / uppercase / lowercase / initial / inherit
+    capitalize : her kelimenin ilk harfini büyük yapar
+    uppercase : kelimenin veya kelimelerin bütün harfleri büyük olur
+    lowercase : kelimenin veya kelimelerin bütün harfleri küçük olur
+}
+text-decoration{
+    metne eklenecek olan dekorasyon ve süsleme özelliklerini belirler
+    içiçe olan elementlerde iç elementlerin özelliklerine initial ve inherit degeri çalışmaz
+    parametreler : decoration / style / color
+    degerler : none & underline & overline & line-through & initial & inherit / solid & dashed & dotted & double & wavy / color
+    underline : metnin alt tarafına çizgi ekler
+    overline : metnin üst tarafına çizgi ekler
+    line-through : metnin üzerine çizgi ekler
+    wavy : dalgalı çizgi 
+    3 dekorasyon degeri aynı anda kullanılabilir
+}
+text-decoration-line{
+    metne eklenecek olan dekorasyon ve süsleme çizgisinin türünü belirler 
+    içiçe olan elementlerde iç elementlerin özelliklerine initial ve inherit degeri çalışmaz
+    degerler : none & underline & overline & line-through & initial & inherit
+    underline : metnin alt tarafına çizgi ekler
+    overline : metnin üst tarafına çizgi ekler
+    line-through : metnin üzerine çizgi ekler
+    /*! prefixlerle kullanılması önerilir
+    3 dekorasyon türü aynı anda kullanılabilir
+}
+text-decoration-style{
+    metne eklenecek olan dekorasyon ve süsleme çizgisinin stilini belirler 
+    içiçe olan elementlerde iç elementlerin özelliklerine initial ve inherit degeri çalışmaz
+    degerler : solid & dashed & dotted & double & wavy
+    wavy : dalgalı çizgi 
+    /*! prefixlerle kullanılması önerilir
+    3 dekorasyon stili aynı anda kullanılabilir
+}
+text-decoration-color{
+    metne eklenecek olan dekorasyon ve süsleme çizgisinin rengini belirler 
+    içiçe olan elementlerde iç elementlerin özelliklerine initial ve inherit degeri çalışmaz
+    degerler : color & initial & inherit
+    /*! prefixlerle kullanılması önerilir
+}
+text-stroke{
+    metne eklenecek olan dış çizgisi özelliklerini belirler
+    parametreler : length / color
+    degerler : length & initial & inherit / color
+    /*! prefixlerle kullanılması önerilir
+}
+text-stroke-width{
+    metne eklenecek olan dış çizgisi genişlgini belirler
+    degerler : length & initial & inherit
+    /*! prefixlerle kullanılması önerilir
+}
+text-stroke-color{
+    metne eklenecek olan dış çizgisi rengini belirler
+    degerler : color
+    /*! prefixlerle kullanılması önerilir
+}
+text-shadow{
+    metnin gölgelendirme özelliklerini belirler
+    parametreler : horizontal shadow (yatay gölge) / vertical shadow (dikey gölge) / blur-radius (bulanıklık yarıçapı) / color
+    degerler : none & length & initial & inherit / none & length & initial & inherit / blur-radius / color
+    blur-radius : bulanıklık yarıçapı degeri
+}
+text-overflow{
+    elementin boyutlandırılmış alanına sıgmayacak kadar büyük metnin taşma özelliklerini belirler
+    degerler : clip / ellipsis / initial / inherit
+    clip : metni kırpar
+    ellipsis : metni kırpar ve sonuna ... ekler
+}
+word-wrap{
+    elementin boyutlandırılmış alanına sıgmayacak kadar büyük kelimelerin veya kelimenin satır kırılma özellilerini belirler
+    degerler : normal / break-word / initial / inherit
+    break-word : kelimeyi kırar
+}
+word-break{
+    elementin boyutlandırılmış alanının sonuna sıgmayacak kadar büyük kelimelerin veya kelimenin satır kırılma özelliklerini belirler
+    degerler : normal / break-all / keep-all / initial / inherit
+    break-all : kelimeyi harflerden kırar
+    keep-all : kelimeyi boşluklardan kırar
+}
+content{
+    before veya after sahte elementleriyle birlikte üretilecek olan içerigi metne eklemek için kullanılır
+    degerler : normal / none / string / open-quote / close-quote / no-open-quote / no-close-quote / url() / attr() / counter() / initial
+    string : içerige yeni bir dizi ekler => content:" ";
+    open-quote : içerige açılış tırnak işareti ekler
+    close-quote : içerige kapanış tırnak işareti ekler 
+    no-open-quote : içerigin açılış tırnak işaretini kaldırır => bu iki deger html in (q) alıntı tagı kullanıldıgı zaman kullanılabilir
+    no-close-qoute : içerigin kapanış tırnak işaretini kaldırır =>
+    url() : içerige medya dosyası ekler
+    attr() : içerigin bulundugu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek degerini ekler
+    counter() : belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek degerini ekler => counter-increment ile kullanılabilir
+}
+attr(){
+    elementin belirtilecek olan herhangi bir özellik bilgisine erişmek için kullanılır.
+    hiç olmayan kendi isimlendirerek oluşturdugunuz bir özellikde olabilir
+}
+quotes{
+    html in q elementi için tırnak işareti türü degerini belirler
+    degerler : none / string / initial / inherit 
+    string :    tek degerli => "çift tıranklar yerine" 
+                çift degerli => "baştaki tırnak yerine" "sondaki tırnak yerine"
+    her türlü deger kullanılabilir unicode karakter / rakam / harf / simge vs.
+}
+font-size{
+    metnin yazı tipi boyutunu belirler
+    degerler : length / % / xx-small / x-small / small / medium / large / x-large / xx-large / smaller / larger / initial / inherit
+    % : fontun varsayılan büyüklügü %100 olarak alır ve ona göre küçültür ve büyütür
+    xx-small : en küçük
+    x-small : çok küçük
+    small : küçük
+    medium : orta
+    large : büyük
+    x-large : çok büyük
+    xx-large : en büyük
+    smaller : daha küçük
+    larger : daha büyük
+}
+font-family{
+    metnin yazı tipi ailesini belirler
+    degerler : family-name / initial / inherit
+    family-name : yazı tipi ailesinin adı
+    
+    font ailelerinin türleri : family-name / generic-name
+    family-name : yazı tipi ailesinin adı
+    generic-name : genel yazı tipi ailesinin adı
+    generic-name => degerler : serif / sans-serif / cursive / fantasy / monospace
+                    serif : tırnaklı
+                    sans-serif : tırnaksız
+                    cursive : el yazısı
+                    fantasy : fantazi
+                    monospace : tek aralıklı
+    
+    font-family:"family-name","generic-name"; (family-name tek kelimeden oluşuyorsa tırnak kullanmak zorunlu degildir)
+    font-family:"1.family-name","2.family-name","generic-name"; (kullanıcının bilgisayarında yüklü olupta ilk eşleşen font ailesini gösterir eger yoksa diger font ailesi varmı yokmu diye bakar)
+    eger kullanılan font ailesi kullanıcının bilgisayarında yüklü degilse çalışmayacaktır çalışması için font dosyasının hostinge yüklenmesi gerekir ve @font-face özelligi kullanılması gerekir
+}
+font-style{
+    metnin yazı tipi stilini belirler
+    degerler : normal / italic / oblique / initial / inherit
+    oblique : egik (bazı yazı tipi fontlarının italik özelligi olmadıgında kullanıbilir.)
+}
+font-weight{
+    metnin yazı tipi kalınlıgını belirler
+    degerler : normal / bold / bolder / lighter / number / initial / inherit
+    bold : kalın
+    bolder : cesur (bold yerine kullanılabilir)
+    lighter : açık
+    number : rakam (100-200-300-400-500-600-700-800-900)
+}
+font-variant{
+    metnin küçük harf içerikleri için büyük harf gösterilme özelliklerini belirler
+    degerler : normal / small-caps / initial / inherit
+    small-caps : küçük harfli metinler küçük harf boyutu korunarak büyük harf olarak dönüştürülür
+}
+font-variant-caps{
+    metnin küçük harf içerikleri için büyük harf alternatif gösterilme özelliklerini belirler
+    degerler : normal / small-caps / all-small-caps / petite-caps / all-petite-caps / unicase / initial / inherit
+    small-caps : küçük harfli metinler küçük harf boyutu korunarak büyük harf olarak dönüştürülür
+    all-small-caps : tüm metinler küçük harf boyutu korunarak büyük harf olarak dönüştürülür
+    petite-caps : küçük harfli metinler küçük harf boyutu korunarak büyük harf olarak dönüştürülür (yazı tipi ailesi küçük harf büyüklüğünü desteklemiyorsa, small-caps yerine kullanılabilir)
+    all-petite-caps : tüm metinler küçük harf boyutu korunarak büyük harf olarak dönüştürülür (yazı tipi ailesi küçük harf büyüklüğünü desteklemiyorsa, all-small-caps yerine kullanılabilir)
+    unicase : büyük harfli metinler küçük harf boyutu korunarak büyük harf olarak dönüştürülür
+}
+font{
+    metnin tüm yazı tipi özelliklerini belirler
+    degerler : font-style / font-variant / font-weight / font-size | line-height / font-family / initial / inherit
+    en az font ailesini ve font boyutunu degerlerini belirtmek zorunlu
+    font-size ve line-height kullanımı => 30px/150px
+    font:font-style font-variant font-weight font-size/line-height family-name, generic-name;
+}
+@font-face{
+    metinler için sistemde yüklü olmayan fontların kullanılabilme durumlarını belirler
+    degerler : font-family / local / src / font-style / font-weight
+    local : yerel
+
+    font dosya türleri : eot / woff2 / woff / ttf & otf / svg
+    eot : internet explorer - microsoft edge
+    woff2 : chrome - firefox - opera
+    woff : tüm tarayıcılar
+    ttf & otf : tüm tarayıcılar
+    svg : chrome - safari - opera
+
+    her font ailesi için bir @font-face kullanılır eger birden fazla font ailesi eklenecekse birden fazla @font-face kullanılabilir
+    @font-face{
+        font-family:"font-family özelliginde kullanılacak olan font ismi(orjinal font ismi kullanılması önerilir)";
+        src:url("font ailesinin ismi.eot"); internet explorer - microsoft edge
+        src:local("font ailesinin orjinal ismi özelligi(italic-regular-vs.)"), local("font ailesini orjinal sade ismi"), kullanıcı cihazının font klasörü kontrol edilir. 
+            eger yapılan site mobil cihazlar içinde geçerli olacaksa veya mobil cihazlar için yapılıyorsa local degeri kullanılamaz kullaınılırsa hata verir. 
+            local degeri kullanılmasada olur orta derecede yaygın olan fontlar için kullanılmalıdır çok yaygın olmayan fontlar için kullanılmasına gerek yoktur
+            url("font ailesinin ismi.eot?#iefix") format("embedded-opentype"), internet explorer 6 - 8
+            url("font ailesinin ismi.woff2") format("woff2"), modern (süper modern) tarayıcılar
+            url("font ailesinin ismi.woff") format("woff"), modern tarayıcılar
+            url("font ailesinin ismi.ttf") format("ttf"), safari - android - ios
+            url("font ailesinin ismi.svg#svg dosyasının içinde font id degeri") format("svg"); ios
+        font-style:italic;
+        font-weight:bold;
+    }
+    div{
+        font-family:"font ailesinin ismi"
+    }
+}
+list-style-type{
+    listedeki madde işaretçisinin türünü belirler
+    degerler : disc / circle / square / decimal / decimal-leading-zero / lower-alpha / upper-alpha / lower-roman / upper-roman / none / initial / inherit
+    disc : içi dolu daire
+    circle : içi boş daire
+    square : içi dolu kare
+    decimal : ondalıklı sayı
+    decimal-leanding-zero : ondalıklı sayı (tek haneli sayılarda başına 0 ekler)
+    lower-alpha : küçük harf
+    upper-alpha : büyük harf
+    lower-roman : küçük harfli roma rakamı
+    upper-roman : büyük harfli roma rakamı
+}
+list-style-position{
+    listedeki madde işaretçisinin içerik akışındaki konum özelliklerini belirler
+    degerler : outside / inside / initial / inherit
+    outside : dışında
+    inside : içinde
+}
+list-style-image{
+    listedeki madde işaretçisinin resim özelliklerini belirler
+    degerler : none / url / initial / inherit
+}
+list-style{
+    listedeki madde işaretçisinin tüm özelliklerini belirler
+    parametreler : list-style-type / list-style-position / list-style-image
+}
+counter-reset{ bir yada daha fazla sayac oluşturmak veya sıfırlamak için kullanılır }
+counter-increment{ bir yada daha fazla sayacın degerini arttırmak için kullanılır }
+counter(){
+    oluşturulmuş olan sayacın degerini html elementine eklemek için kullanılır
+    parametreler : sayaç adı / style-type
+    degerler : decimal / decimal-leading-zero / lower-alpha / upper-alpha / lower-roman / upper-roman
+    örnek kullanım
+    div{ eger div sonlandırılmış 2. bir tagı açılmışsa 2. div tagında sıfırlanacaktır
+        counter-reset:sayaç ismi;
+    }
+    p::before{
+        counter-increment:sayaç ismi;
+        content:counter(sayaç ismi, style-type); eger üst elementin sayaç degeride eklenecekse counters() fonksiyonu kullanılmalıdır
+    }
+}
+overflow{
+    elementin boyutlandırılmış alanına sıgamaycak kadar büyük olan içerigin taşma özelliklerini belirler
+    degerler : visible / hidden / scroll / auto / initial / inherit
+    visible : görünür
+    hidden : gizler
+    scroll : alt tarafta ve sag tarafta kaydırma çubugu çıkar
+    auto : taşan kısımda kaydırma çubugu çıkar (taşma varsa çıkar)
+}
+overflow-x{
+    elementin x ekseni baz alınarak boyutlandırılmış alanına sıgamaycak kadar büyük olan içerigin taşma özelliklerini belirler
+    degerler : visible / hidden / scroll / auto / initial / inherit
+    visible : görünür (sadece x ekseninde taşan kısım için geçerlidir)
+    hidden : gizler (sadece x ekseninde taşan kısım için geçerlidir)
+    scroll : alt tarafta kaydırma çubugu çıkar
+    auto : alt tarafta kısımda kaydırma çubugu çıkar (taşma varsa çıkar)
+}
+overflow-y{
+    elementin y ekseni baz alınarak boyutlandırılmış alanına sıgamaycak kadar büyük olan içerigin taşma özelliklerini belirler
+    degerler : visible / hidden / scroll / auto / initial / inherit
+    visible : görünür (sadece y ekseninde taşan kısım için geçerlidir)
+    hidden : gizler (sadece y ekseninde taşan kısım için geçerlidir)
+    scroll : sag tarafta kaydırma çubugu çıkar
+    auto : sag tarafta kısımda kaydırma çubugu çıkar (taşma varsa çıkar)
+}
+overflow-wrap{
+    elementin boyutlandırılmış alanına sıgmaayacak kadar büyük metnin satır kırılma özelliklerini belirler
+    degerler : normal / break-word / initial / inherit
+    break-word : kelimeyi kır
+}
+border-collapse{
+    table elementinin kenarlık veya çerçeve birleştirme durumunu belirtir
+    degerler : separate / collapse / initial / inherit
+    separate : ayrı kenarlık veya çerçeve
+    collapse : bitişik kenarlık veya çerçeve
+    eger dış kenarlık içindeki kenarlıklardan stili, rengi ve boyutu farklıysa birleştirirken içindeki kenarlıkların stili, boyutu ve rengi geçerli olur
+}
+border-spacing{
+    table elementinde bulunan hücrelerin arasındaki mesafeyi belirler
+    degerler : length / initial / inherit
+    2 degerli kullanımı => border-spacing: 1.parametre(x ekseninde) 2.parametre(y ekseninde);
+    eger border-collapse kullanılırsa border-spacing özelligi devre dışı kalacaktır
+}
+empty-cells{
+    table elementinde bulunan ve içerigi boş hücrelerin görüntülenme özelliklerini belirler
+    degler : show / hide / initial / inherit
+}
+table-layout{
+    table elementinde bulunan sütunların genişlikleri için düzen algoritması özelliklerini belirler
+    degerler : auto / fixed / initial
+    fixed : sabit
+}
+caption-side{
+    table elementinde bulunan başlık elementinin konum özelliklerini belirler
+    degerler : top / bottom / initial / inherit
+}
+float{
+    elementin bulundugu konumdan kayma özelliklerini belirler
+    degerler : none / left / right / initial / inherit
+}
+clear{
+    elemente atanmış olan kayma özelliginin temizleme durumu belirler
+    degerler : none / left / right / both / initial
+    left : sol tarafı temizler
+    right : sag tarafı temizler
+    both : her iki tarafıda temizler
+}
+display{
+    elementin görüntülenme özelliklerini belirler
+    degerler : inline / block / inline-block / none / run-in / list-item / table / table-row / table-cell / table-caption / table-row-group / table-header-group / table-footer-group / table-column /
+                table-column-group / inline-table / flex / inline-flex / grid / inline-grid / initial
+    inline : element satır düzeyli element olarak kabul edilir ve görüntüler (elemente içerik alanından fazla genişlik veya yükseklik atamasına izin verilmez.)
+    block : element blok düzeyli element olarak kabul edilir ve görüntülenir
+    inline-block : element hem satır düzeyli hemde blok düzeyli element olarak kabul edilir ve görüntülenir (elemente içerik alanından fazla genişlik veya yükseklik atamasına izin verir.)
+    none : deger yok (element görüntülenmez)
+    run-in : element ya satır ya da blok düzeyli element olarak kabul edilir ve görüntülenir
+    list-item : element liste elementi (li) olarak kabul edilir ve görüntülenir
+    table : element table elementi (table) olarak kabul edilir ve görüntülenir 
+    table-row : element tablo satır elementi (tr) olarak kabul edilir ve görüntülenir
+    table-cell : element tablo sütun elementi (td) olarak kabul edilir ve görüntülenir
+    table-caption : element tablo kısa başlık elementi (caption) olarak kabul edilir ve görüntülenir
+    table-row-group : element tablo gövde elementi (tbody) olarak kabul edilir ve görüntülenir
+    table-header-group : element tablo içi başlık elementi (thead) olarak kabul edilir ve görüntülenir
+    table-footer-group : element tablo içi altlık elementi (tfoot) olarak kabul edilir ve görüntülenir
+    table-column : element tablo içi sütun ortak özellikleri belirleme elementi (col) olarak kabul edilir ve görüntülenir
+    table-column-group : element tablo içi sütun ortak özellikleri belirleme grubu elementi (colgroup) olarak kabul edilir ve görüntülenir
+    inline-table : element satır düzeyli tablo elementi (table) olarak kabul edilir ve görüntülenir
+    flex : element blok düzeyli esnek element olarak kabul edilir ve görüntülenir (prefixlerle kullanılır) => display:-webkit-flex;
+    inline-flex : element satır düzeyli esnek element olarak kabul edilir ve görüntülenir (prefixlerle kullanılır) => display:-webkit-inline-flex;
+    grid : element blok düzeyli ızgara elementi olarak kabul edilir ve görüntülenir
+    inline-grid : element satır düzeyli ızgara elementi olarak kabul edilir ve görüntülenir
+}
+visibility{
+    elementin görüntülenme ve gizlenme özelliklerini belirler
+    degerler : visible / hidden / collapse / initial / inherit
+    visible : görünür
+    hidden : gizli (element gösterilmez ama kapladıgı alan konurunarak boş alan gösterilir)
+    collapse : bitişik (element gösterilmez ve elementin kapladıgı alan degerleri korunarak boş alan oluşur fakat element bir table elementi ise kapladıgı alan degerleri korunmaz)
+}
+position{
+    elementin konumlandırma özelliklerini belirler
+    degerler : static / relative / absolute / fixed / sticky / initial / inherit
+    static : Duragan
+    relative : göreceli
+    absolute : mutlak / kesin
+    fixed : sabit
+    sticky : yapışkan
+
+    top : konumlandırılmış bir elementin üstten hizalama konumunu belirler
+    right : konumlandırılmış bir elementin sagdan hizalama konumunu belirler
+    left : konumlandırılmış bir elementin soldan hizalama konumunu belirler
+    bottom : konumlandırılmış bir elementin alttan hizalama konumunu belirler
+    degerler : auto / length / initial
+    ( - ) degerde alabilirler
+}
+z-index{
+    konumlandırılmış bir elementin katman / yığın sırasını belirler
+    degerler : auto / number / initial
+    number : rakam degeri (en büyük rakam degeri daima en üstte olacaktır)
+}
+box-sizing{
+    elementin genişlik ve yükseklik degerlerinin ne şekilde hesaplanması gerektigini belirler
+    degerler : content-box / border-box / initial / inherit
+    content-box :içerik kutusu
+    border-box : kenarlık kutusu
+    /*! prefixlerle kullanılması önerilir
+}
+box-decoration-break{
+    elementin kenarlık / çerçeve özelliklerinin, kutu parçalandıgındaki satır veya sayfa sonları için davranış özelliklerini belirler
+    degerler : slice / clone / initial
+    slice : dilimlemek
+    clone : klonlamak
+}
+box-shadow{
+    elementin gölgelendirme özelliklerini belirler
+    parametreler : horizontal (yatay) shadow / vertical (dikey) shadow / blur spread (bulanıklık yayma) / spread radius (yayma yarıçapı) / color
+    degerler : none / length / inset / initial
+    inset : ilave (içerisinde) (degerlerin en sonunda kullanılır)
+    (-) deger verilirse sol ve üste geçer
+    /*! prefixlerle kullanılması önerilir
+    aralarına virgül konarak birden fazla  gölge eklenebilir
+}
+resize{
+    elementin kullanıcı tarafından yeniden boyutlandırılabilir olup olmadıgını durumunu belirler
+    degerler : none / both / horizontal / vertical / initial / inherit
+    both : her iki tarafada
+    horizontal : yatayda
+    vertical : dikeyde
+    div, p gibi elementlerde overflow:auto; özelligini kullanılması gerekir
+}
+opacity{
+    elementin opaklık / şeffaflık özelliklerini belirler
+    degerler : number / initial
+    *{
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=opacity özelliginde verilen deger*100)";
+        filter:Alpha(opacity=opacity özelliginde verilen deger*100);
+        opacity: ;
+    }
+}
+filter{
+    elemente uygulanacak olan efekt özelliklerini belirler
+    degerler : none / blur() / brightness() / contrast() / drop-shadow() / grayscale() / hue-rotate() / invert() / opacity() / saturate() / sepia()
+    blur() : bulanıklık (px)
+    brightness() : parlaklık (0% ile 100% arası)
+    contrast() : kontrast (0% ile 100% arası)
+    drop-shadow() : gölgelendirme (horizontal shadow / vertical shadow / blur spread / color)
+    grayscale() : gri tonlama (0% ile 100% arası)
+    hue-rotate() : renk döndürme (0 ile 360 derece (deg) arası)
+    invert() : ters çevirme (0% ile 100% arası)
+    opacity() : opaklık (0% ile 100% arası)
+    saturate() : renk doyması (0% ile 100% arası)
+    sepia() : sepya (kahverengi agırlıklı antik tonlama) (0% ile 100% arası)
+    /*! prefixlerle kullanılması önerilir
+    aralarına boşluk bırakılarak birden fazla özellik kullanılabilir
+}
+clip{
+    position:absolute; özelligi ile konumlandırılmış bir elementin kırpma / maskeleme özelliklerini belirler
+    degerler : auto / shape / initial
+    sahpe : rect() fonksiyonu kullanılır (rectangle => dikdörtgen)
+    clip:rect(); 1.parametre: üst, 2.parametre: sag, 3.parametre: alt, 4.parametre: sol
+}
+clip-path{
+    position:absolute; özelligi ile konumlandırılmış bir elementin gelişmiş kırpma / maskeleme özelliklerini belirler
+    degerler : auto / shape / initial
+    shape : şekil
+    shape degerleri : inset() / circle() / ellipse() / polygon() / initial
+    inset() : ilave (aralarında virgül kullanılmaz boşluk bırakırlarak kullanılır) 1.parametre: üst, 2.parametre: sag, 3.parametre: alt, 4.parametre: sol
+    circle() : daire 1.parametre: şekil yarı çapı, 2 parametre: yatay pozisyon, 3 parametre: dikey pozisyon
+    clip-path:circle(50% at 50% 50%) 
+    ellipse() : elips 1.parametre: şekil yatay yarı çapı, 2.parametre: şekil dikey yarı çapı, 3.parametre: yatay pozisyon, 4.parametre: dikey pozisyon
+    clip-path:ellipse(50% 25% at 50% 50%) 
+    polygon() : clip-path:polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); (path(yol) / doldurma kuralı) (yatay pozisyon dikey pozisyon) en az üç tane deger kullanılmalı
+}
+object-fit{
+    elementin boyutlandırılmış alanına sıgamayacak kadar büyük resim veya video içeriklerinin yeniden nasıl boyutlandırılcagını belirler
+    degerler : fill / cover / contain / none / scale-down / initial
+    fill : doldurma (genişlik ve yükseklik degerlerine bakılmaksızın resim veya video elementin içerisine sıgacak şekilde daraltırılır ve uzatılır)
+    cover : kapak (genişlik ve yükseklik degerleri korunarak resim veya video elementin içerisine sıgacak halde kırpılır fakat resim veya video genişlik yada yükselik degeri elementin genişlik veya yükseklik
+                    degerinden az ise uzatılır)
+    contain : içerme (genişlik ve yükseklik degerleri korunarak resim veya video elementin içerisine sıgacak halde orantılı bir şekilde yeniden boyutlandırılır)
+    none : deger yok (genişlik ve yükseklik degerleri korunarak resim veya video elementin içersine sıgdırılmaya çalışmaz fakat elementin içerisine sıgmayan taşan kısım kırpılır)
+    scale-down : azaltma (resim veya video nesnesinin en uygun boyutlandırılmasını bulmak için contain ve none degerlerini karşılaştırarak en uygun olanını otomatik olarak uygular)
+}
+object-position{
+    elementin boyutlandırılmış alanına sıgmayacak kadar büyük resim veya video içeriklerinin object-fit özelligi kullanılarak yeniden boyutlandırılma sonrasındaki resmin veya videonun konum özelliklerini 
+    belirler
+    parametreler : horizontal value / vertical value
+    degerler : length / % / center / top / right / bottom / left / initial
+}
+column-count{
+    elementin çok sütunlu düzeni için bölünmesi gereken sütun sayısı özelligi belirler
+    degerler : number / auto / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-width{
+    elementin çok sütunlu düzeni için bölünmesi gereken sütunların genişliğini belirler
+    sütun sayısı otomatik olarak belirlenir
+    degerler : auto / length / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+columns{
+    elementin çok sütunlu düzeni için bölünmesi gereken sütunların minimum genişlik ve maksimum sütun sayısı özelliklerini belirler
+    parametreler : column-width / column-count
+    degerler : auto / column-width / column-count / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-fill{
+    elementin çok sütunlu düzeni için bölünen sütunların nasıl doldurulacagı durumunu belirler
+    degerler : balance / auto / initial / inherit
+    balance : dengeli (sütunlardaki içerikleri eşit satır sayısında tutmaya çalışır)
+    auto : otomatşk deger (ilk sütunu yükseklige tam dolacak şekilde doldurur ondan sonra bir sonraki sütuna geçer)
+    /*! prefixlerle kullanılması önerilir
+}
+column-span{
+    elementin çok sütunlu düzeni için bölünen sütunların içerisindeki bir elementin sütun veya sütunlara yayılması durumunu belirler
+    degerler : none / all / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-gap{
+    elementin çok sütunlu düzeni için bölünen sütunların aralarındaki boşluk degerlerini belirler
+    degerler : normal / length / initial /inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-rule-style{
+    elementin çok sütunlu düzeni için  bölünen sütunların aralarında dikey ayraç stilini belirler
+    degerler : none / hidden / solid / dashed / dotted / double / groove / ridge / inset / outset / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-rule-width{
+    elementin çok sütunlu düzeni için bölünen sütunların aralarında dikey ayraç genişliğini belirler
+    degerler : length / thin / medium / thick / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-rule-color{
+    elementin çok sütunlu düzeni için bölünen sütunların aralarında dikey ayraç rengini belirler
+    degerler : color / initial / inherit
+    /*! prefixlerle kullanılması önerilir
+}
+column-rule{
+    elementin çok sütunlu düzeni için bölünen sütunların aralarındaki dikey ayraç özelliklerini belirler
+    parametreler : column-rule-width / column-rule-style / column-rule-color
+    degerler : rule value / initial / inherit
+    rule value : kural degeri
+    /*! prefixlerle kullanılması önerilir
+}
+break-before{
+    elementinin çok sütunlu düzeni için bölünen sütunların arasındaki belirtilecek olan elementin öncesinde bölünme davranış özelliklerini belirler
+    degerler : auto / column / initial
+    column : sütun bölünür
+}
+break-after{
+    elementinin çok sütunlu düzeni için bölünen sütunların arasındaki belirtilecek olan elementin sonrasında bölünme davranış özelliklerini belirler
+    degerler : auto / column / initial
+    column : sütun bölünür
+}
+flex-direction{
+    esnek kutuların dizilim yönü özelliklerini belirler
+    degerler : row / row-reverse / column / column-reverse / initial
+    row : soldan saga dogru dizilir
+    row-reverse : sagdan sola dogru dizilir
+    column :yukarıdan aşagı dogru dizilir
+    column-reverse : aşagıdan yukarı dogru dizilir
+    /*! prefixlerle kullanılması önerilir
+}
+flex-wrap{
+    esnek kutuların satır kırılma özelliklerini belirler
+    degerler : nowrap / wrap / wrap-reverse / initial
+    nowrap : elementler yeniden boyutlandırılarak satıra sıgdırılmaya çalışılır
+    wrap : elemenlar belirledigimiz boyutlarda kalır ve satıra sıgmayan elemenlar bir alt satıra geçer
+    /*! prefixlerle kullanılması önerilir
+}
+flex-flow{
+    esnek kutuların dizilim yönü ve satır kırılma özelliklerini belirler
+    parametreler : flex-direction / flex-wrap
+    degerler : row & row-reverse & column & column-reverse / nowrap & wrap & wrap-reverse / initial
+    /*! prefixlerle kullanılması önerilir
+}
+flex-basis{
+    esnek kutu içerisindeki element veya elementlerin başlangıç uzunlugu degerlerini belirler
+    degerler : auto / number / initial
+    /*! prefixlerle kullanılması önerilir
+}
+flex-grow{
+    esnek kutu içerisindeki element veya elementlerin diger elementlere göre büyüklük oranının ne şekilde olması gerektigini belirler
+    degerler : number / initial
+    /*! prefixlerle kullanılması önerilir
+}
+flex-shrink{
+    esnek kutu içerisindeki element veya elementlerin diger elementlere göre küçüklük / büzülme oranının ne şekilde olması gerektigini belirler
+    degerler : number / initial
+    /*! prefixlerle kullanılması önerilir
+}
+flex{
+    esnek kutu içerisindeki element veya elementlerin diger elementlere göre büyüklük oranını yada küçüklük / büzülme yada başlangıç uzunlugu degerini belirler
+    degerler : flex-grow / flex-shrink / flex-basis / auto / initial
+    /*! prefixlerle kullanılması önerilir
+}
+align-items{
+    esnek kutu içerisinde bulunan elementlerin hizalama özelliklerini belirler
+    degerler : stretch / center / flex-start / flex-end / baseline / initial
+    center : kutunun yüksekligi içerik yüksekligi kadar olur ve kutu ortalanır
+    flex-start : kutunun yüksekligi içerik yüksekligi kadar olur ve kutu en başa yapışır
+    flex-end : kutunun yüksekligi içerik yüksekligi kadar olur ve kutu en sona yapışır
+    baseline : flex-start la aynı işlemi görür
+    /*! prefixlerle kullanılması önerilir
+}
+align-self{
+    esnek kutu içerisinde bulunan ve seçilen element veya elementlerin hizalama özelliklerini belirler
+    degerler : auto / stretch / center / flex-start / flex-end / baseline / initial
+    center : kutunun yüksekligi içerik yüksekligi kadar olur ve kutu ortalanır
+    flex-start : kutunun yüksekligi içerik yüksekligi kadar olur ve kutu en başa yapışır
+    flex-end : kutunun yüksekligi içerik yüksekligi kadar olur ve kutu en sona yapışır
+    baseline : flex-start la aynı işlemi görür
+    /*! prefixlerle kullanılması önerilir
+}
+align-content{
+    esnek kutu içerisinde bulunan elementler tüm alanı kullanmadıgında ve satır kırılma oldugunda elementlerin hizalama özelliklerini belirler
+    degerler : stretch / center / flex-start / flex-end / space-between / space-arround / initial
+    space-between : başlangıca ve en sona dayar ortada boşluk bırakır. 3 satırlı olursa ortadakini en ortaya koyar
+    space-arround : başlangıcında ve sonunda da boşluk koyar
+    /*! prefixlerle kullanılması önerilir
+}
+justify-content{
+    esnek kutu içerisinde bulunan elementler tüm alanı kullanmadıgında elementlerin hizalama özelliklerini belirler
+    degerler : center / flex-start / flex-end / space-between / space-arround / initial
+    /*! prefixlerle kullanılması önerilir
+}
+order{
+    Esnek kutu içerisnde bulunan element veya elementlerin diger elementlere göre sıralama özelliklerini berlirler
+    deger : number / initial
+    number : (eger eski deger verilirse baştan sıralar artı deger olursa sondan sıralar) (bütün iç elemanlara deger eksi deger verilirse sondan sıralar pozitif deger verilirse baştan sıralar)
+    /*! prefixlerle kullanılması önerilir
+}
+grid-template-columns{
+    ızgara düzeni içerisindeki element veya elementler için oluşturulması gereken sütun adedini ve sütun boyutu genişligini belirler
+    degerler : none / auto / max-content / min-content / length / initial
+    auto : (yazılan auto kadar sütun oluşur de otomatik genişlik alır)
+    max-content : kutunun genişligi içerik genişligi kadar olur ve yazılan max-content kadar sütun oluşur
+    min-content : içindeki yazıları boşluklardan bölerek oluşur ve yazılan min-content kadar sütun oluşur
+    length : yazılan uzunluk kadar sütun oluşur
+    repeat() fonksiyonu : repeat(degerin veya degerlerin kaç sefer tekrarlanacagı, kullanılacak deger(burdaki yazan deger kadar sütun oluşur))
+}
+grid-templates-rows{
+    Izgara düzeni içerisindeki element veya elementlerin oluşturulması gerekn satır boyutu yüksekligini belirler
+    degerler : none / auto / max-content / min-content / length / initial
+    repeat() fonksiyonu kullanılabilir
+    satır sayısı kadar deger yazılmalıdır
+}
+grid-column-gap{
+    Izagara düzeni içerisindeli element veya elementler için oluşturulmuş olan sütunların aralarındaki boşluk degerlerini belirler
+    degerler : length / initial
+}
+grid-row-gap{
+    Izagara düzeni içerisindeli element veya elementler için oluşturulmuş olan satırların aralarındaki boşluk degerlerini belirler
+    degerler : length / initial
+}
+grid-gap{
+    Izagara düzeni içerisindeli element veya elementler için oluşturulmuş olan satırların ve sütunların aralarındaki boşluk degerlerini belirler
+    parametreler : gird-row-gap / grid-column-gap
+    degerler : length / initial
+    tek deger ve çift deger kullanılabilir
+}
+grid-auto-flow{
+    Izagara düzeni içerisindeli element veya elementler için otomatik yerleşim algortiması özelliklerini belirler
+    degerler : row / column / row dense / column dense / initial
+    row : elementlerler yanyana dizilir
+    column : elementler alt alta dizilir
+    row dense : boşluk varsa doldurulur ve yanyana dizilir
+    column dense : boşluk varsa doldurulur ve alt alta dizilir
+}
+grid-auto-columns{
+    Izagara düzeni içerisindeli element veya elementler için oluşturulması gereken sütunların varsayılan genişligini belirler
+    degerler : auto / max-content / min-content / length / initial
+}
+grid-auto-rows{
+    Izagara düzeni içerisindeli element veya elementler için oluşturulması gereken satırların varsayılan genişligini belirler
+    degerler : auto / max-content / min-content / length / initial
+}
+grid-column-start{
+    ızgara düzeni içerisindeki elementlerin kaçıncı sütundan başlaması gerektigini belirler
+    degerler : auto / column-line / initial
+    column-line : kaçıncı sütundan başlaması isteniyor (eger başına veya sonuna "span" yazılırsa örnek => span 4 veya 4 span gibi 4 sütunluk alanı kaplar)
+    (aralardada kullanılabilir ve birden fazla elementde aynı anda kullanılabilir)
+}
+grid-column-end{
+    ızgara düzeni içerisindeki elementlerin kaçıncı sütunda bitmesi gerektigini belirler
+    degerler : auto / column-line / initial
+    column-line : kaçıncı sütunda bitmesi isteniyor (eger başına veya sonuna "span" yazılırsa örnek => span 4 veya 4 span gibi 4 sütunluk alanı kaplar)
+    (aralardada kullanılabilir ve birden fazla elementde aynı anda kullanılabilir)
+}
+grid-column{
+    ızgara düzeni içerisindeki elementlerin kaçıncı sütundan başlaması gerektigini ve kaçıncı sütunda bitmesi gerektigini belirler
+    parametreler : grid-column-start / grid-column-end
+    degerler : auto / column-line / initial
+    column-line :  tek parametre kullanımında => kaçıncı sütunda başlaması ve bitmesi isteniyor (eger başına veya sonuna "span" yazılırsa örnek => span 4 veya 4 span gibi 4 sütunluk alanı kaplar)
+    çift parametre örnek kullanımı : column-line:2 / 5; 2de başlar 5 de biter 
+    (eger sapan kullanılmak istenirse  column-line: 2 / span 5 veya 2 / 5 span => 2. sütundan başlar ve 5 tane alan kaplar /  colum-line: span 2 / 5 => 2 sütunluk alan kaplar ve 5. sütunda biter)
+}
+grid-row-start{
+    ızgara içindeki elementin kaçıncı satırdan başlaması gerektigini belirler
+    degerler : auto / row-line / initial
+    row-line : kaçıncı satırda başlaması isteniyor (eger başına veya sonuna "span" yazılırsa örnek => span 4 veya 4 span gibi 4 satırlık alanı kaplar)
+    (aralardada kullanılabilir ve birden fazla elementde aynı anda kullanılabilir)
+}
+grid-row-end{
+    ızgara düzeni içerisindeki elementlerin kaçıncı satırda bitmesi gerektigini belirler
+    degerler : auto / column-line / initial
+    row-line : kaçıncı satırda bitmesi isteniyor (eger başına veya sonuna "span" yazılırsa örnek => span 4 veya 4 span gibi 4 satırlık alanı kaplar)
+    (aralardada kullanılabilir ve birden fazla elementde aynı anda kullanılabilir)
+}
+grid-row{
+    ızgara düzeni içerisindeki elementlerin kaçıncı satırdan başlaması gerektigini ve kaçıncı satırda bitmesi gerektigini belirler
+    parametreler : grid-row-start / grid-row-end
+    degerler : auto / row-line / initial
+    row-line :  tek parametre kullanımında => kaçıncı satırda başlaması ve bitmesi isteniyor (eger başına veya sonuna "span" yazılırsa örnek => span 4 veya 4 span gibi 4 satırlık alanı kaplar)
+    çift parametre örnek kullanımı : row-line:2 / 5; 2de başlar 5 de biter 
+    (eger sapan kullanılmak istenirse  row-line: 2 / span 5 veya 2 / 5 span => 2. satırdan başlar ve 5 tane alan kaplar / row-line: span 2 / 5 => 2 satırlık alan kaplar ve 5. satırda biter)
+}
+grid-area{
+    Izgara düzeni içerisindeki elementin tüm satır ve sütun işlmeleri için alan yarleştirme özelliklerini belirler. Aynı zmaanda ızgara düzeni içerisindeki elementin alan adı degerini belirler
+    parametreler : grid-row-start / grid-column-start / grid-row-end / grid-column-end
+    degerler : areaname / initial (degerler kullanılırken parametre degerleri kullanılamaz)
+    areaname : kullanıldıgı zaman varsayılan olarak 2 sütun şeklinde oluşur eger (birden fazla element te alan adı oluşturulursa her element için 2 tane sütun oluşur yani 4 elementte kullanılırsa 8 sütun oluşur)
+    parametreler arasında "/" kullanılır
+    parametrelerde span kullanılabilir
+}
+grid-template-areas{
+    Izgara düzeni içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler
+    degerler : none / area name
+    none : yerine (.) nokta da kullanılabilir
+    kullanımı
+    .class{
+        grid-area:alanadi; => türkçe karakter kullanılmamalıdır sadece bu şekilde kullanılırsa class ın buluddugu element 2.sütunun 2.satırına gider
+    } 
+    .üstelement{
+        grid-template-areas:none; => şekilde kullanılırsa class ın buluddugu element 2.sütunun 2.satırına gider
+    }
+    .üstelement{
+        grid-template-areas:"alanadi alanadi" veya 'alanadi alanadi'; 
+        tüm tırnaklar içinde yazılan deger kadar sütun oluşturur
+        classın bulundugu element yazılan alanadi kadar sütun kaplar (belirtilen element için geçerli)
+        belirtilen element en üste çıkar 
+        tırnaklar içinde yazılan degerin sınırı yoktur 1 tanede olabilir 100 tanede 
+    }
+    .üstelement{
+        grid-template-areas:"alanadi alanadi . . ." veya 'alanadi alanadi . . .'; 
+        tüm tırnaklar içinde bulunan deger kadar sütun oluşturur (2 tane alan adı degeri + 3 nokta = 5 sütun) 
+        classın bulundugu element yazılan alanadi kadar sütun kaplar + nokta kadar sütun koyar (belirtilen element için geçerli)
+        belirtilen element en üste çıkar 
+        tırnaklar içinde yazılan degerin sınırı yoktur 1 tanede olabilir 100 tanede 
+    }
+    .üstelement{
+        grid-template-areas:". . . alanadi alanadi . . ." veya '. . . alanadi alanadi . . .'; 
+        tüm tırnaklar içinde bulunan deger kadar sütun oluşturur (3 nokta 2 tane alan adı degeri + 3 nokta = 8 sütun)
+        alanadi degeri öncesinde bulunan nokta kadar sütun +  classın bulundugu element yazılan alanadi kadar sütun kaplar + alanadi degeri sonrasında bulunan nokta kadar sütun (belirtilen element için geçerli)
+        belirtilen element en üste çıkar 
+        tırnaklar içinde yazılan degerin sınırı yoktur 1 tanede olabilir 100 tanede 
+    }
+    yazılan her tırnak bir satır için geçerlidir eger birden fazla tırnak olursa tırnak sayısı kadar tırnak içindeki özelliklere baglı kalarak satır oluşur devamında normal satırlar devam eder
+    birden fazla satır için birden fazla tırnak kullanılmışsa alan adı yazan elemntler birleşik gözükür
+    bir tırnak için birden fazla (farklı) alan adı degeri kullanılabilir 
+}
+grid-template{
+    ızgara düzeni içerisindeki element veya elementler için tüm satır ve sütun işlemlerinin yanı sıra alan yerleştirme özelliklerini belirler
+    parametreler : grid-template-rows / grid-template-columns / grid-template-areas
+    degerler : none / initial (parametre degerleri yokken kullanılır)
+    parametreler "/" ile ayrılır
+}
+grid{
+    ızgara düzeni içerisindeki element veya elementler için gelişmiş tüm satır ve sütun işlemlerinin yanı sıra alan yerleştirme özelliklerini belirler
+    parametreler : grid-template-rows / grid-template-columns / grid-template-areas
+    parametreler : grid-template-rows / [grid-auto-flow] grid-template-columns
+    parametreler : [grid-auto-flow] grid-template-rows / grid-template-columns
+    degerler : none / initial
+}
+align-items{
+    ızgara düzeni içerisinde bulunan elementlerin dikey hizalama özelliklerini belirler
+    degerler : stretch / center / start / end / initial
+    stretch : uzat / esne (bütün alanı komple kaplar)
+    center : (elementin yüksekligi kadar alan kaplar ve ve elementleri ortalar)
+    start : (elementin yüksekligi kadar alan kaplar ve ve elementleri başlangıca getirir)
+    end : (elementin yüksekligi kadar alan kaplar ve ve elementleri sonuna getirir)
+    /*! prefixlerle kullanılması önerilir
+}
+align-self{
+    ızgara düzeni içerisinde bulunan seçilen elementlerin dikey hizalama özelliklerini belirler
+    degerler : auto / stretch / center / start / end / initial
+    /*! prefixlerle kullanılması önerilir
+}
+align-content{
+    ızagara düzeni içerisinde bulunan elementler tüm alanı kullanmadıgında elementlerin dikey hizalama özelliklerini belirler
+    degerler : stretch / center / start / end / space-around / space-between / space-evenly / initial
+    space-between : ilk kutuyu en başa alarak diger elemnlerle aralarında eşit boluş bırakarak yerleştirir
+    space-around: ilk ve son kutuyu diger kutularlaa aralarındaki oluşacak bolugun yarısını en sona yarısını en başa ekler
+    space-evenly : bütün boşlukları eşit yapar
+    /*! prefixlerle kullanılması önerilir
+}
+justify-items{
+    ızagara düzeni içerisinde bulunan elementlerin yatay hizalama özelliklerini belirler
+    degeler : stretch / center / start / end / initial
+    /*! prefixlerle kullanılması önerilir
+}
+justify-self{
+    ızgara düzeni içerisinde bulunan seçilen elementlerin yatay hizalama özelliklerini belirler
+    degerler : auto / stretch / center / start / end / initial
+    /*! prefixlerle kullanılması önerilir
+}
+jsutify-content{
+    ızagara düzeni içerisinde bulunan elementler tüm alanı kullanmadıgında elementlerin yatay hizalama özelliklerini belirler
+    degerler : stretch / center / start / end / space-around / space-between / space-evenly / initial
+    /*! prefixlerle kullanılması önerilir
+}
+order{
+    ızgara düzeni içerisindeki elementlerin diger elementlere göre sıralama özelliklerini belirler
+    degerler : number / initial
+    number : pozitif deger verilmişse degerlerden en büyük olan en sona gider / negatif deger verilmişse en küçük olan deger en başa gelir
+    ! prefixlerle kullanılması önerilir
+}
+transform{
+    elementin 2d veya veya 3d dönüştürme özelliklerini belirler
+    degerler : none / translate() / translate3d() / translateX() / translateY() / translateZ() / skew() / skewX() / skewY() / scale() / scale3d() / scaleX() / scaleY() / scaleZ() / rotate() / rotate3d() /
+                rotate3d() / rotateX() / rotateY() / rotateZ() / perspective() / matrix() / matrix3d() / inital
+    ? z ekseni : 3d transform özelliklerinde derinligi belirtir
+    ? konum olarak degiştirme yapmaz (içerikler üst üste gelebilir) eksi deger verilirse -x ve -y ekseninde ilerler 
+    ? kullanımı translate(x ekseni(x ekseninde gidicegi konum), y ekseni(y ekseninde gidecegi konum))
+    translate() : elementin x ve y ekseninde konumunu degiştirir 
+    ? perspective() ile birlikte kullanılmalı
+    ? eksi deger verilince içerik uzaklaşır artı deger verilirse yakınlaşır
+    ! konumu degişmez konum içerisinde verilen x ve y eksenine göre ilerler
+    translate3d() : elementin x, y ve z ekseninde konumunu degiştirir 
+    translateX() : elementin x ekseninde konumu degiştirir
+    translateY() : elementin y ekseninde konumu degiştirir
+    ? perspective() ile birlikte kullanılmalı
+    ? konumu degişmeden eksi deger verilirse uzaklaşır pozitif deger verilirse yakınlaşır
+    translateZ() : elementin z ekseninde konumu degiştirir 
+    ? kullanımı skew(1deg) eger eksi deger verilirse diger yönde egilir
+    skew() : elementin x ve y ekseninde eger (yamultur)
+    skewX() : elementin x ekseninde eger
+    skewY() : elementin y ekseninde eger
+    ? kullanımı scale(2) elementin boyutunu 2 kat arttırır -- scale(0.5) elementin boyutunu yarısına düşürür
+    ? scale içinde verilen degerler elementin boyutu çarpılır
+    ? tek parametrede hem x hemde y eksenindeki boyutu ile çarpılır
+    scale() : elementin x ve y ekseninde boyutunu degiştirir
+    scale3d() : elementin x, y ve z ekseninde boyutunu degiştirir 
+    scaleX() : elementin x ekseninde boyutunu degiştirir
+    scaleY() : elementin y ekseninde boyutunu degiştirir
+    scaleZ() : elementin z ekseninde boyutunu degiştirir
+    ? rotate(45deg) -> kullanımı eksi deger kullanılırsa tam tersine döndürür
+    rotate() : elementin saat yönünde döndürür
+    rotate3d() : elementin x,y ve z ekseninde döndürür 
+    rotateX() : elementin x ekseninde döndürür 
+    rotateY() : elementin y ekseninde döndürür 
+    rotateZ() : elementin z ekseninde döndürür 
+    ? gerçek degeri  1000px dir
+    perspective() : elementin perspektif görünüşünü belirler 
+    ! buradaki sıralama ile degerler verilmeli
+    matrix() : elemente 6 farklı dönüşüm özelligi belirler (scaleX(), skewY(),skewX(),scaleY(), translateX(), translateY()) 
+    ? (https://www.codepen.io/fta/pen/infqh) -> ornek site indirildi dosya içinde var
+    matrix3d() : elemente 4X4 dönüşüm özelligi belirler 
+    ! prefixlerle kullanılması önerilir
+}
+transform-origin{
+    elementin dönüştürme sonrasındaki konum özelliklerini belirler
+    parametreler : x / y / z
+    ? varsayılan deger : x -> 50% / y -> 50% / z -> 0
+    degerler : length / % / initial
+    ! prefixlerle kullanılması önerilir
+    ! element dönünce eksen yönleride döner
+}
+transform-style{
+    ? iç içe geçmiş elementlerin 3d dönüştürme sonrasındaki 3d boşlugunda konumlandırılmış veya element düzleminde düzleştirilmiş olup olmadıgı durumunu belirler
+    degerler : flat / preserve-3d / initial
+    flat : düz
+    perserve-3d : 3d perspektif
+    ! prefixlerle kullanılması önerilir
+}
+perspective{
+    ? elementin 3d dönüştürme sonrasındaki perspektif derinligi özelliklerini belirler
+    degerler : none / length / initial
+    ! prefixlerler kullanılması önerilir
+}
+perspective-origin{
+    ? elementin 3d dönüştürme sonrasındaki perspektif derinligi konum özelliklerini belirler
+    parametreler : x / y
+    varsayılan degerler : 50% 50%
+    degerler : length / % / initial
+    ! prefixlerle kullanılması önerilir
+}
+backface-visibility{
+    ? belirtilen elementin dönüştürme, geçiş veya animasyon işlemlerinde arka yüzeyinin görüntülenme veya gizlenme özelliklerini belirler
+    degerler : visible / hidden / initial
+    ! prefixlerle kullanılması önerilir
+}
+transition{
+    ? elementin tüm geçiş özelliklerini belirler
+    parametreler : transition-property / transition-duration / transition-timing-function / transition-delay
+    degerler : özellik degerleri / initial
+    ? all denirse tüm özellikler içerir
+    transition-property : css özellik adı
+    transition-duration : geçiş süresi (sn (saniye), ms (milisaniye))
+    transition-timing-function : hız egrisi
+    transition-delay : duraksama süresi ( ne kadar süre sonra başlayacagını belirler )
+    ? birden fazla özellik eklemek için bütün parametrelerden sonra virgül konularak devam edilebilir
+    ! prefixlerle kullanıması önerilir
+}
+transition-property{
+    ?elemente tanımlanmış olan geçiş özelligi için kullanılması gereken css de tanımlı olan özellik adını belirler
+    degerler : all / property / initial
+    property : css özellik adı
+    ? virgül kullanılarak birden fazla belirtilebilir
+    ! prefixlerle kullanılması önerilir
+}
+transition-duration{
+   ? elemente tanımlanmış olan geçiş özelliginin kaç saniye veya kaç milisaniye sonunda tamamlanacagını belirler
+    degerler : time / initial
+    ? saniye -> s
+    ? milisaniye -> ms
+    time : zaman degeri
+    ? virgül kullanılarak birden fazla belirtilebilir
+    ! prefixlerle kullanılması önerilir
+}
+transition-delay{
+    ?elemente tanımlanmış olan geçiş özelliginin kaç saniye veya milisaniye gecikecegini belirler
+    degerler : time / initial
+    ? saniye -> s
+    ? milisaniye -> ms
+    time : zaman degeri
+    ? virgül kullanılarak birden fazla belirtilebilir
+    ! prefixlerle kullanılması önerilir
+}
+transition-timing-function{
+    ? elemente tanımlanmış olan geçiş özelliginin hız egrisi özelliklerini belirler
+    degerler : ease / linear / ease-in / ease-out / ease-in-out / step-start / step-end / steps() / cubic-bezier() / initial
+    ease : yavaş olarak başlayarak hızlanır ve sona dogru yavaşlar
+    linear : başlangıçtan sona kadar aynı hız
+    ease-in : yavaş olarak başlayarak sona dogru hızlanır
+    ease-out : hızlı olarak başlayarak sona dogru yavaşlar
+    ease-in-out : yavaş olarak başlayarak ortada hızlanır ve sona dogru tekrar yavaşlar
+    step-start : geçiş süresine bakılmaksızın dogrudan sona ulaşır
+    step-end : geçiş süresine bakılarak geçiş süresi kadar bekliyerek dogrudan sona ulaşır
+    ? iki parametre alır
+    ? steps(10, end) -> 10 adımda sona ulaşır 
+    ? varsayılan degerler --> (1, end)
+    ? end de biraz gecikmeli olarak başlar start da hemen başlar
+    steps() : başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar
+    ? https://cubic-bezier.com/
+    ? en güzel deger (0,1,1,0)
+    cubic-bezier() : bezier egrisi
+    ! prefixlerle kullanılması önerilir
+}
+animation{
+   ? elementin tüm animasyon özelliklerini belirler
+    parametreler : animation-name / animation-duration / animation-timing-function / animation-delay / animation-iteration-count / animation-direction / animation-fill-mode / animation-play-state
+    ? varsayılan degerler : none 0 ease 0 1 normal none running
+    degerler : animation value / initial
+    ! prefixlerle kullanılması önerilir
+    ! animation tanımlandıktan sonra 
+    ? animasyon aşamaları belirtilmeli
+    @keyframes animation-name{ 
+        ? başlangıcı belirtir
+        from{ 
+            left:0px;
+        }
+        ? bitişi belirtir
+        to{
+            left: 100px;
+        }
+    }
+}
+@keyframes animation-name{
+    ? elemente tanımlanmış olan animasyonun animasyon sırasındaki ara aşamalarını belirler
+    degerler  : from / to / %
+    from : başlangıç
+    to : bitiş
+}
+animation-name{
+    ? elemente atanmış olan animasyonun @keyframes özelligi için isim tanımlamasını belirtir
+    degerler : none / @keyframes name / initial
+    ! prefixlerle kullanılması önerilir
+}
+animation-duration{
+    ? elemente tanımlanmış olan animasyon döngüsünün kaç saniye veya kaç milisaniye sonunda tamamlanacagını belirler
+    degerler : time / initial
+    ? saniye -> s / milisaniye -> ms
+    time : zaman
+    ! prefixlerle kullanılması önerilir
+}
+animation-delay{
+    ? elemente tanımlanmış olan animasyonun kaç saniye ve kaç milisaniye gecikme sonunda başlayacagını belirler
+    degerler : time / initial
+    ? saniye -> s / milisaniye -> ms
+    time : zaman
+    ! prefixlerle kullanılması önerilir
+}
+animation-timing-function{
+    ? elemente tanımlanmış olan geçiş özelliginin hız egrisi özelliklerini belirler
+    degerler : ease / linear / ease-in / ease-out / ease-in-out / step-start / step-end / steps() / cubic-bezier() / initial
+    ease : yavaş olarak başlayarak hızlanır ve sona dogru yavaşlar
+    linear : başlangıçtan sona kadar aynı hız
+    ease-in : yavaş olarak başlayarak sona dogru hızlanır
+    ease-out : hızlı olarak başlayarak sona dogru yavaşlar
+    ease-in-out : yavaş olarak başlayarak ortada hızlanır ve sona dogru tekrar yavaşlar
+    step-start : geçiş süresine bakılmaksızın dogrudan sona ulaşır
+    step-end : geçiş süresine bakılarak geçiş süresi kadar bekliyerek dogrudan sona ulaşır
+    ? iki parametre alır
+    ? steps(10, end) -> 10 adımda sona ulaşır 
+    ? varsayılan degerler --> (1, end)
+    ? end de biraz gecikmeli olarak başlar start da hemen başlar
+    steps() : başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar
+    ? https://cubic-bezier.com/
+    cubic-bezier() : bezier egrisi
+    ! prefixlerle kullanılması önerilir
+}
+animation-iteration-count{
+    ? elemente tanımlanmış olan animasyonu kaç defa oynatılacagını belirler
+    degerler : number / infinite / initial
+    ? sayfa açık oldugu sürece çalışacaktır
+    infinite : sonsuz
+    ? varsayılan deger -> 1
+    ? number degeri kaç verilir o kadar çalışacaktır -> 5 verilmişse aynı animasyon işlemi 5 sefer tekrarlanacak ve duracaktır
+    ! prefixlerle kullanılması önerilir
+}
+animation-direction{
+    ? elemente tanımlanmış olan animasyonun oynatma yönü özelliklerini belirler
+    degerler : normal / reverse / alternate / alternate-reverse / initial
+    ? baştan başlayıp sona dogru gider
+    normal : animasyon normal şekilde devam eder
+    ? sondan başlayıp başa dogru ilerler
+    reverse : animasyondan ters başlar
+    ? baştan başlayıp sona dogru gider sonra durmadan sondan başa dogru gelir bu işlem sürekli tekrarlanır
+    alternate : animasyon hiç durmadan baştan sona sondan başa şeklinde devam eder
+    ? sondan başlayıp başa dogru gider sonra durmadan sona dogru ilerler bu işlem durmadan devam eder
+    alternate-reverse : animasyon hiç durmadan tersden devam eder
+    ! prefixlerle kullanılması önerilir
+}
+animation-fill-mode{
+    ? elemente tanımlanmış olan animasyonun oynatma işlemi tamamlandıgında elementin konum özelliklerini belirler
+    degerler : none / forwards / backwards / both / initial
+    ? element animasyonun sonunda kalır
+    forwards : sonda
+    ? element animasyonun başında kalır
+    backwards : başta
+    ? animasyon nerde biterde keyframes de belirlenen bitiş degerine göre otomatik olarak belirlenir ve orda kalır 
+    both : otomatik belirler
+    ! prefixlerle kullanılması önerilir
+}
+animation-play-state{
+    ? elemente tanımlanmış olan animasyonun çalışıp çalışmadıgını veya duraklatılmış olup olmadıgını belirler
+    degerler : running / paused / initial
+    ! prefixlerle kullanılması önerilir
+}
+? yalnızca ekranlı cihazlarda çalışır
+@media only screen{
+    div{
+        color:red;
+    }
+}
+? yalnızca baskı (yazıcı) cihazları için çalışır
+@media only print{
+    div{
+        color:red;
+    }
+}
+? tüm cihazlarda çalışır
+@media only all{
+    div{
+        color:red;
+    }
+}
+? yalnızca ekranlı ve baskı (yazıcı) cihazları için çalışır
+@media only screen, print{
+    div{
+        color:red;
+    }
+}
+? ekranlı olmayan cihazlarda çalışır
+@media not screen{
+    div{
+        color:red;
+    }
+}
+? sadece ekranlı cihazlarda ve minimum genişligi 1200 pixel olan ekranlarda çalışır
+@media only screen and (min-width:1200px){
+    div{
+        color:red;
+    }
+}
+? sadece ekranlı cihazlarda ve genişligi en az 300 pixel ve en fazla 600px olan ekranlarda çalışır
+@media only screen and (min-width:300px) and (max-width:600px){
+    div{
+        color:red;
+    }
+}
+? sadece ekranlı cihazlarda ve yüksekligi en az 300 pixel ve en fazla 600px olan ekranlarda çalışır
+@media only screen and (min-height:300px) and (max-height:600px){
+    div{
+        color:red;
+    }
+}
+*/
+
+/*
+Seçiciler
+
+div{
+    element(tür) seçici
+}
+
+*{
+    genel(evrensel) seçici
+    tüm herşeyi seçer
+}
+
+#id{
+    id(benzersiz kimlik) seçici
+}
+div#id{
+    html tagını yazarak da kullanılabilir
+    id(benzersiz kimlik) seçici
+}
+
+.deneme{
+    class(sınıf) seçici
+}
+div.deneme{
+    html tagı yazarak da kullanılabilir
+    class(sınıf) seçici
+}
+
+div > p{
+    child(çocuk) seçici
+}
+
+div p{
+    descendant(torun soy) seçici
+    divin altındaki p elemanlarını seçer
+}
+
+div ~ p{
+    Genel sibling(kardeş) seçici
+    divden sonra gelen aynı girintide(seviyede) olan p taglarını seçer
+}
+
+div + p{
+    Bitişik kardeş (kardeş) seçici
+    divin altında ve üstünde ki aynı girintide(seviyede) p taglarını seçer
+}
+
+div, p, .class, #id{
+    multiple (çoklu) seçici
+}
+
+div[name]{
+    Attribute (özellik) seçici
+    name degeri olan div elemanlarını seçer 
+    name degerinin içi boş ve farklıda olabilir
+}
+[name]{
+    Attribute (özellik) seçici
+    name degeri olan bütün elemanlarını seçer 
+    name degerinin içi boş ve farklıda olabilir
+}
+
+[kendi ekleginiz özelligi yazbilirsiniz]{
+    Attribute (özellik) seçici
+}
+div[name=""]{
+    Attribute (özellik) seçicilerde tam deger filtresi
+    name degeri boş olan div elemanlarını seçer 
+    
+}
+[name=""]{
+    Attribute (özellik) seçicilerde tam deger filtresi
+    name degeri boş olan bütün elemanlarını seçer 
+    
+}
+div[title~="isim"]{
+    Attribute (özellik) seçicilerde içeren tam deger filtresi
+    title attribute nun içerisinde isim kelimesi geçiyorsa kabul olur
+}
+div[title~="isim" i]{ 
+    i => büyük harf ve küçük harf olayını kaldırır
+    Attribute (özellik) seçicilerde içeren tam deger filtresi
+    title attribute nun içerisinde isim kelimesi geçiyorsa kabul olur
+}
+div[title*="isim"]{ 
+    Attribute (özellik) seçicilerde içeren deger filtresi
+    title attribute nun içerisinde isim geçiyorsa kabul olur
+}
+div[title*=" "]{ 
+    Attribute (özellik) seçicilerde içeren deger filtresi
+    title attribute nun içerisinde boşluk geçiyorsa kabul olur
+}
+
+div[name^="m"]{ 
+    Attribute (özellik) seçicilerde başlayan deger filtresi
+    name attribute nde en başındaki kelimenin m harfi ile başlayanları seçer
+}
+div[name|="tr"]{ 
+    Attribute (özellik) seçicilerde tireli veya tiresiz başlayan deger filtresi
+    name attribute nde tr kelimesinin yanında tr olsada seçer olmasada seçer
+    tr TR
+    tr-TR
+}
+div[name$="secenek"]{
+    Attribute (özellik) seçicilerde biten deger filtresi
+    name attribute nde secenek ile bitenleri seçer
+}
+*/
+
+/*
+Sahte sınıflar
+a:link{
+    daha önce hiç açılmamış linkin rengini tanımlar
+    sadece renkde degişiklik gösterir
+}
+h3:hover{
+    belirtilen elemtin üzerine geldiginde çalışır
+}
+
+a:active{
+    linke tıklandıgı zaman tıklanan yazıyı seçer ama linklerde basılı tutmalısınız ki fark edebilesiniz
+}
+h3:active{
+    yazılarda yazıya tıklandıgı zamanki anda yazıyı seçer
+}
+
+a:visited{
+    daha önce açılmış linkin rengini tanımlar
+}
+
+a:any-link{
+    link elemanın url degeri boş degil ise seçer
+    google chrome da çalışmaz (a:-webkit-any-link ) yazılması gerekir
+    çalışmaması için a etiketinde hiç href yazısının olmaması lazım
+}
+
+input:focus{
+    kutuya tıklandıgında seçer
+}
+
+div:lang(dil){
+    html elemanındaki lang özelligi ile lang sahte sınıfındaki aynı olan div elemanını seçer
+}
+
+(hedeflenen eleman):target{
+    belirtilen html elemanının çapayla baglanmış ve tıklandıgında hedeflenmiş olan bölgeyi seçer
+    eger birden fazla varsa en son tıklananı aktif eder digerleri pasifleşir
+}
+
+:root{
+    html belgesinin kök (html) elemanına stil tanımlar
+    tüm sayfayı seçer
+}
+
+div:empty{
+    belirtilen elemanın içerigi tamamen boşsa seçer
+    eleman belirtilmezse bütün boş elemanları seçer
+    ama çalışması için ekranda gözükmesi lazım
+    onuda şu yollarla yapılabilir:
+        boyut vererek -> width :100%; height :1px;
+}
+
+:not(div){
+    belirtilen eleman dışındaki bütün elemanları seçer
+    dogru çalışması için belirtilen elemana css tanımlanmalı
+    örnek:
+    div{
+        color :blue;
+    }
+    not(div){
+        color :red;
+    }
+}
+
+:checked{
+    belirtilen eleman seçildiginde stil tanımlar
+    seçim kaldırıldıgında stil eski haline döner
+}
+
+:disabled{
+    belirtilen eleman etkin olmadıgında stil tanımlar
+}
+:enabled{
+    belirtilen eleman etkin oldugunda stil tanımlar
+}
+
+:read-only{
+    belirtilen eleman sadece okunabilir oldugunda stil tanımlar
+}
+
+:read-write{
+    belirtilen eleman okunabilir  ve yazılabilir oldugunda stil tanımlar
+}
+
+:required{
+    belirtilen elemana deger girilmesi zorunlu oldugunda stil tanımlar
+}
+:optional{
+    belirtilen elemana deger girilmesi zorunlu olmadıgında stil tanımlar
+}
+
+:valid{
+    belirtilen elemana bilgi girişi geçerli yani dogru oldugunda stil tanımlar.
+}
+:invalid{
+    belirtilen elemana bilgi girişi geçersiz yani yanlış oldugunda stil tanımlar.
+}
+
+:in-range{
+    belirtilen elemana bilgi girişi belirtilen aralıklar dahilinde oldugunda stil tanımlar. belirtilen aralıklar dışında oldugunda stil normale döner
+    <input type="number" min="10" max="20"/>
+}
+
+:out-of-range{
+    belirtilen elemana bilgi girişi belirtilen aralıklar dışında oldugunda stil tanımlar. belirtilen aralıklar dahilinde oldugunda stil normale döner
+}
+
+:first-child{
+    belirtilen eleman baz alınarak üst elementine göre bitişik ilk child (çocuk) durumundaki elemana stil tanımlar
+}
+
+:last-child{
+    belirtilen eleman baz alınarak üst elementine göre bitişik son child (çocuk) durumundaki elemana stil tanımlar
+}
+
+:first-of-type{
+    belirtilen eleman baz alınarak üst elementine göre ilk child (çocuk) durumundaki elemana stil tanımlar
+}
+
+:last-of-type{
+    belirtilen eleman baz alınarak üst elementine göre son child (çocuk) durumundaki elemana stil tanımlar
+}
+
+:only-child{
+    belirtilen eleman baz alınarak üst elementine göre bitişik tek child (çocuk) durumundaki elemana stil tanımlar
+}
+
+:only-of-type{
+    belirtilen eleman baz alınarak üst elementine göre kardeş eleman türleride eşleşen tek child (çocuk) durumundaki elemana stil tanımlar
+}
+
+:nth-child(){
+    belirtilen eleman baz alınarak üst elementine göre kardeş eleman türüne bakılmaksızın ilk child (çocuk) durumundaki elemandan başlayarak sıra numarasına veya numaralarına göre stil tanımlar
+    odd => tek haneye göre sıralama
+    even => çift haneye göre sıralama
+    ul li:nth-child(2n+1){
+        ul nin içindeki 1. li den başlayarak 2 şer şer artarak tekrar eder
+        parantez içi istediginiz gibi degişebilir
+    }
+    ul li:nth-child(odd){
+        sıralaması tek sayı olanlara stil tanımlar
+    }
+    bir yerde durdurmak için nth-last-child sınıfı kullanmak gerekli
+    :nth-child():nth-last-child()
+    eger belirtilen elemandan farklı bir eleman varsa stil tanımlamaz
+}
+
+:nth-last-child(){
+    belirtilen eleman baz alınarak üst elementine göre kardeş eleman türüne bakılmaksızın son child (çocuk) durumundaki elemandan başlayarak sıra numarasına veya numaralarına göre stil tanımlar
+    odd => tek haneye göre sıralama
+    even => çift haneye göre sıralama
+}
+
+:nth-of-type(){
+    belirtilen eleman baz alınarak üst elementine göre kardeş eleman türleride eşlesen ilk child (çocuk) durumundaki elemandan başlayarak sıra numarasına veya numaralarına göre stil tanımlar
+    odd => tek haneye göre sıralama
+    even => çift haneye göre sıralama
+}
+
+:nth-of-type(){
+    belirtilen eleman baz alınarak üst elementine göre kardeş eleman türleride eşlesen son child (çocuk) durumundaki elemandan başlayarak sıra numarasına veya numaralarına göre stil tanımlar
+    odd => tek haneye göre sıralama
+    even => çift haneye göre sıralama
+}
+*/
+
+/*
+sahte elementler
+::first-letter{
+    belirtilen html elemanın ilk karakterine stil tanımlar
+}
+
+::first-line{
+    belirtilen html elemanın ilk satırna stil tanımlar
+}
+
+::before{
+    belirtilen html elemanın öncesine içerik atayarak stil tanımlar
+    content :"buraya yazmak istediginiz metin";
+    devamına css eklenebilir ama sadece content ile eklenmiş içerige stil tanımlar
+    burdan eklenen içerik seçilemez
+}
+
+::after{
+    belirtilen html elemanın sonrasına içerik atayarak stil tanımlar
+    content :"buraya yazmak istediginiz metin";
+    devamına css eklenebilir ama sadece content ile eklenmiş içerige stil tanımlar 
+    burdan eklenen içerik seçilemez
+}
+
+::selection{
+    belirtilen html elemanın seçilen kısmına stil tanımlar
+}
+*/
+
+/*
+Seviye basamaklandırma
+{ 
+    seviye basamaklandırmada seviyeyi degiştirmek için 
+    !important 
+    color :blue !important;
+    şeklinde kullanılmalıdır
+
+}
+*/
+
+/*
+ölçülendirme (relative)(göreceli)
+em{
+    boyut 12 px atanmış ise 1em =12px
+    eger boyut atanmamış ise kullanınlan font ailesinin büyük m harfinin genişligi ve yüksekligini baz alır
+}
+rem{
+    htmlin kök elemanına yani html e atanmış boyut degerine göre hesaplama yapılır
+    boyut 12 px atanmış ise 1rem =12px
+}
+ex{
+    yazi tipi boyunun yukarıdan aşagı (x eksenine) yüksekligi degerine göre hesaplanarak bulunur
+}
+ch{
+    font ailesindeki 0 degerine göre hesaplanır 
+    boyut 12 px atanmış ise 1ch =6px
+    boyut atanmamış ise font ailesindeki 0 rakamının yüksekligi ve genişligine göre hesaplanır
+}
+vw{
+    viewport (görünür alan) genişlik boyutuna baglı ölçülendirme birimi
+    viewport genişliginin %1 dir
+    viewport genişlik boyutu 1200px ise 1vw =12px 
+}
+vh{
+    viewport (görünür alan) yükseklik boyutuna baglı ölçülendirme birimi
+    viewport yüksekliginin %1 dir
+    viewport yükseklik boyutu 900px ise 1vh =9px 
+}
+vmin{
+    vw ve vh arasında daha küçük olanın degerine göre hesaplanır
+    %1 dir.
+}
+vmin{
+    vw ve vh arasında daha büyük olanın degerine göre hesaplanır
+    %1 dir.
+}
+%{
+    çevreleyen alan olmalı 
+    hesapalama formülü => üst ölçülendirme /100 * deger
+}
+*/
