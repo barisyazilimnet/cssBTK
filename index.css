@@ -1463,6 +1463,114 @@ animation-play-state{
         color:red;
     }
 }
+! en çok kullanılan responsive yapısı
+? XL ekranlar
+@media only screen and (min-width:1200px){ 
+    div{
+        color:red;
+    }
+}
+? L ekranlar
+@media only screen and (min-width:992px) and (max-width:1199px){ 
+    div{
+        color:blue;
+    }
+}
+? M ekranlar
+@media only screen and (min-width:768px) and (max-width:991px){ 
+    div{
+        color:yellow;
+    }
+}
+? S ekranlar
+@media only screen and (min-width:576px) and (max-width:767px){ 
+    div{
+        color:orange;
+    }
+}
+? XS ekranlar
+@media only screen and (max-width:575px){ 
+    div{
+        color:aqua;
+    }
+}
+? @import "asd.css" only screen and (min-width:1200px);
+page-break-before{
+    ? sayfa yazdırma işlemlerinde belirtilecek olan elementden önce sayfa sonlandırma durumunu belirler
+    degerler : auto / always / initial
+    always : daima
+}
+page-break-after{
+    ? sayfa yazdırma işlemlerinde belirtilecek olan elementden sonra sayfa sonlandırma durumunu belirler
+    degerler : auto / always / initial
+    always : daima
+}
+page-break-inside{
+    ? sayfa yazdırma işlemlerinde belirtilecek olan elementi içerisinde sayfa sonlandırma yapılıp yapılamayacagı durumunu belirler
+    degerler : auto / avoid / initial
+    avoid : önleme
+}
+cursor{
+    ? mouse içaretsinin stilini belirler
+    degerler : auto / default / none / pointer / text / vertical-text / crosshair / cell / help / alias / copy / progress / wait / zoom-in / zoom-out / grab / grabbing / move / no-drop / not-allowed / all-scroll /
+                row-resize / col-resize / nwse-resize / se-resize / nw-resize / nesw-resize / sw-resize / ne-resize / ns-resize / s-resize / n-resize / ew-resize / e-resize / w-resize / url / initial / inherit
+    default : tüm elementlerde mouse imleci ok şeklinde gözükür
+    none : İmleç görünmez
+    crosshair : artı şekli 
+    cell : içerisi boş artı şekli 
+    help : imlecin sag alt köşesine soru işareti eklenir
+    alias : imlecin sag üst tarafına kısayol simgesi oku eklenir
+    copy : imlecin sag üst tarafına artı simegsi eklenir
+    progress : imlecin sag üst tarafına yükleniyor simegsi eklenir
+    wait : yükleniyor simegsi 
+    zoom-in : büyüteç simgesi içerisinde artı simgesi
+    zoom-out : büyüteç simgesi içerisinde eksi simgesi
+    ! prefixlerle kullanılması önerilir
+    grab : sürükle bırak işlemindeki gibi el işareti
+    ! prefixlerle kullanılması önerilir
+    grabbing : sürükle bırak işlemindeki gibi el işareti (kapalı hali sanki tıklanmış gibi)
+    no-drop : girilmez olumsuz işareti 
+    not-allowed : girilmez olumsuz işareti
+    all-scroll :  taşıma simgesi işareti (bazı işletim sistemlerinde mouse tekerler simgesi)
+    row-resize : satır boyutlandırma işlemi simgesi
+    col-resize : sütun boyutlandırma işlemi simgesi
+    nwse-resize : çapraz pencere büyütme oku simgesi (soldan saga)
+    se-resize : çapraz pencere büyütme oku simgesi (soldan saga)
+    nw-resize : çapraz pencere büyütme oku simgesi (soldan saga)
+    nesw-resize : çapraz pencere büyütme oku simgesi (sagdan sola)
+    sw-resize :  çapraz pencere büyütme oku simgesi (sagdan sola)
+    ne-resize : çapraz pencere büyütme oku simgesi (sagdan sola)
+    ns-resize : dik pencere büyütme oku simgesi
+    s-resize : dik pencere büyütme oku simgesi
+    n-resize : dik pencere büyütme oku simgesi 
+    ew-resize : yatay pencere büyütme oku simgesi  
+    e-resize : yatay pencere büyütme oku simgesi 
+    w-resize : yatay pencere büyütme oku simgesi 
+    url() : .cur uzantılı imleç dosyası belirtilrerek özel imleç yapılabilir
+    ! farklı işletim sistemlerinde farklı simgeler çıkabilir
+}
+caret-color{
+    ? bilgi girişi elementlerin veya düzenlenebilir degerine sahip herhangi bir elementin imleç rengini belirler
+    degerler : auto / color / transparent / initial
+}
+all{
+    ? direction ve unicode-bidi hariç diger tüm css özelliklerinin sıfırlanacagı ve devralınacagı durumu belirler
+    degerler : initial / inherit / unset
+    initial : belirtilen tüm css özelliklerini varsayılan biçimlendirme degerine döner
+    inherit : belirtilen üst elementinden normalde devralınmayan tüm css özelliklerini devralır
+    unset :  belirtilen üst elementinden normalde devralınmayan tüm css özelliklerini devralır. fakat üst elementinde tanımlı herhangi bir özellik yoksa tüm css özellikleri varsayılan biçimlendirme degerine döner
+}
+var(){
+    ? önceden tanımlanmış olan ve tüm css kodları içerisinde kullanılmak üzere belirli degerler içeren verilen tutuldugu degişkenlerin çagrılma durumunu belirler
+    ? degişken oluşturma -> --degişkenadi
+    ? bütün degişkenler bunun içine yazılır
+    :root{
+        --kirmizirenk:red;
+        --maviborder:2px solid blue;
+    }
+    ? kullanımı -> css özelligi : var(--degişkenadi)
+    border : var(--maviborder);
+}
 */
 
 /*
