@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="tr" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? maximum-scale=1.0, user-scaleble=no -->
+    <link rel="icon" href="img/favicon.png" sizes="96x96" type="image/png" />
+    <meta name="robots" content="index, follow, noarchive" />
+    <!-- ? indexlenebilir içindeki linkler takip edilebilir ama arşivlenemez -->
+    <meta name="revisit-after" content="7 Days" />
+    <!-- ? arşivlenemedigi için 7 günde bir site arama motorları tarafından ziyaret edilecektir -->
+    <meta name="rating" content="general" />
+    <!-- ? bütün kitleye hitap edebilir-->
+    <meta name="copyright" content="Copyright &copy; 2019 - 2021 barisyazilim.net Tüm Hakları Saklıdır." />
+    <!-- ? arama motorlarının görecegi copyright -->
+    <meta name="reply-to" content="kurt-bar07@hotmail.com" />
+    <!-- ? arama motorlarının görecegi web site sahibine burdan erişilebilir -->
+    <meta name="author" content="Barış KURT - kurt-bar07@hotmail.com" />
+    <meta name="designer" content="Barış KURT - Barış Yazılım" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="description" content="Türkiye'nin En Kaliteli ve En Büyük Ayakkabı Alışverişi buradadır." />
+    <meta name="keywords" content="Ayakkabı, Nike, Docker, Lumberjack, Adidas, Hummel, Kinetix" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Barış Ayakkabı</title>
+</head>
+
+<body>
+    <div id="page_section">
+        <header>
+            <div id="header_section">
+                <div id="header_message_section">
+                    <img id="mesajresim1" src="mesajresim1" alt="mesajresim1" title="mesajresim1" />
+                    <img id="mesajresim2" src="mesajresim2" alt="mesajresim2" title="mesajresim2" />
+                    <img id="mesajresim3" src="mesajresim3" alt="mesajresim3" title="mesajresim3" />
+                    <img id="mesajresim4" src="mesajresim4" alt="mesajresim4" title="mesajresim4" />
+                    <img id="mesajresim5" src="mesajresim5" alt="mesajresim5" title="mesajresim5" />
+                </div>
+                <div id="header_menu_section">
+                    <div id="header_menu_top_section">
+                        <div id="header_menu_top_limitation_section">
+                            <ul id="header_menu_top_options_section">
+                                <!-- ? kullanıcı sisteme giriş yaptıktan sonra görünecek seçenekler -->
+                                <!-- <li class="header_menu_top_options"><a href="my_account.html" target="_top"><img src="img/user_login_16px.png" alt="user_login" title="user_login"></a></li>
+                                <li class="header_menu_top_options"><a href="my_account.html" target="_top">Hesabım</a></li>
+                                <li class="header_menu_top_options"><a href="sign_out.html" target="_top"><img src="img/sign_out_16px.png" alt="sign_out" title="sign_out"></a></li>
+                                <li class="header_menu_top_options"><a href="sign_out.html" target="_top">Çıkış yap</a></li>
+                                <li class="header_menu_top_options"><a href="shopping_cart.html" target="_top"><img src="img/shopping_cart_16px.png" alt="shopping_cart" title="shopping_cart"></a></li>
+                                <li class="header_menu_top_options"><a href="shopping_cart.html" target="_top">Alışveriş Sepeti</a></li> -->
+                                <!-- ? kullanıcı sisteme giriş yapmadan önceki görünecek seçenekler -->
+                                <li class="header_menu_top_options">
+                                    <a href="login.html" target="_top"><img src="img/user_login_16px.png"
+                                            alt="user_login" title="user_login" /></a>
+                                </li>
+                                <li class="header_menu_top_options">
+                                    <a href="login.html" target="_top">Giriş Yap</a>
+                                </li>
+                                <li class="header_menu_top_options">
+                                    <a href="sign_up.html" target="_top"><img src="img/user_sign_up_16px.png"
+                                            alt="user_sign_up" title="user_sign_up" /></a>
+                                </li>
+                                <li class="header_menu_top_options">
+                                    <a href="sign_up.html" target="_top">Üye Ol</a>
+                                </li>
+                                <li class="header_menu_top_options">
+                                    <a href="shopping_cart.html" target="_top"><img src="img/shopping_cart_16px.png"
+                                            alt="shopping_cart" title="shopping_cart" /></a>
+                                </li>
+                                <li class="header_menu_top_options">
+                                    <a href="shopping_cart.html" target="_top">Alışveriş Sepeti</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="header_menu_limitation_section">
+                        <div id="header_menu_logo_section">
+                            <a href="index.html" target="_top"><img src="analogo" alt="analogo" title="analogo" /></a>
+                        </div>
+                        <div id="header_menu_nav_section">
+                            <nav id="header_menu_nav">
+                                <ul id="header_menu_options_section">
+                                    <li class="header_menu_options">
+                                        <a href="index.html" target="_top">Anasayfa</a>
+                                    </li>
+                                    <li class="header_menu_options">
+                                        <a href="man_shoes.html" target="_top">Erkek Ayakkabıları</a>
+                                    </li>
+                                    <li class="header_menu_options">
+                                        <a href="woman_shoes.html" target="_top">Kadın Ayakkabıları</a>
+                                    </li>
+                                    <li class="header_menu_options">
+                                        <a href="kid_shoes.html" target="_top">Çocuk Ayakkabıları</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="header_menu_bar_button_section">
+                            <img src="img/menu_bar_24px.png" alt="menu_bar" title="menu_bar" />
+                        </div>
+                    </div>
+                </div>
+                <div id="header_menu_bar_button_limitation_section" style="display: none">
+                    <div id="header_menu_bar_button_menu">
+                        <ul id="header_menu_bar_button_options_section">
+                            <li class="header_menu_bar_button_options">
+                                <a href="index.html" target="_top">Anasayfa</a>
+                            </li>
+                            <li class="header_menu_bar_button_options">
+                                <a href="man_shoes.html" target="_top">Erkek Ayakkabıları</a>
+                            </li>
+                            <li class="header_menu_bar_button_options">
+                                <a href="woman_shoes.html" target="_top">Kadın Ayakkabıları</a>
+                            </li>
+                            <li class="header_menu_bar_button_options">
+                                <a href="kid_shoes.html" target="_top">Çocuk Ayakkabıları</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="full_page_frame_section">
+                <div id="full_page_frame_limitation_section">
+                    <div id="full_page_frame_section_inside_shopping_cart_page_left_section">
+                        <div class="full_page_frame_section_inside_shopping_cart_underline_header_section">
+                            <div class="full_page_frame_section_inside_shopping_cart_underline_header_section_top_header_text">Alışveriş Sepeti</div>
+                            <div class="full_page_frame_section_inside_shopping_cart_underline_header_section_bottom_header_text">Ödeme türü aşağıdan belirtebilirsin.</div>
+                        </div>
+                        <form id="shopping_cart_form" action="" method="post">
+                            <div class="full_page_frame_section_inside_shopping_cart_payment_options_section">
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_options_header_section">Ödeme Sistemi Seçimi</div>
+                                <div class="full_page_frame_section_inside_payment_selections_section">
+                                    <div class="full_page_frame_section_inside_payment_selections_balancing_section">
+                                        <div class="full_page_frame_section_inside_payment_selections_limitation_section">
+                                            <div class="full_page_frame_section_inside_payment_system_logo_section">
+                                                <img src="img/credit_card_80px.png" alt="credit_card" title="Kredi Kartı"/>
+                                            </div>
+                                            <div class="full_page_frame_section_inside_payment_selections_table_section">
+                                                <table class="full_page_frame_section_inside_payment_selections_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_payment_selections_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="payment_system_selections" id="credit_card_payment" class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_inputs" checked="checked" onclick="$.shopping_cart_payment_page_credit_card_payment_system()">
+                                                                        <span class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="full_page_frame_section_inside_payment_selections_table_header_text_column">Kredi Kartı İle Ödeme</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_payment_selections_limitation_section">
+                                            <div class="full_page_frame_section_inside_payment_system_logo_section">
+                                                <img src="img/mobile_payment_80px.png" alt="mobile_payment" title="Mobil Ödeme"/>
+                                            </div>
+                                            <div class="full_page_frame_section_inside_payment_selections_table_section">
+                                                <table class="full_page_frame_section_inside_payment_selections_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_payment_selections_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="payment_system_selections" id="mobile_payment" class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_inputs" onclick="$.shopping_cart_payment_page_mobile_payment_system()">
+                                                                        <span class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="full_page_frame_section_inside_payment_selections_table_header_text_column">Mobil Ödeme İle Ödeme</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_payment_selections_limitation_section">
+                                            <div class="full_page_frame_section_inside_payment_system_logo_section">
+                                                <img src="img/bank_payment_80px.png" alt="bank_payment" title="Banka Havalesi"/>
+                                            </div>
+                                            <div class="full_page_frame_section_inside_payment_selections_table_section">
+                                                <table class="full_page_frame_section_inside_payment_selections_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_payment_selections_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="payment_system_selections" id="bank_payment" class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_inputs" onclick="$.shopping_cart_payment_page_bank_payment_system()">
+                                                                        <span class="full_page_frame_section_inside_shopping_cart_payment_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="full_page_frame_section_inside_payment_selections_table_header_text_column">Banka Havalesi İle Ödeme</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="credit_card_payment_section" class="full_page_frame_section_inside_shopping_cart_payment_selections_credit_card_section">
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_credit_card_header_section">Kredi Kartı İle Ödeme</div>
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_credit_card_description_text_section">Lütfen ödeme işleminizde kullanmak istediğiniz kredi kartınızın markasını seçiniz.
+                                    Kredi kartınızın markası aşağıdaki listede yer almıyorsa diğer seçeneğini kullanabilirsiniz. ATM (bankamatik) kartı ile ödeme yapmak istiyorsanız "ATM KARTLARI" seçeneğini kullanabilirsiniz.</div>
+                                <div class="full_page_frame_section_inside_credit_card_selections_section">
+                                    <div class="full_page_frame_section_inside_credit_card_selections_balancing_section">
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_axess_card_58x15.png" alt="payment_selection_axess_card" title="Axess Kart"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_axess_card" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_bonus_card_51x15.png" alt="payment_selection_bonus_card" title="Bonus Kart"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_bonus_card" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_cardfinans_card_98x15.png" alt="payment_selection_cardfinans_card" title="Cardfinans Kart"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_cardfinans_card" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_maximum_card_58x15.png" alt="payment_selection_maximum_card" title="Maximum Kart"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_maximum_card" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_world_card_60x15.png" alt="payment_selection_world_card" title="World Kart"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_world_card" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_parafly_card_24x15.png" alt="payment_selection_parafly_card" title="Parafly Kart"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_parafly_card" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_other_cards_82x15.png" alt="payment_selection_other_cards" title="Diger Kartlar"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_other_cards" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_selection_limitation_section">
+                                            <div class="full_page_frame_section_inside_credit_card_logo_section"><img src="img/payment_selection_ATM_cards_82x15.png" alt="payment_selection_ATM_cards" title="ATM Kartları"></div>
+                                            <div class="full_page_frame_section_inside_credit_card_selection_table_section">
+                                                <table class="full_page_frame_section_inside_credit_card_selection_table" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="full_page_frame_section_inside_credit_card_selection_table_radio_button_column">
+                                                                <div class="full_page_frame_section_inside_credit_card_selections_radio_button_section">
+                                                                    <label class="full_page_frame_section_inside_credit_card_selections_radio_button_option_coverage_section">
+                                                                        <input type="radio" name="credit_cart_selection" id="payment_selection_ATM_cards" class="full_page_frame_section_inside_credit_card_selections_radio_button_inputs">
+                                                                        <span class="full_page_frame_section_inside_credit_card_selections_radio_button_giving_shape_section"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_credit_card_description_text_section">Lütfen ödeme işleminde uygulanmasını istediğiniz taksit sayısını seçiniz.
+                                    Kredi kartınızın markası yukarıdaki listede yer almıyorsa ödeme işleminde herhangi bir taksitlendirme yapılamaz.</div>
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_credit_card_installment_selection_section">
+                                    <div class="full_page_frame_section_inside_shopping_cart_payment_selections_credit_card_installment_selection_header_section">Taksit seçimi</div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">Tek Çekim</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">1 x 1.000,00</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">2 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">2 x 500,00</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">3 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">3 x 333,33</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">4 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">4 x 250,00</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">5 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">5 x 200,00</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">6 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">6 x 166,66</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">7 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">7 x 142,85</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">8 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">8 x 125,00</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="full_page_frame_section_inside_credit_card_installment_selections_detail_section">
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_section">
+                                            <label class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_option_coverage_section">
+                                                <input type="radio" name="installment_selection" class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_inputs">
+                                                <span class="full_page_frame_section_inside_credit_card_installment_selections_radio_button_giving_shape_section"></span>
+                                            </label>
+                                        </div>
+                                        <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text_coverage_section">
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_text">9 Taksit</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_slices">9 x 111,11</div>
+                                            <div class="full_page_frame_section_inside_credit_card_installment_selections_number_of_installments_total_payment_amount">₺ 1.000,00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mobile_payment_section" class="full_page_frame_section_inside_shopping_cart_payment_selections_mobile_section" style="display: none;">
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_mobile_header_section">Mobil Ödeme İle Ödeme</div>
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_mobile_description_text_section">Lütfen ödeme işleminizde kullanmak istediğiniz cep telefonu numarasını 
+                                    aşağıda yer alan ilgili alana yazınız. Mobil ödeme işlemlerinde sadece Türk Telekom, Turkcell ve Vodafone hatları yararlanabilir.<br />
+                                    <b>Önemli Bilgilendirme :</b> Mobil ödeme ile işlem başı maksimum ödeme tutarı operatörler tarafından ₺ 100 ile sınırlandırılmaktadır.</div>
+                                <div class="full_page_frame_section_inside_mobile_payment_phone_number_section">
+                                    <input type="tel" name="mobile_payment_phone_number" id="mobile_payment_phone_number" class="form_elements_text_inputs" tabindex="1" style="text-align: center; font-weight: 600; color: #f90;" placeholder="Cep Telefonunuzu giriniz">
+                                </div>
+                            </div>
+                            <div id="bank_payment_section" class="full_page_frame_section_inside_shopping_cart_payment_selections_bank_section" style="display: none;">
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_bank_header_section">Banka Havalesi İle Ödeme</div>
+                                <div class="full_page_frame_section_inside_shopping_cart_payment_selections_bank_description_text_section">Banka havalesi / EFT ile ürün satın alabilmek için, öncelikle alışveriş sepeti tutarını
+                                    "Banka Hesaplarımız" sayfasında bulunan herhangi bir  hesaba ödeme yaptıktan sonra, iletişim formu aracılığı ile lütfen tarafımıza bilgi veriniz. Vereceğiniz bilgiye istinaden ilgili işlem 
+                                    kontrol edildikten sonra, bankadan onay alınacak olur ise siparişiniz en kısa sürede tarafınıza kargo ile gönderilecektir.</div>
+                            </div>
+                        </form> 
+                    </div>
+                    <div id="full_page_frame_section_inside_shopping_cart_page_right_section">
+                        <div class="full_page_frame_section_inside_shopping_cart_underline_right_header_section">
+                            <div class="full_page_frame_section_inside_shopping_cart_underline_right_header_section_top_header_text">Sipariş Özeti</div>
+                            <div class="full_page_frame_section_inside_shopping_cart_underline_right_header_section_bottom_header_text">Toplam ürün adedi : 5</div>
+                        </div> 
+                        <div class="full_page_frame_section_inside_shopping_cart_total_amount_header_section">Ödenecek Tutar (KDV Dahil)</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_total_amount_number_section">1.000,00 TL</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_order_summary_inside_button_section" onclick="$.send_shopping_cart_form()">
+                            <span class="full_page_frame_section_inside_shopping_cart_order_summary_inside_button_icon"><img src="img/shopping_cart_20px.png" alt="shopping_cart" title="shopping_cart"></span>
+                            <span class="full_page_frame_section_inside_shopping_cart_order_summary_inside_button_text">Ödeme Yap</span>
+                        </div>
+                        <div class="full_page_frame_section_inside_shopping_cart_products_total_KDV_included_header_section">Ürünler Toplamı (KDV Dahil)</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_products_total_KDV_included_number_section">1.000,00 TL</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_discounts_total_KDV_included_header_section">İndirimler Toplamı (KDV Dahil)</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_discounts_total_KDV_included_number_section">1.000,00 TL</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_cargo_price_total_KDV_included_header_section">Kargo Ücreti (KDV Dahil)</div>
+                        <div class="full_page_frame_section_inside_shopping_cart_cargo_price_total_KDV_included_number_section">12,00 TL</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer_menu_section">
+                <div id="footer_menu_limitation_section">
+                    <div class="footer_menu_column_section">
+                        <div class="footer_menu_column_header_section">KURUMSAL</div>
+                        <div class="footer_menu_column_menu_section"><a href="about_us.html" target="_top">Hakkımızda</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="bank_accounts.html" target="_top">Banka Hesaplarımız</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="transfer_notification_form.html" target="_top">Havale Bildirim Formu</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="dealers.html" target="_top">Bayilerimiz</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="dealership_application_form.html" target="_top">Bayilik Başvuru Formu</a></div>
+                    </div>
+                    <div class="footer_menu_column_section">
+                        <div class="footer_menu_column_header_section">ÜYELİK & HİZMETLER</div>
+                        <!-- <div class="footer_menu_column_menu_section"><a href="my_account.html" target="_top">Hesabım</a></div>
+                            <div class="footer_menu_column_menu_section"><a href="sign_out.html" target="_top">Çıkış Yap</a></div> -->
+                        <div class="footer_menu_column_menu_section"><a href="login.html" target="_top">Giriş Yap</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="sign_up.html" target="_top">Üye Ol</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="sss.html" target="_top">SSS</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="cargo_tracking.html" target="_top">Kargom Nerede?</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="contact.html" target="_top">İletişim</a></div>
+                    </div>
+                    <div class="footer_menu_column_section footer_menu_column_section_clear">
+                        <div class="footer_menu_column_header_section">SÖZLEŞMELER</div>
+                        <div class="footer_menu_column_menu_section"><a href="membership_agreement.html" target="_top">Üyelik Sözleşmesi</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="dealership_agreement.html" target="_top">Bayilik Sözleşmesi</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="terms_of_use.html" target="_top">Kullanım Koşulları</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="privacy_and_security.html" target="_top">Gizlilik ve Güvenlik</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="distance_selling_agreement.html" target="_top">Mesafeli Satış Sözleşmesi</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="delivery.html" target="_top">Teslimat</a></div>
+                        <div class="footer_menu_column_menu_section"><a href="cancel_return_change.html" target="_top">İptal & İade & Değişim</a></div>
+                    </div>
+                    <div class="footer_menu_column_section">
+                        <div class="footer_menu_column_header_section">BİZİ TAKİP EDİN</div>
+                        <div class="footer_menu_column_menu_section">
+                            <a href="https://www.facebook.com/barisyazilim.net" target="_top"><img src="img/facebook_16px.png" alt="facebook" title="facebook">Facebook</a>
+                        </div>
+                        <div class="footer_menu_column_menu_section">
+                            <a href="https://twitter.com/barisyazilimnet" target="_top"><img src="img/twitter_16px.png" alt="Twitter" title="Twitter">Twitter</a>
+                        </div>
+                        <div class="footer_menu_column_menu_section">
+                            <a href="https://www.linkedin.com/in/barisyazilimnet/" target="_top"><img src="img/linkedin_16px.png" alt="Linkedin" title="Linkedin">Linkedin</a>
+                        </div>
+                        <div class="footer_menu_column_menu_section">
+                            <a href="https://www.instagram.com/barisyazilimnet/" target="_top"><img src="img/instagram_16px.png" alt="İnstagram" title="İnstagram">İnstagram</a>
+                        </div>
+                        <div class="footer_menu_column_menu_section">
+                            <a href="https://tr.pinterest.com/" target="_top"><img src="img/pinterest_16px.png" alt="Pinterest" title="Pinterest">Pinterest</a>
+                        </div>
+                        <div class="footer_menu_column_menu_section">
+                            <a href="https://www.youtube.com/channel/UCAiKeVC8Ja7NySNsViOHv8g" target="_top"><img src="img/youtube_16px.png" alt="Youtube" title="Youtube">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_bottom_text_section">
+                <div id="footer_bottom_text_limitation_section">Copyright &copy; 2019 - 2021 barisyazilim.net Tüm Hakları Saklıdır.</div>
+            </div>
+            <div id="footer_bottom_logo_section">
+                <div id="footer_bottom_logo_limitation_section">
+                    <!-- ? genellikle bu sıralama ile kullanılmaktadır -->
+                    <div id="footer_bottom_rapid_ssl_logo_section"><img src="img/rapid_ssl_32x12.png" alt="rapid_ssl" title="rapid_ssl"></div>
+                    <div id="footer_bottom_security_shop_logo_section"><img src="img/security_shop_28x12.png" alt="security_shop" title="security_shop"></div>
+                    <div id="footer_bottom_3d_secure_logo_section"><img src="img/3d_secure_14x12.png" alt="3d_secure" title="3d_secure"></div>
+                    <div id="footer_bottom_bonus_logo_section"><img src="img/bonus_41x12.png" alt="bonus" title="bonus"></div>
+                    <div id="footer_bottom_maximum_logo_section"><img src="img/maximum_46x12.png" alt="maximum" title="maximum"></div>
+                    <div id="footer_bottom_world_logo_section"><img src="img/world_48x12.png" alt="world" title="world"></div>
+                    <div id="footer_bottom_cardfinans_logo_section"><img src="img/cardfinans_78x12.png" alt="cardfinans" title="cardfinans"></div>
+                    <div id="footer_bottom_axess_logo_section"><img src="img/axess_46x12.png" alt="axess" title="axess"></div>
+                    <div id="footer_bottom_paraf_logo_section"><img src="img/paraf_19x12.png" alt="paraf" title="paraf"></div>
+                    <div id="footer_bottom_visa_logo_section"><img src="img/visa_37x12.png" alt="visa" title="visa"></div>
+                    <div id="footer_bottom_mastercard_logo_section"><img src="img/mastercard_21x12.png" alt="mastercard" title="mastercard"></div>
+                    <div id="footer_bottom_american_express_logo_section"><img src="img/american_express_20x12.png" alt="american_express" title="american_express"></div>
+                    <!-- ! kesinlikle bu sıralamada olmalı -->
+                    <div id="footer_bottom_turk_telekom_logo_section"><img src="img/turk_telekom_59x12.png" alt="turk_telekom" title="turk_telekom"></div>
+                    <div id="footer_bottom_turkcell_logo_section"><img src="img/turkcell_53x12.png" alt="turkcell" title="turkcell"></div>
+                    <div id="footer_bottom_vodafone_logo_section"><img src="img/vodafone_63x12.png" alt="vodafone" title="vodafone"></div>
+                    <!-- ! mobil ödeme çözüm ortagıdır mobil ödeme için bundan istemek lazım  -->
+                    <div id="footer_bottom_wirecard_logo_section"><img src="img/wirecard_60x12.png" alt="wirecard" title="wirecard"></div> 
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" language="javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/script.js"></script>
+</body>
+
+</html>
